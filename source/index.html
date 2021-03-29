@@ -6,47 +6,49 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav">
+    <div class="container-center">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
           <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
-       </a>
+        </a>
+        <button class="page-header__burger" type="button" aria-label="Открыть меню"></button>
       </div>
-      <button class="main-nav__toggle" type="button">
-        <span aria-label="Открыть меню"></span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="site-list__item site-list__item--active">
-            <a>
-              главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              html academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="page-header__download-application">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__download-application">
       <h1 class="visually-hidden">Приложение «Pink»</h1>
       <p class="download__slogan">
         Взгляните на жизнь иначе!
       </p>
       <img src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
-      <section class="page-header__download-section">
+      <section class="page-main__download-section">
         <a class="button download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="download-applications__list">
             <li class="download-application__item">
@@ -70,8 +72,6 @@
         </p>
      </section>
     </div>
-  </header>
-  <main class="page-main">
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <p class="advantages__slogan">
