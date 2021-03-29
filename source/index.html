@@ -6,72 +6,77 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <div class="container-center">
-      <div class="page-header__logo-wrapper">
+    <div class="container">
+      <div class="page-header__top">
         <a class="page-header__logo">
           <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
         </a>
-        <button class="page-header__burger" type="button" aria-label="Открыть меню"></button>
+        <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="page-header__panel">
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="site-list__item site-list__item--active">
+            <li class="main-nav__item site-list__item--active">
               <a>
                 главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="catalog.html">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 конкурс
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 html academy
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__download-application">
-      <h1 class="visually-hidden">Приложение «Pink»</h1>
-      <p class="download__slogan">
-        Взгляните на жизнь иначе!
-      </p>
-      <img src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
-      <section class="page-main__download-section">
-        <a class="button download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-          <ul class="download-applications__list">
-            <li class="download-application__item">
-              <a class="download-application__link download-application__link--apple" href="https://www.apple.com/ru/app-store/">
-                скачать приложение в app-store
-              </a>
-           </li>
-            <li class="download-application__item">
-              <a class="download-application__link download-application__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
-                скачать приложение в play market
-              </a>
-           </li>
-            <li class="download-application__item">
-              <a class="download-application__link download-application__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                скачать приложение в microsoft store
-              </a>
-           </li>
-          </ul>
-        <p class="download__availability">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-     </section>
-    </div>
+    <section class="promo">
+     <div class="container">
+       <div class="promo__wrapper">
+         <h1 class="visually-hidden">Приложение «Pink»</h1>
+         <p class="download__slogan">
+           Взгляните на жизнь иначе!
+         </p>
+         <img src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+         <section class="page-main__download-section">
+           <h2 class="visually-hidden">Скачать приложеие «Pink»</h2>
+           <a class="button download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+             <ul class="download-applications__list">
+                <li class="download-application__item">
+                  <a class="download-application__link download-application__link--apple" href="https://www.apple.com/ru/app-store/">
+                    скачать приложение в app-store
+                  </a>
+               </li>
+                <li class="download-application__item">
+                  <a class="download-application__link download-application__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
+                    скачать приложение в play market
+                  </a>
+               </li>
+                <li class="download-application__item">
+                  <a class="download-application__link download-application__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                    скачать приложение в microsoft store
+                  </a>
+               </li>
+             </ul>
+           <p class="download__availability">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+           </p>
+          </section>
+       </div>
+      </div>
+    </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <p class="advantages__slogan">
@@ -82,16 +87,16 @@
       </p>
       <ul class="advantages__list">
         <li class="advantages-item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <h3 class="advantages-item__title">Поднимает настроение</h3>
+          <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="advantages-item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <h3 class="advantages-item__title">Меняет мир вокруг</h3>
+          <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="advantages-item">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <h3 class="advantages-item__title">Заводит новых друзей</h3>
+          <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
     </section>
