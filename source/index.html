@@ -16,7 +16,7 @@
       <div class="page-header__panel">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item site-list__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a>
                 главная
               </a>
@@ -44,28 +44,28 @@
   <main class="page-main">
     <section class="promo">
      <div class="container">
-       <div class="promo__wrapper">
+       <div class="promo__application">
          <h1 class="visually-hidden">Приложение «Pink»</h1>
-         <p class="download__slogan">
+         <p class="promo__slogan">
            Взгляните на жизнь иначе!
          </p>
-         <img src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
-         <section class="page-main__download-section">
+         <img class="promo__image" src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+         <section class="download">
            <h2 class="visually-hidden">Скачать приложеие «Pink»</h2>
            <a class="button download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-             <ul class="download-applications__list">
-                <li class="download-application__item">
-                  <a class="download-application__link download-application__link--apple" href="https://www.apple.com/ru/app-store/">
+             <ul class="download__list">
+                <li class="download__item">
+                  <a class="download__link download__link--apple" href="https://www.apple.com/ru/app-store/">
                     скачать приложение в app-store
                   </a>
                </li>
-                <li class="download-application__item">
-                  <a class="download-application__link download-application__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
+                <li class="download__item">
+                  <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
                     скачать приложение в play market
                   </a>
                </li>
-                <li class="download-application__item">
-                  <a class="download-application__link download-application__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                <li class="download__item">
+                  <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
                     скачать приложение в microsoft store
                   </a>
                </li>
@@ -141,76 +141,74 @@
         </div>
       </div>
     </section>
-    <section class="application-price">
+    <section class="price">
       <h2 class="visually-hidden">Стоимость приложения</h2>
-      <div class="application-price__table-wrapper">
-        <table class="price-table">
-          <caption class="visually-hidden">Стоимость функциональных возможностей приложения</caption>
-          <thead>
-            <tr>
-              <th class="price-table__column"></th>
-              <th class="price-table__column" scope="col">
-                <span class="price-table__tarif">База</span>
-                <b class="price-table__value">1,99 USD</b>
-              </th>
-              <th class="price-table__column" scope="col">
-                <span class="price-table__tarif">Стандарт</span>
-                <b class="price-table__value">3,99 USD</b>
-              </th>
-              <th class="price-table__column" scope="col">
-                <span class="price-table__tarif">Аналим</span>
-                <b class="price-table__value">9,99 USD</b>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="price-table__row-description" scope="row">Розовый фильтр</th>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Есть</span>
-              </td>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Есть</span>
-              </td>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Есть</span>
-              </td>
-           </tr>
-            <tr>
-              <th class="price-table__row-description" scope="row">Смайлики</th>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Нет</span>
-              </td>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Есть</span>
-              </td>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Есть</span>
-              </td>
-           </tr>
-            <tr>
-              <th class="price-table__row-description" scope="row">Комментарии</th>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Нет</span>
-              </td>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Нет</span>
-              </td>
-              <td class="price-table__cell">
-                <span class="visually-hiden">Есть</span>
-              </td>
-           </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="application-price__toggles slider__toggles">
+      <table class="price-table">
+        <caption class="visually-hidden">Стоимость функциональных возможностей приложения</caption>
+        <thead>
+          <tr>
+            <th class="price-table__column"></th>
+            <th class="price-table__column" scope="col">
+              <span class="price-table__tarif">База</span>
+              <span class="price-table__value">1,99 USD</span>
+            </th>
+            <th class="price-table__column" scope="col">
+              <span class="price-table__tarif">Стандарт</span>
+              <span class="price-table__value">3,99 USD</span>
+            </th>
+            <th class="price-table__column" scope="col">
+              <span class="price-table__tarif">Аналим</span>
+              <span class="price-table__value">9,99 USD</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="price-table__title" scope="row">Розовый фильтр</th>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Есть</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Есть</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Есть</span>
+            </td>
+         </tr>
+          <tr>
+            <th class="price-table__title" scope="row">Смайлики</th>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Нет</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Есть</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Есть</span>
+            </td>
+         </tr>
+          <tr>
+            <th class="price-table__title" scope="row">Комментарии</th>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Нет</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Нет</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__title visually-hidden">Есть</span>
+            </td>
+         </tr>
+        </tbody>
+      </table>
+      <div class="price__toggles slider__toggles">
         <span class="slider__toggle slider__toggle--current">1</span>
         <span class="slider__toggle">2</span>
         <span class="slider__toggle">3</span>
       </div>
     </section>
     <section class="contacts">
-      <p class="contacts-slogan">
+      <p class="contacts__slogan">
         Остались вопросы?
         Свяжитесь с нами!
       </p>
@@ -218,30 +216,30 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <b class="contacts__title">Звоните:</b>
-            <a class="contacts-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             <b class="contacts__title">Пишите:</b>
-            <a class="contacts-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <b class="contacts__title">Приезжайте в гости:</b>
-            <a class="contacts-info" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16">ул. Большая Конюшенная, 19/8</a>
+            <a class="contacts__info" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
       </div>
-      <div class="contacts_map">
+      <div class="contacts__map">
         <a class="contacts__map-link" href="#">
           <img src="img/map.png" width="320" height="200" alt="карта проезда">
         </a>
      </div>
     </section>
     <footer class="page-footer">
-        <div class="footer__container">
+        <div class="page-footer__container">
           <a class="page-footer__logo">
             <img src="img/pink-footer.svg" width="74" height="24" alt="Логотип приложения Pink">
           </a>
-         <section class="page-footer__social-section">
+         <section class="page-footer__social social">
            <ul class="social__list">
              <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
