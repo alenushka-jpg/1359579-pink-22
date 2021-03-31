@@ -42,129 +42,149 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="container">
-      <section class="contest">
+    <div class="contest">
+      <div class="container">
         <h1 class="contest__title">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
-        <p class="contest__text">
-          Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!
-        </p>
-        <div class="user-data">
-          <form class="user-data__form" method="get" action="https://echo.htmlacademy.ru">
+      </div>
+    </div>
+    <div class="user-data">
+      <form class="user-data__form" method="get" action="https://echo.htmlacademy.ru">
+        <div class="user-data__section user-data__section--name-form">
+          <div class="container user-data__container">
             <fieldset class="user-data__filedset">
+              <legend class="user-data__legend">
+                Поделитесь своей историей и получите
+                шанс выиграть ценный приз — 1000
+                миль на вашу бонусную карту!
+              </legend>
               <label class="user-data__field field">
                 <span class="field__label">Фамилия</span>
-                <input class="field__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname">
+                <input class="field__input" type="text" name="surname" placeholder="Укажите фамилию *">
               </label>
               <label class="user-data__field field">
                 <span class="field__label">Имя</span>
-                <input class="field__input" type="text" name="name" placeholder="Введите ваше имя *" id="name">
+                <input class="field__input" type="text" name="name" placeholder="Введите ваше имя *">
               </label>
               <label class="user-data__field field">
                 <span class="field__label">Отчество</span>
-                <input class="field__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
+                <input class="field__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </fieldset>
-            <fieldset class="user-data__filedset user-data__fieldset—bg-light .user-data__fieldset—bordered">
-              <legend class="user-data__caption">Ваши безбашенные достижения в путешествии</legend>
+          </div>
+        </div>
+        <div class="user-data__section user-data__fieldset—bg-light user-data__section--checkbox">
+          <div class="container user-data__container">
+            <fieldset class="user-data__filedset .user-data__fieldset—bordered">
+              <legend class="user-data__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="user-data__list">
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="checkbox" name="filter-checkbox" id="check-1">
-                    <span class="field__label">Сделал селфи с акулой</span>
+                  <label class="user-data__field checkbox">
+                    <input class="checkbox__input" type="checkbox" name="filter-checkbox" value="selfie">
+                    <span class="checkbox__label">Сделал селфи с акулой</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="checkbox" name="filter-checkbox" id="check-2">
-                    <span class="field__label">Обгорел на пляже</span>
+                  <label class="user-data__field checkbox">
+                    <input class="checkbox__input" type="checkbox" name="filter-checkbox" value="beach">
+                    <span class="checkbox__label">Обгорел на пляже</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="checkbox" name="filter-checkbox" id="check-3">
-                    <span class="field__label">Видел Чака Норриса</span>
+                  <label class="user-data__field checkbox">
+                    <input class="checkbox__input" type="checkbox" name="filter-checkbox" value="chuck-norris">
+                    <span class="checkbox__label">Видел Чака Норриса</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="checkbox" name="filter-checkbox" id="check-4">
-                    <span class="field__label">Накупил сувениров</span>
+                  <label class="user-data__field checkbox">
+                    <input class="checkbox__input" type="checkbox" name="filter-checkbox" value="souvenir">
+                    <span class="checkbox__label">Накупил сувениров</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="checkbox" name="filter-checkbox" id="check-5">
-                    <span class="field__label">Удержал башню</span>
+                  <label class="user-data__field checkbox">
+                    <input class="checkbox__input" type="checkbox" name="filter-checkbox" value="tower">
+                    <span class="checkbox__label">Удержал башню</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="checkbox" name="filter-checkbox" id="check-6">
-                    <span class="field__label">Разгромил отель</span>
+                  <label class="user-data__field checkbox">
+                    <input class="checkbox__input" type="checkbox" name="filter-checkbox" value="hotel">
+                    <span class="checkbox__label">Разгромил отель</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
+          </div>
+        </div>
+        <div class="user-data__section user-data__section—contacts">
+          <div class="user-data__container">
             <fieldset class="user-data__filedset .user-data__fieldset—bordered">
-              <label class="user-data__field field">
-                <span class="field__label">Номер телефона</span>
-                <input class="field__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <label class="user-data__field checkbox">
+                <span class="checkbox__label">Номер телефона</span>
+                <input class="checkbox__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
               </label>
-              <label class="user-data__field field">
-                <span class="field__label">Адрес почты</span>
-                <input class="field__input" type="email" name="email" placeholder="Введите почту *">
+              <label class="user-data__field checkbox">
+                <span class="checkbox__label">Адрес почты</span>
+                <input class="checkbox__input" type="email" name="email" placeholder="Введите почту *">
               </label>
             </fieldset>
-            <fieldset class="user-data__fieldset user-data__fieldset—bg-light .user-data__fieldset—bordered">
-              <legend class="user-data__caption">С каким приложением путешествовали?</legend>
+          </div>
+        </div>
+        <div class="user-data__section user-data__fieldset—bg-light user-data__section--radio">
+          <div class="user-data__container">
+            <fieldset class="user-data__fieldset .user-data__fieldset—bordered">
+              <legend class="user-data__legend">С каким приложением путешествовали?</legend>
               <ul class="user-data__list">
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="radio" name="filter-radio" id="filter-ios">
-                    <span class="field__label">Pink для iOS</span>
+                  <label class="user-data__field radio">
+                    <input class="radio__input" type="radio" name="filter-radio" value="ios">
+                    <span class="radio__label">Pink для iOS</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="radio" name="filter-radio" id="filter-android">
-                    <span class="field__label">Pink на Android</span>
+                  <label class="user-data__field radio">
+                    <input class="radio__input" type="radio" name="filter-radio" value="android">
+                    <span class="radio__label">Pink на Android</span>
                   </label>
                 </li>
                 <li class="user-data__item">
-                  <label class="user-data__field field">
-                    <input class="field__input" type="radio" name="filter-radio" id="filter-windows">
-                    <span class="field__label">Windows Phone</span>
+                  <label class="user-data__field radio">
+                    <input class="radio__input" type="radio" name="filter-radio" value="windows">
+                    <span class="radio__label">Windows Phone</span>
                  </label>
                 </li>
               </ul>
             </fieldset>
+          </div>
+        </div>
+        <div class="user-data__section user-data__section--textarea">
+          <div class="user-data__container">
             <fieldset class="user-data__filedset">
-              <legend class="user-data__caption">Опишите свои эмоции</legend>
+              <legend class="user-data__legend">Опишите свои эмоции</legend>
               <label class="user-data__field field">
                 <textarea class="user-data__textarea" name="textarea" cols="30" rows="10" placeholder="Можно прям в красках, не
                 стесняясь в выражениях"></textarea>
               </label>
             </fieldset>
-            <div class="user-data__submit">
-              <button class="user-data__submit-button" type="submit">Отправить форму</button>
-              <p class="user-data__text">* — обязательные поля</p>
-            </div>
-          </form>
+          </div>
         </div>
-      </section>
+        <div class="user-data__footer">
+          <button class="button user-data__footer-button" type="submit">Отправить форму</button>
+          <p class="user-data__text">* — обязательные поля</p>
+        </div>
+      </form>
     </div>
   </main>
   <footer class="page-footer">
     <div class="container">
-      <h2 class="visually-hidden">Социальные сети</h2>
         <a class="page-footer__logo">
           <img src="img/pink-footer.svg" width="74" height="24" alt="Логотип приложения Pink">
         </a>
        <section class="page-footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
          <ul class="social__list">
            <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
