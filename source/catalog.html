@@ -249,28 +249,31 @@
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Обрезать фотографию</span>
                 </button>
-                <div class="tools__scale">
-                  <div class="tools__bar"></div>
-                </div>
+                <label class="tools__range-controls range-controls">
+                  <span class="visually-hidden">Обрезать фотографию</span>
+                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                </label>
               </li>
               <li class="tools__item">
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Добавить розовый фильтр</span>
                 </button>
-                <div class="tools__scale">
-                  <div class="tools__bar"></div>
-                </div>
+                <label class="tools__range-controls range-controls">
+                  <span class="visually-hidden">Добавить розовый фильтр</span>
+                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                </label>
               </li>
               <li class="tools__item">
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Задать контрастность</span>
                 </button>
-                <div class="tools__scale">
-                  <div class="tools__bar"></div>
-                </div>
+                <label class="tools__range-controls range-controls">
+                  <span class="visually-hidden">Задать контрастность</span>
+                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                </label>
               </li>
             </ul>
-            <button class="button tools__submit button--submit" type="button">Запостить</button>
+            <button class="button tools__submit button--submit" type="type">Запостить</button>
             <button class="button tools__reset button--reset" type="reset">Отмена</button>
           </div>
         </form>
