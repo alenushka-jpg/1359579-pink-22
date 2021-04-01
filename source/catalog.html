@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
+        <a class="page-header__logo">
+          <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
+        </a>
+        <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <div class="page-header__panel">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="intro">
+      <div class="container">
+        <h1 class="intro_title">Фотографии пользователей</h1>
+      </div>
+    </div>
+    <section class="gallery">
+      <div class="container">
+        <p class="gallery__text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
+      </div>
+      <article class="gallery__picture post">
+        <a class="post__link-photo">
+          <picture class="post__picture post__picture--panorama">
+            <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя с высоты птичьего полёта с видом на природу">
+          </picture>
+         </a>
+        <div class="container">
+          <div class="post__author author">
+            <b class="author__name">Анна</b>
+            <time class="author__time" datetime="2018-03-31">(5 минут назад)</time>
+            <div class="author__text">
+              <p>
+                Прыгать или нет? Напишите в
+                комментарии свой совет и
+                смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!
+              </p>
+            </div>
+            <div class="author__social-like">
+              <button class="author__button">
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
+              <span class="author__like">Нравится: 215</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="container">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <article class="gallery__picture post">
+              <a class="post__link-photo">
+                <picture class="post__picture">
+                  <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="">
+                </picture>
+              </a>
+              <div class="container">
+                <div class="post__author author">
+                  <b class="author__name">Левон</b>
+                  <time class="author__time" datetime="2018-03-31">(5 часов назад)</time>
+                  <div class="author__text">
+                    <p>
+                      Вчера он на луну летал, сегодня в руки к нам попал.
+                    </p>
+                  </div>
+                  <div class="author__social-like">
+                    <button class="author__button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="author__like">Нравится: 356</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item">
+            <article class="gallery__picture post">
+              <a class="post__link-photo">
+                <picture class="post__picture">
+                  <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="">
+                </picture>
+              </a>
+              <div class="container">
+                <div class="post__author author">
+                  <b class="author__name">Антон</b>
+                  <time class="author__time" datetime="2018-03-31">(12 часов назад)</time>
+                  <div class="author__text">
+                    <p>
+                      Соседи будут рады!
+                    </p>
+                  </div>
+                  <div class="author__social-like">
+                    <button class="author__button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="author__like">Нравится: 666</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item">
+            <article class="gallery__picture post">
+              <a class="post__link-photo">
+                <picture class="post__picture">
+                  <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="">
+                </picture>
+              </a>
+              <div class="container">
+                <div class="post__author author">
+                  <b class="author__name">Борис</b>
+                  <time class="author__time" datetime="2018-03-31">(20 часов назад)</time>
+                  <div class="author__text">
+                    <p>
+                      Здесь могла быть ваша цитата о высоком и вечном.
+                    </p>
+                  </div>
+                  <div class="author__social-like">
+                    <button class="author__button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="author__like">Нравится: 215</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item">
+            <article class="gallery__picture">
+              <a class="post__link-photo">
+                <picture class="post__picture">
+                  <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="">
+                </picture>
+              </a>
+              <div class="container">
+                <div class="post__author author">
+                  <b class="author__name">Сергей</b>
+                  <time class="author__time" datetime="2018-03-31">(25 часов назад)</time>
+                  <div class="author__text">
+                    <p>
+                      Самая кубанская в мире!
+                    </p>
+                  </div>
+                  <div class="author__social-like">
+                    <button class="author__button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="author__like">Нравится: 4</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item">
+            <article class="gallery__picture">
+              <a class="post__link-photo">
+                <picture class="post__picture">
+                  <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="">
+                </picture>
+               </a>
+              <div class="container">
+                <div class="post__author author">
+                  <b class="author__name">Максим</b>
+                  <time class="author__time" datetime="2018-03-31">(40 часов назад)</time>
+                  <div class="author__text">
+                    <p>
+                      Где снег-то?
+                    </p>
+                  </div>
+                  <div class="author__social-like">
+                    <button class="author__button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="author__like">Нравится: 150</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item">
+            <article class="gallery__picture">
+              <a class="post__link-photo">
+                <picture class="post__picture">
+                  <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="">
+                </picture>
+              </a>
+              <div class="container">
+                <div class="post__author author">
+                  <b class="author__name">Надежда</b>
+                  <time class="author__time" datetime="2018-03-31">(45 часов назад)</time>
+                  <div class="author__text">
+                    <p>
+                      Всем GM и взаимные лайки!
+                    </p>
+                  </div>
+                  <div class="author__social-like">
+                    <button class="author__button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="author__like">Нравится: 2560</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="upload">
+      <div class="container">
+        <h2 class="visually-hidden">Обрабатывайте и загружайте фотографии</h2>
+        <p class="upload__slogan">
+          Затмите их всех!
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
+          <a class="upload__picture-link">
+            <picture class="upload__picture">
+              <img src="img/upload-photo.jpg" width="280" height="374" alt="">
+            </picture>
+          </a>
+          <div class="upload__tools tools">
+            <ul class="tools__list">
+              <li class="tools__item tools__item--active">
+                <div class="tools__range-controls range-controls">
+                  <div class="range-controls__scale">
+                    <span class="visually-hidden">Обрезать фотографию</span>
+                    <div class="range-controls__bar"></div>
+                  </div>
+                  <div class="range-controls__toggle" tabindex="0"></div>
+                </div>
+              </li>
+              <li class="tools__item">
+                <div class="tools__range-controls range-controls">
+                  <div class="range-controls__scale">
+                     <span class="visually-hidden">Добавить розовый фильтр</span>
+                    <div class="range-controls__bar"></div>
+                  </div>
+                  <div class="range-controls__toggle" tabindex="0"></div>
+                </div>
+              </li>
+              <li class="tools__item">
+                <div class="tools__range-controls range-controls">
+                  <div class="range-controls__scale">
+                     <span class="visually-hidden">Задать контрастность</span>
+                    <div class="range-controls__bar"></div>
+                  </div>
+                  <div class="range-controls__toggle" tabindex="0"></div>
+                </div>
+              </li>
+            </ul>
+            <button class="button tools__submit button--submit" type="button">Запостить</button>
+            <button class="button tools__reset button--reset" type="reset">Отмена</button>
+          </div>
+        </form>
+     </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+        <a class="page-footer__logo">
+          <img src="img/pink-footer.svg" width="74" height="24" alt="Логотип приложения Pink">
+        </a>
+       <section class="page-footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+         <ul class="social__list">
+           <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+             </a>
+           </li>
+           <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+           </li>
+           <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+           </li>
+         </ul>
+       </section>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
