@@ -35,6 +35,7 @@
     "source/img/**/*.svg",
     "source/less/**/*.less"
   ],
+  "editor.renderWhitespace": "all",
   "engines": {
     "node": "14.15.0"
   }
