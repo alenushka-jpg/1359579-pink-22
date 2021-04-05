@@ -1,0 +1,50 @@
+.price {
+  background-color: $basic-color-light-2;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.price-table__column:not(:first-child) {
+  width: 276px;
+  padding-top: 19px;
+  padding-bottom: 35px;
+  background-color: $basic-color-darkblue;
+  color: $basic-color-white;
+}
+
+.price-table__tarif {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price-table__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price-table__title,
+.price-table__cell {
+  width: 276px;
+  background-color: $basic-color-white;
+}
+
+.price-table__title {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-color-darkblue;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.price-table__headline {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+
+

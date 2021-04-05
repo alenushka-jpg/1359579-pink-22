@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Html Academy: Pink</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body class="page__body">
   <header class="page-header">
     <div class="container">
       <div class="page-header__top">
         <a class="page-header__logo">
-          <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
+          <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
         </a>
         <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
       </div>
@@ -17,22 +18,22 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link">
                 главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 конкурс
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 html academy
               </a>
             </li>
@@ -51,8 +52,8 @@
           </p>
           <img class="promo__image" src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
         </div>
-        <section class="promo download">
-          <h2 class="visually-hidden">Скачать приложеие «Pink»</h2>
+        <section class="promo__download download">
+          <h2 class="visually-hidden">Скачать приложение «Pink»</h2>
           <a class="button download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
@@ -141,8 +142,8 @@
               </blockquote>
             </li>
           </ul>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
+          <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
           <div class="reviews__toggles point">
             <span class="slider__toggle slider__toggle--current">1</span>
             <span class="slider__toggle">2</span>
@@ -275,37 +276,37 @@
       </div>
     </section>
     <footer class="page-footer">
-        <div class="container">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <a class="page-footer__logo">
-            <img src="img/pink-footer.svg" width="74" height="24" alt="Логотип приложения Pink">
-          </a>
-          <section class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Фейсбуке</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Инстаграме</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано:</p>
-            <p>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </p>
-          </div>
+      <div class="container">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="page-footer__logo">
+          <img src="img/pink-footer.svg" width="74" height="24" alt="Логотип приложения Pink">
+        </a>
+        <section class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
+                <span class="">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
+                <span class="">Мы в Инстаграме</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </p>
         </div>
+      </div>
     </footer>
   </main>
 </body>

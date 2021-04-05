@@ -1,0 +1,30 @@
+.reviews {
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.quote {
+  margin: 0;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.quote__author-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.quote__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-color-darkblue;
+}
+
+

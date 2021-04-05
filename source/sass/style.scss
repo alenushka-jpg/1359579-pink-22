@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+// Global
+@import "global/fonts";
+@import "global/variables";
+@import "global/global";
+
+@import "blocks/page-header";
+@import "blocks/page-footer";
+// Index
+@import "blocks/promo";
+@import "blocks/advantages";
+@import "blocks/reviews";
+@import "blocks/price";
+@import "blocks/contacts";
+// Form
+@import "blocks/intro";
+@import "blocks/user-data";
+// Catalog
+@import "blocks/intro-photos";
+@import "blocks/gallery";
+@import "blocks/upload";
