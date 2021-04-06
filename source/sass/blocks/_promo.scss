@@ -1,7 +1,7 @@
 .promo__application {
-  background: url("../../img/back-mobile.png") no-repeat;
   width: 320px;
   height: 462px;
+  background: url("../../img/back-mobile.png") no-repeat;
 }
 
 .promo__slogan {
@@ -11,33 +11,3 @@
   color: $basic-color-white;
 }
 
-.download {
-  background-color: $basic-color-darkblue-2;
-  padding-top: 28px;
-  padding-bottom: 38px;
-}
-
-.button  {
-  display: block;
-  width: 280px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  text-decoration: none;
-  color: $basic-color-white;
-}
-
-.download__button {
-  border-radius: 29px;
-  border: 3px solid $basic-color-white;
-  padding: 17px 30px;
-  text-align: center;
-}
-
-.download__availability {
-  width: 280px;
-  font-size: 14px;
-  line-height: 24px;
-  color: $basic-color-white;
-  margin: 0 auto;
-}

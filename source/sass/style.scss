@@ -3,14 +3,23 @@
 @import "global/variables";
 @import "global/global";
 
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/button";
+@import "blocks/visually-hidden";
 @import "blocks/page-header";
 @import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
 // Index
+@import "blocks/main";
 @import "blocks/promo";
+@import "blocks/download";
 @import "blocks/advantages";
 @import "blocks/reviews";
 @import "blocks/price";
 @import "blocks/contacts";
+@import "blocks/quote";
 // Form
 @import "blocks/intro";
 @import "blocks/user-data";

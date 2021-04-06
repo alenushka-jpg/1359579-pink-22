@@ -1,37 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+ }
+
+html {
+  box-sizing: border-box;
+ }
+
+ *, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-color-darkblue;
+ }
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.page {
-  height: 100%;
-  font-size: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  line-height: 27px;
-}
-
-.page__body {
-  min-width: 100%;
-  margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif ;
-  color: $basic-color-black;
-  min-height: 100%;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-}

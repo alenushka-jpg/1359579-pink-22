@@ -1,0 +1,17 @@
+.quote {
+  margin: 0;
+  margin-bottom: 31px;
+  text-align: center
+}
+
+.quote__author-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.quote__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-color-darkblue;
+}

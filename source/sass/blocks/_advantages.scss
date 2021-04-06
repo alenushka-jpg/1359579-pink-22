@@ -16,13 +16,13 @@
 }
 
 .advantages__list {
-  background: url("../../img/mobile-smile.png") no-repeat;
-  background-position: bottom;
-  list-style: none;
-  background-color: $basic-color-light;
   padding-top: 70px;
   padding-bottom: 325px;
   text-align: center;
+  list-style: none;
+  background: url("../../img/mobile-smile.png") no-repeat;
+  background-position: bottom;
+  background-color: $color-lightest;
 }
 
 .advantages-item {
@@ -30,10 +30,10 @@
 }
 
 .advantages-item__title {
+  margin-bottom: 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 24px;
 }
 
 .advantages-item__description {
