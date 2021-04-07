@@ -1,9 +1,72 @@
 .button {
-  display: block;
-  width: 280px;
-  font-weight: 700;
+  display: inline-block;
+  min-width: 280px;
+  padding: 20px 30px;
+  border: 0;
+  border-radius: 1px;
+  font: inherit;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 20px;
+  // font-weight: 700;
   text-decoration: none;
-  color: $basic-color-white;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &--send {
+    background-color: $sub;
+
+    &--send:hover {
+      background-color: $sub-hover;
+    }
+
+    &--send:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--disabled {
+    border-color: $disabled;
+    background-color: $disabled;
+    pointer-events: none;
+  }
+
+  &--round {
+    padding: 15px 30px;
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: transparent;
+    text-transform: none;
+  }
+
+  &--main {
+    border-color: $main;
+    color: $main;
+
+    &:hover {
+      background-color: $main;
+      color: $white;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--reset {
+    color: rgba($dark, 0.1);
+    border-color: rgba($dark, 0.1);
+
+    &:hover {
+      border-color: rgba($dark, 0.3);
+      color: rgba($dark, 0.3);
+    }
+
+    &:active {
+      background-color: rgba($dark, 0.3);
+      color: rgba($white, 0.3);
+    }
+  }
 }

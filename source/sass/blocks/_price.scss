@@ -1,15 +1,19 @@
 .price {
   padding-top: 90px;
-  padding-bottom: 50px;
-  background-color: $color-lighter;
+  padding-bottom: 40px;
+  background-color: $disabled;
+}
+
+.price-table {
+  margin: 0 20px;
 }
 
 .price-table__column:not(:first-child) {
   width: 276px;
   padding-top: 19px;
   padding-bottom: 35px;
-  color: $basic-color-white;
-  background-color: $basic-color-darkblue;
+  color: $white;
+  background-color: $dark;
 }
 
 .price-table__tarif {
@@ -28,7 +32,7 @@
 .price-table__title,
 .price-table__cell {
   width: 276px;
-  background-color: $basic-color-white;
+  background-color: $white;
 }
 
 .price-table__title {
@@ -38,7 +42,7 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  color: $basic-color-darkblue;
+  color: $dark;
 }
 
 .price-table__headline {
@@ -46,5 +50,9 @@
   text-transform: uppercase;
 }
 
+.price__toggles {
+  padding-top: 40px;
+  text-align: center;
+}
 
 

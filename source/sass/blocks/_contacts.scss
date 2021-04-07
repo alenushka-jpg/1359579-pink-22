@@ -9,7 +9,7 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  color: $basic-color-darkblue;
+  color: $sub-dark;
 }
 
 .contacts__list {
@@ -29,10 +29,13 @@
 .contacts__info {
   display: block;
   margin-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: $color-pink;
+  color: $main;
+  text-decoration: none;
 }
 
 

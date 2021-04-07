@@ -1,0 +1,21 @@
+.radio {
+  position: relative;
+}
+
+.radio__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
+}
+
+.radio__input::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -55px;
+  width: 35px;
+  height: 35px;
+  background: $white;
+  border: 2px solid #e5e5e5;
+  border-radius: 24px
+}

@@ -1,12 +1,10 @@
-.advantages {
-  padding-top: 46px;
-}
-
 .advantages__slogan {
+  margin: 0;
+  margin-top: 46px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  color: $basic-color-darkblue;
+  color: $dark;
   text-align: center;
 }
 
@@ -16,13 +14,13 @@
 }
 
 .advantages__list {
-  padding-top: 70px;
-  padding-bottom: 325px;
+  margin: 0;
+  padding: 70px 20px 325px 20px;
   text-align: center;
   list-style: none;
   background: url("../../img/mobile-smile.png") no-repeat;
   background-position: bottom;
-  background-color: $color-lightest;
+  background-color: $light;
 }
 
 .advantages-item {
