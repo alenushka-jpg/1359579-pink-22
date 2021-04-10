@@ -1,21 +1,33 @@
+.promo__container {
+  padding: 0;
+}
 
 .promo__application {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
-  width: 320px;
-  height: 462px;
-  background: url("../../img/back-mobile.png") no-repeat;
+  position: relative;
+  min-height: 462px;
+  background: url(../../img/back-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.promo__slogan-wrapper {
+  padding: 10px 35px 15px 35px;
 }
 
 .promo__slogan {
   margin: 0;
-  padding: 10px 35px 15px 35px;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: $white;
+}
+
+.promo__image {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 320px;
+  height: 286px;
+  transform: translateX(-50%);
 }
 

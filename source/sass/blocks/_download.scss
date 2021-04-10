@@ -4,13 +4,8 @@
 }
 
 .download__button {
-  min-width: 280px;
-  padding: 15px 30px;
-  text-align: center;
-  border-radius: 29px;
   border: 3px solid $white;
   background: inherit;
-  text-transform: none;
 
   &:hover {
     color: $main;
@@ -35,8 +30,7 @@
 }
 
 .download__availability {
-  min-width: 280px;
-  margin: 0 auto;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: center;

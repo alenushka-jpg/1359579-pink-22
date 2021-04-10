@@ -8,7 +8,7 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header__container">
       <div class="page-header__top">
         <a class="page-header__logo">
           <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
@@ -45,30 +45,34 @@
   </header>
   <main class="page-main">
     <section class="promo">
-      <div class="container">
+      <div class="container promo__container">
         <div class="promo__application">
           <h1 class="visually-hidden">Приложение «Pink»</h1>
-          <p class="promo__slogan">
-            Взгляните на жизнь иначе!
-          </p>
-          <img class="promo__image" src="img/phone-screen.png" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+          <div class="promo__slogan-wrapper">
+            <p class="promo__slogan">
+              Взгляните на жизнь иначе!
+            </p>
+          </div>
+          <div class="promo__image-wrapper">
+            <img class="promo__image" src="img/phone-screen.png" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+          </div>
         </div>
         <section class="promo__download download">
           <h2 class="visually-hidden">Скачать приложение «Pink»</h2>
-          <a class="button download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <a class="button download__button button--round" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
-              <a class="download__link download__link--apple" href="https://www.apple.com/ru/app-store/">
+              <a class="visually-hidden download__link download__link--apple" href="https://www.apple.com/ru/app-store/">
                 Cкачать приложение в app-store
               </a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
+              <a class="visually-hidden download__link download__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
                 Cкачать приложение в play market
               </a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+              <a class="visually-hidden download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
                 Cкачать приложение в microsoft store
               </a>
             </li>
@@ -80,32 +84,38 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="container">
+      <div class="container advantages__container">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__slogan">
+        <div class="advantages__text-slogan">
+          <p class="advantages__slogan">
           Устали от серости мегаполиса?
-        </p>
-        <p class="advantages__slogan">
-          Нам есть, что вам предложить!
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages-item advantages__advantages-item">
-            <h3 class="advantages-item__title">Поднимает настроение</h3>
-            <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages-item advantages__advantages-item">
-            <h3 class="advantages-item__title">Меняет мир вокруг</h3>
-            <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages-item advantages__advantages-item">
-            <h3 class="advantages-item__title">Заводит новых друзей</h3>
-            <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+          </p>
+          <p class="advantages__slogan">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
       </div>
+        <div class="advantages__inner-wrapper">
+          <div class="container">
+            <ul class="advantages__list">
+              <li class="advantages-item advantages__advantages-item">
+                <h3 class="advantages-item__title">Поднимает настроение</h3>
+                <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages-item advantages__advantages-item">
+                <h3 class="advantages-item__title">Меняет мир вокруг</h3>
+                <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages-item advantages__advantages-item">
+                <h3 class="advantages-item__title">Заводит новых друзей</h3>
+                <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </div>
     </section>
     <section class="reviews">
-      <div class="container">
+      <div class="container container__reviews">
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <ul class="reviews__list">
@@ -154,13 +164,13 @@
       </div>
     </section>
     <section class="price">
-      <div class="container">
+      <div class="container price__container">
         <h2 class="visually-hidden">Стоимость приложения</h2>
         <table class="price-table">
           <caption class="visually-hidden">Стоимость функциональных возможностей приложения</caption>
           <thead>
             <tr>
-              <th class="price-table__column"></th>
+              <th class="price-table__title"></th>
               <th class="price-table__column" scope="col">
                 <span class="price-table__tarif">База</span>
                 <span class="price-table__price">1,99 USD</span>
@@ -177,7 +187,7 @@
           </thead>
           <tbody>
             <tr>
-              <th class="price-table__title" scope="row">Розовый фильтр</th>
+              <th class="price-table__title" scope="row">Розовыйфильтр</th>
               <td class="price-table__cell">
                 <span class="price-table__value price-table__value--check">
                   <span class="visually-hidden">Есть</span>
@@ -249,35 +259,35 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="container">
+      <div class="container contacts__container">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts__slogan">
           Остались вопросы?
           Свяжитесь с нами!
         </p>
         <div class="contacts__top">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title">Звоните:</b> <br>
+          <dl class="contacts__list">
+            <dt class="contacts__title">Звоните:</dt>
+            <dd class="contacts__item">
               <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Пишите:</b> <br>
+            </dd>
+            <dt class="contacts__title">Пишите:</dt>
+            <dd class="contacts__item">
               <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Приезжайте в гости:</b> <br>
+            </dd>
+            <dt class="contacts__title">Приезжайте в гости:</dt>
+            <dd class="contacts__item">
               <a class="contacts__info" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16">ул. Большая Конюшенная, 19/8</a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </div>
       </div>
       <div class="contacts__map">
-        <img src="img/map.png" width="320" height="200" alt="карта проезда">
+        <img class="contacts__map-image" src="img/map.png" width="320" height="200" alt="карта проезда">
       </div>
     </section>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <h2 class="visually-hidden">Социальные сети</h2>
         <a class="page-footer__logo">
           <img src="img/pink-footer.svg" width="74" height="24" alt="Логотип приложения Pink">
@@ -286,17 +296,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="">Мы в Вконтакте</span>
+                <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
-                <span class="">Мы в Фейсбуке</span>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
-                <span class="">Мы в Инстаграме</span>
+                <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
             </li>
           </ul>

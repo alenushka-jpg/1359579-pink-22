@@ -2,6 +2,10 @@
   background-color: $sub-dark;
 }
 
+.page-header__container {
+  padding: 0;
+}
+
 .page-header__top {
   display: flex;
   justify-content: space-between;

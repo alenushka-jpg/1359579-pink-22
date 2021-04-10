@@ -1,22 +1,33 @@
+.price__container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .price {
   padding-top: 90px;
   padding-bottom: 40px;
   background-color: $disabled;
+  overflow: hidden;
 }
 
 .price-table {
-  margin: 0 20px;
+  width: 280px;
 }
 
-.price-table__column:not(:first-child) {
-  width: 276px;
+.price-table__column {
   padding-top: 19px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
+  padding-right: 95px;
+  padding-left: 95px;
+  width: 276px;
   color: $white;
   background-color: $dark;
 }
 
 .price-table__tarif {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -36,6 +47,7 @@
 }
 
 .price-table__title {
+  display: none;
   padding-top: 12px;
   padding-bottom: 12px;
   font-weight: 400px;
@@ -43,6 +55,11 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $dark;
+}
+
+.price-table__cell  {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .price-table__headline {

@@ -10,15 +10,17 @@
   color: $dark;
 }
 
-.checkbox__input::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -55px;
-  width: 35px;
-  height: 35px;
-  background: $white;
-  border: 2px solid $border-color;
-  border-radius: 1px;
+.checkbox__input {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -55px;
+    width: 35px;
+    height: 35px;
+    background: $white;
+    border: 2px solid $border-color;
+    border-radius: 1px;
+  }
 }
 
