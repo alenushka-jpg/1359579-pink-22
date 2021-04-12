@@ -1,0 +1,65 @@
+.advantages__container{
+  padding: 0;
+}
+
+.advantages__text-slogan {
+  padding-top: 46px;
+  padding-bottom: 70px;
+}
+
+.advantages__slogan {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $dark;
+  text-align: center;
+}
+
+.advantages__slogan:last-of-type {
+  padding-top: 40px;
+}
+
+.advantages__inner-wrapper {
+  padding-top: 75px;
+  padding-bottom: 325px;
+  background-color: $light;
+  overflow: hidden;
+}
+
+.advantages__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -363px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 157px;
+    height: 320px;
+    background: url(../../img/mobile-smile.png) no-repeat;
+  }
+}
+
+.advantages-item:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.advantages-item__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages-item__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}

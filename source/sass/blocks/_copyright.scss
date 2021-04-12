@@ -1,0 +1,16 @@
+.copyright__text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+}
+
+.copyright__link {
+  display: inline-block;
+  color: $dark;
+  text-decoration: none;
+}

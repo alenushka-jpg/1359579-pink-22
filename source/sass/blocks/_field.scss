@@ -1,0 +1,18 @@
+.field__label {
+  display: block;
+  padding: 20px 20px 3px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $main;
+  text-transform: uppercase;
+}
+
+.field__input {
+  min-width: 276px;
+  min-height: 60px;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $disabled;
+  border-radius: 1px;
+}

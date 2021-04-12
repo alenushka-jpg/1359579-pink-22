@@ -1,0 +1,109 @@
+.user-data {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.user-data__name-container {
+  padding-top: 25px;
+  padding-bottom: 44px;
+}
+
+.user-data__checkbox-container {
+  padding-top: 42px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 44px;
+}
+
+.user-data__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.user-data__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark;
+  text-align: center;
+}
+
+.user-data__legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: $main;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-data__checkbox-wrapper {
+  padding-top: 55px;
+  padding-left: 45px;
+}
+
+.user-data__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-data__item:not(:first-child) {
+  margin-top: 47px;
+}
+
+.user-data__section--checkbox {
+  background-color: $light;
+}
+
+.user-data__contacts-container {
+  padding-top: 25px;
+  padding-bottom: 44px;
+}
+
+.user-data__radio-container {
+  padding-top: 42px;
+  padding-bottom: 50px;
+  background-color: $light;
+}
+
+.user-data__radio-wrapper {
+  padding-top: 45px;
+  padding-left: 70px;
+}
+
+.user-data__textarea-container {
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
+
+.user-data__textarea {
+  min-width: 276px;
+  min-height: 197px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+  resize: none;
+}
+
+.user-data__footer {
+  text-align: center;
+}
+
+.user-data__footer .user-data__text {
+  padding-top: 46px;
+  text-transform: uppercase;
+}
+
+.user-data__text-star {
+  color: $main;
+}
+

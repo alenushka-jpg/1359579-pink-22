@@ -35,6 +35,7 @@
     "source/img/**/*.svg",
     "source/sass/**/*.scss"
   ],
+  "editor.renderWhitespace": "all",
   "engines": {
     "node": "14.15.0"
   }

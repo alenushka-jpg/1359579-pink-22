@@ -1,0 +1,38 @@
+.download {
+  padding: 28px 20px 38px 20px;
+  background-color: $dark;
+}
+
+.download__button {
+  border: 3px solid $white;
+  background: inherit;
+
+  &:hover {
+    color: $main;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba($main, 0.3);
+    background-color: $white;
+  }
+}
+
+.download__list {
+  margin: 0;
+  padding: 15px 10px;
+  list-style: none;
+}
+
+.download__link {
+  text-decoration: none;
+  color: $white;
+}
+
+.download__availability {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+}
