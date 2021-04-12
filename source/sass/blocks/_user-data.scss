@@ -6,6 +6,8 @@
 .user-data__name-container {
   padding-top: 25px;
   padding-bottom: 44px;
+  padding-left: 21px;
+  padding-right: 23px;
 }
 
 .user-data__checkbox-container {
@@ -19,6 +21,16 @@
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.user-data__fieldset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-data__fieldset-item:not(:last-child) {
+  padding-bottom: 15px;
 }
 
 .user-data__text {
