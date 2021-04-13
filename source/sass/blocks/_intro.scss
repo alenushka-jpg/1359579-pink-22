@@ -1,22 +1,22 @@
 .intro {
-  width: 320px;
-  height: 170px;
-  background: url("../../img/back-mobile.png") no-repeat;
+  padding-top: 36px;
+  padding-bottom: 68px;
+  background: url(../../img/back-mobile.png) no-repeat;
+  background-size: cover;
 }
 
 .intro__container {
   padding: 0;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .intro__title {
   margin: 0;
-  padding-top: 31px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: $white;
 }
+

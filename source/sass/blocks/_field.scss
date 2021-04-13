@@ -1,5 +1,21 @@
+.field {
+  display: block;
+  &--textarea {
+    .field__textarea {
+      width: 276px;
+      height: 197px;
+      margin-top: 20px;
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
 .field__label {
-  padding-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
   padding-left: 23px;
   font-size: 14px;
   line-height: 30px;
@@ -8,11 +24,20 @@
 }
 
 .field__input {
-  min-width: 276px;
-  min-height: 60px;
-  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  padding: 13px 20px;
   font-size: 18px;
   line-height: 30px;
-  border: 2px solid $disabled;
+  border: 2px solid #E5E5E5;
   border-radius: 1px;
+}
+
+.field__textarea {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+  resize: none;
 }
