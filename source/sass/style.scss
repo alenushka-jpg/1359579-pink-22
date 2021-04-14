@@ -19,13 +19,14 @@
 @import "blocks/reviews";
 @import "blocks/price";
 @import "blocks/contacts";
-@import "blocks/checkbox";
-@import "blocks/radio";
 @import "blocks/quote";
 // Form
 @import "blocks/intro";
 @import "blocks/user-data";
+@import "blocks/checkbox";
+@import "blocks/radio-button.scss";
 @import "blocks/field";
+@import "blocks/footnote";
 // Catalog
 @import "blocks/gallery";
 @import "blocks/post";
