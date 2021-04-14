@@ -5,7 +5,8 @@
 .promo__application {
   position: relative;
   min-height: 462px;
-  background: url(../../img/back-mobile.png) no-repeat;
+  background-image: url(../../img/back-mobile.png);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 

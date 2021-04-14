@@ -42,7 +42,8 @@
     transform: translateX(-50%);
     width: 157px;
     height: 320px;
-    background: url(../../img/mobile-smile.png) no-repeat;
+    background-image: url(../../img/mobile-smile.png);
+    background-repeat: no-repeat;
   }
 }
 

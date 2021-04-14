@@ -1,6 +1,6 @@
 .user-data {
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 
 .user-data__text {
@@ -11,61 +11,52 @@
   text-align: center;
 }
 
-.user-data__section {
-  padding-top: 42px;
-  padding-bottom: 44px;
+.user-data__fieldset {
+  min-width: 0;
+  margin: 0 -20px;
+  padding: 42px 20px 44px;
+  border: none;
 
-  &--checkbox {
+  &--user,
+  &--contacts {
+    .user-data__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--features,
+  &--applications {
     background-color: $light;
   }
 
-  &--radio {
-    background-color: $light;
+  &--user {
+
   }
-}
 
-.user-data__container {
-  padding: 0;
- }
+  &--features {
+    .user-data__item {
+      margin-bottom: 47px;
+    }
+  }
 
-.user-data__fieldset-name{
-  margin: 0;
-  padding: 0;
-  padding-left: 21px;
-  padding-right: 23px;
-  border: 0;
-}
-
-.user-data__checkbox-fieldset {
-  margin: 0;
-  padding: 0;
-  padding-right: 35px;
-  padding-left: 35px;
-  border: 0;
-}
-
-.user-data__fieldset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.user-data__fieldset-item:not(:last-child) {
-  padding-bottom: 15px;
+  &--applications {
+    .user-data__item {
+      margin-bottom: 38px;
+    }
+  }
 }
 
 .user-data__legend {
+  width: 100%;
+  float: left;
+  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 30px;
   color: $main;
   text-align: center;
   text-transform: uppercase;
-}
-
-.user-data__checkbox-wrapper {
-  padding-top: 55px;
-  padding-left: 45px;
 }
 
 .user-data__list {
@@ -74,41 +65,10 @@
   list-style: none;
 }
 
-.user-data__item:not(:last-child) {
-  margin-bottom: 47px;
-}
-
-.user-data__contacts-fieldset {
-  margin: 0;
-  padding: 0;
-  padding-left: 21px;
-  padding-right: 23px;
-  border: 0;
-}
-
-.user-data__radio-wrapper {
-  padding-top: 40px;
-  padding-left: 60px;
-}
-
-.user-data__fieldset-textarea {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  padding-left: 21px;
-  padding-right: 23px;
+.user-data__item:last-child {
+  margin-bottom: 0;
 }
 
 .user-data__footer {
   text-align: center;
 }
-
-.user-data__footer .user-data__text {
-  padding-top: 46px;
-  text-transform: uppercase;
-}
-
-.user-data__text-star {
-  color: $main;
-}
-

@@ -1,7 +1,8 @@
 .intro {
-  padding-top: 36px;
-  padding-bottom: 68px;
-  background: url(../../img/back-mobile.png) no-repeat;
+  min-height: 235px;
+  padding-top: 95px;
+  padding-bottom: 40px;
+  background-image: url(../../img/back-mobile.png);
   background-size: cover;
 }
 
@@ -13,9 +14,9 @@
 
 .intro__title {
   margin: 0;
-  font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+  font-weight: 300;
   text-align: center;
   color: $white;
 }
