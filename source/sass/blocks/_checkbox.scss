@@ -11,6 +11,15 @@
 }
 
 .checkbox__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkox__control {
+  position: absolute;
+
   &::before {
     content: "";
     position: absolute;
@@ -19,19 +28,35 @@
     width: 35px;
     height: 35px;
     background: $white;
-    border: 2px solid $light;
-    border-radius: 1px;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -55px;
-    width: 35px;
-    height: 35px;
-    background: $white;
-    border: 2px solid $light;
+    border: 2px solid $disabled;
     border-radius: 1px;
   }
 }
 
+.checkbox__input:checked + .checkox__control {
+  &::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -47px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../img/check-mark.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.checkbox__input:hover + .checkox__control::before {
+  border: 2px solid $dark;
+}
+
+.checkbox__input:focus + .checkox__control::before,
+.checkbox__input:checked:focus + .checkox__control::before {
+  border: 2px solid $main;
+}
+
+.checkbox__input:disabled + .checkox__control::before,
+.checkbox__input:checked:disabled + .checkox__control::before {
+  border: 2px solid $disabled;
+  color: $disabled;
+}

@@ -1,14 +1,10 @@
 .field {
   display: block;
   &--textarea {
-    .field__textarea {
-      width: 276px;
+    margin-left: 21px;
+    margin-right: 23px;
+    .field__input {
       height: 197px;
-      margin-top: 20px;
-      padding-top: 15px;
-      padding-left: 20px;
-      padding-right: 10px;
-      padding-bottom: 15px;
     }
   }
 }
@@ -26,7 +22,7 @@
 .field__input {
   display: block;
   width: 100%;
-  padding: 13px 20px;
+  padding: 13px 17px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $disabled;
