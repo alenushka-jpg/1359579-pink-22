@@ -1,8 +1,8 @@
 body {
-  font-family: $main-font;
+  font-family: $dark;
   font-size: 14px;
   line-height: 30px;
-  color: $font-color;
+  color: $dark;
 }
 
 .page {
@@ -10,12 +10,10 @@ body {
 }
 
 .page__body {
+  position: relative;
   min-width: 320px;;
   min-height: 100%;
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
   font-weight: 400;
-  color: $font-color;
+  color: $dark;
   overflow-x: hidden;
 }
