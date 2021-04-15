@@ -4,21 +4,17 @@
   cursor: pointer;
 }
 
-.radio-button__label {
-  font-size: 18px;
-  line-height: 30px;
-  color: $dark;
-}
-
 .radio-button__input {
-  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.radio-button__control {
+.radio-button__label {
   position: absolute;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
 
   &::before {
     content: "";
@@ -33,7 +29,7 @@
   }
 }
 
-.radio-button__input:checked + .radio-button__control {
+.radio-button__input:checked ~ .radio-button__label {
   &::after{
     content: "";
     position: absolute;
@@ -41,23 +37,23 @@
     left: -45px;
     width: 15px;
     height: 15px;
-    background: #D22856;
+    background-color: #D22856;
     border-radius: 50%;
     background-repeat: no-repeat;
   }
 }
 
-.radio-button__input:hover + .radio-button__control::before {
+.radio-button__input:hover + .radio-button__label::before {
   border: 2px solid $dark;
 }
 
-.radio-button__input:focus + .radio-button__control::before,
-.radio-button__input:checked:focus + .radio-button__control::before {
+.radio-button__input:focus + .radio-button__label::before,
+.radio-button__input:checked:focus + .radio-button__label::before {
   border: 2px solid $main;
 }
 
-.radio-button__input:disabled + .radio-button__control::before,
-.radio-button__input:checked:disabled + .radio-button__control::before {
+.radio-button__input:disabled + .radio-button__label::before,
+.radio-button__input:checked:disabled + .radio-button__label::before {
   border: 2px solid $disabled;
   color: $disabled;
 }
