@@ -1,0 +1,24 @@
+.social-like {
+  position: relative;
+}
+
+.social-like__text {
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $main;
+}
+
+.social-like__icon {
+  &::before {
+  position: absolute;
+  bottom: 10px;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url("../../img/like.svg");
+  background-repeat: no-repeat;
+  }
+}

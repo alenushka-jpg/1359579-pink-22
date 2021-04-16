@@ -1,5 +1,10 @@
-.post__content {
-  background: $light;
+.post__content{
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 17px;
+  padding-right: 10px;
+  background-color: $light;
 }
 
 .post__name {
@@ -8,6 +13,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  color: $dark;
 }
 
 .post__time {
@@ -18,8 +24,17 @@
   color: $dark;
 }
 
-.post-text {
-  margin: 0;
+.post__text-wrapper {
+  margin-bottom: 10px;
 }
 
+.post__text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
 
+.post__picture-image {
+  display: block;
+}
