@@ -235,53 +235,58 @@
       </div>
     </section>
     <section class="upload">
-      <div class="container upload__container">
+      <div class="container">
         <h2 class="visually-hidden">Обрабатывайте и загружайте фотографии</h2>
         <p class="upload__slogan">
           Затмите их всех!
+        </p>
+        <p class="upload__slogan">
           Выкладывайте все, что накопилось в телефоне!
         </p>
+      </div>
+      <div class="container upload__container">
         <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
           <a class="upload__picture-link">
-            <picture class="upload__picture">
-              <img class="post__picture-image" src="img/upload-photo.jpg" width="280" height="374" alt="">
-            </picture>
-          </a>
-          <div class="upload__tools tools">
-            <ul class="tools__list">
-              <li class="tools__item tools__item--active">
-                <button class="tools__toggle" tabindex="0">
-                  <span class="visually-hidden">Обрезать фотографию</span>
-                </button>
-                <label class="tools__range-controls range-controls">
-                  <span class="visually-hidden">Обрезать фотографию</span>
-                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
-                </label>
-              </li>
-              <li class="tools__item">
-                <button class="tools__toggle" tabindex="0">
-                  <span class="visually-hidden">Добавить розовый фильтр</span>
-                </button>
-                <label class="tools__range-controls range-controls">
-                  <span class="visually-hidden">Добавить розовый фильтр</span>
-                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
-                </label>
-              </li>
-              <li class="tools__item">
-                <button class="tools__toggle" tabindex="0">
-                  <span class="visually-hidden">Задать контрастность</span>
-                </button>
-                <label class="tools__range-controls range-controls">
-                  <span class="visually-hidden">Задать контрастность</span>
-                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
-                </label>
-              </li>
-            </ul>
-            <button class="button button--round button--main" type="type">Запостить</button>
-            <button class="button button--round button--reset" type="reset">Отмена</button>
-          </div>
-        </form>
+           <picture class="upload__picture">
+             <img class="post__picture-image" src="img/upload-photo.jpg" width="280" height="374" alt="">
+           </picture>
+         </a>
+         <div class="upload__tools tools">
+           <ul class="tools__list">
+             <li class="tools__item tools__item--active">
+               <button class="tools__toggle" tabindex="0">
+                 <span class="visually-hidden">Обрезать фотографию</span>
+               </button>
+               <label class="tools__range-controls range-controls">
+                 <span class="visually-hidden">Обрезать фотографию</span>
+                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
+               </label>
+             </li>
+             <li class="tools__item">
+               <button class="tools__toggle" tabindex="0">
+                 <span class="visually-hidden">Добавить розовый фильтр</span>
+               </button>
+               <label class="tools__range-controls range-controls">
+                 <span class="visually-hidden">Добавить розовый фильтр</span>
+                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
+               </label>
+             </li>
+             <li class="tools__item">
+               <button class="tools__toggle" tabindex="0">
+                 <span class="visually-hidden">Задать контрастность</span>
+               </button>
+               <label class="tools__range-controls range-controls">
+                 <span class="visually-hidden">Задать контрастность</span>
+                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
+               </label>
+             </li>
+           </ul>
+           <button class="button button--round button--main" type="type">Запостить</button>
+           <button class="button button--round button--reset" type="reset">Отмена</button>
+         </div>
+       </form>
       </div>
+
     </section>
   </main>
   <footer class="page-footer">

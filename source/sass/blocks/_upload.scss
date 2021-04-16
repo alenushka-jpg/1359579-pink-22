@@ -3,4 +3,15 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+}
+
+.upload__slogan:last-of-type {
+  margin-bottom: 40px;
+}
+
+.upload__container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: $light;
 }
