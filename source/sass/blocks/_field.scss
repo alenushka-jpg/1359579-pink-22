@@ -1,10 +1,14 @@
 .field {
   display: block;
   &--textarea {
-    margin-left: 21px;
-    margin-right: 23px;
     .field__input {
       height: 197px;
+      border: 2px solid $light;
+      color: $dark;
+      resize: none;
+      &::placeholder {
+        color: $dark;
+      }
     }
   }
 }
@@ -30,10 +34,7 @@
 }
 
 .field__textarea {
-  font-size: 18px;
-  line-height: 30px;
   color: $dark;
   border: 2px solid $light;
-  border-radius: 1px;
   resize: none;
 }

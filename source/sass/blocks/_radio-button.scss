@@ -41,19 +41,20 @@
     border-radius: 50%;
     background-repeat: no-repeat;
   }
+
+  &:hover + &::before {
+    border: 2px solid $dark;
+  }
+
+  &:focus + &::before,
+  &:checked:focus + &::before {
+    border: 2px solid $main;
+  }
+
+  &:disabled + &::before,
+  &:checked:disabled + &::before {
+    border: 2px solid $disabled;
+    color: $disabled;
+  }
 }
 
-.radio-button__input:hover + .radio-button__label::before {
-  border: 2px solid $dark;
-}
-
-.radio-button__input:focus + .radio-button__label::before,
-.radio-button__input:checked:focus + .radio-button__label::before {
-  border: 2px solid $main;
-}
-
-.radio-button__input:disabled + .radio-button__label::before,
-.radio-button__input:checked:disabled + .radio-button__label::before {
-  border: 2px solid $disabled;
-  color: $disabled;
-}

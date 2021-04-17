@@ -40,19 +40,21 @@
     background-image: url("../../img/check-mark.svg");
     background-repeat: no-repeat;
   }
+
+  &:focus + &::before,
+  &:checked:focus + &::before {
+    border: 2px solid $main;
+  }
+
+  &:hover + &::before {
+    border: 2px solid $dark;
+  }
+
+  &:disabled + &::before,
+  &:checked:disabled + &::before {
+    border: 2px solid $disabled;
+    color: $disabled;
+  }
 }
 
-.checkbox__input:hover + .checkbox__label::before {
-  border: 2px solid $dark;
-}
 
-.checkbox__input:focus + .checbkox__label::before,
-.checkbox__input:checked:focus + .checkbox__label::before {
-  border: 2px solid $main;
-}
-
-.checkbox__input:disabled + .checkbox__label::before,
-.checkbox__input:checked:disabled + .checkbox__label::before {
-  border: 2px solid $disabled;
-  color: $disabled;
-}

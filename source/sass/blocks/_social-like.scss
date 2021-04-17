@@ -12,13 +12,16 @@
 }
 
 .social-like__icon {
-  &::before {
-  position: absolute;
-  bottom: 10px;
-  content: "";
+  display: inline-block;
   width: 13px;
   height: 12px;
-  background-image: url("../../img/like.svg");
-  background-repeat: no-repeat;
+  &::before {
+    position: absolute;
+    bottom: 10px;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/like.svg");
+    background-repeat: no-repeat;
   }
 }

@@ -1,9 +1,13 @@
+.post_link-photo {
+  display: block;
+}
+
 .post__content{
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 17px;
-  padding-right: 10px;
+  padding-right: 17px;
   background-color: $light;
 }
 
@@ -35,6 +39,15 @@
   line-height: 24px;
 }
 
-.post__picture-image {
-  display: block;
+.post__picture {
+  .post__picture-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--panorama {
+    .post__picture-image {
+      width: 100%;
+    }
+  }
 }
