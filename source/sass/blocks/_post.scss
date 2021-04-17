@@ -1,0 +1,53 @@
+.post_link-photo {
+  display: block;
+}
+
+.post__content{
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: $light;
+}
+
+.post__name {
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark;
+}
+
+.post__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.post__text-wrapper {
+  margin-bottom: 10px;
+}
+
+.post__text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__picture {
+  .post__picture-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--panorama {
+    .post__picture-image {
+      width: 100%;
+    }
+  }
+}

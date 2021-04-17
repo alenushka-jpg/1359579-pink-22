@@ -1,14 +1,14 @@
 .field {
   display: block;
   &--textarea {
-    .field__textarea {
-      width: 276px;
+    .field__input {
       height: 197px;
-      margin-top: 20px;
-      padding-top: 15px;
-      padding-left: 20px;
-      padding-right: 10px;
-      padding-bottom: 15px;
+      border: 2px solid $light;
+      color: $dark;
+      resize: none;
+      &::placeholder {
+        color: $dark;
+      }
     }
   }
 }
@@ -26,7 +26,7 @@
 .field__input {
   display: block;
   width: 100%;
-  padding: 13px 20px;
+  padding: 13px 17px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $disabled;
@@ -34,10 +34,7 @@
 }
 
 .field__textarea {
-  font-size: 18px;
-  line-height: 30px;
   color: $dark;
   border: 2px solid $light;
-  border-radius: 1px;
   resize: none;
 }

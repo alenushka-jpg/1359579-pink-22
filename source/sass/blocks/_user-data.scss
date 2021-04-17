@@ -11,6 +11,7 @@
   text-align: center;
 }
 
+
 .user-data__fieldset {
   min-width: 0;
   margin: 0 -20px;
@@ -29,19 +30,43 @@
     background-color: $light;
   }
 
-  &--user {
-
+  &--user,
+  &--contacts{
+    .user-data__list {
+      margin-left: 21px;
+      margin-right: 23px;
+    }
   }
 
   &--features {
+    .user-data__list {
+      margin-left: 79px;
+      margin-right: 41px;
+    }
+
     .user-data__item {
       margin-bottom: 47px;
+    }
+
+    .user-data__legend {
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 
   &--applications {
+    .user-data__list {
+      margin-left: 90px;
+    }
+
     .user-data__item {
       margin-bottom: 38px;
+    }
+  }
+
+  &--message {
+    .user-data__legend {
+      margin-bottom: 10px;
     }
   }
 }
@@ -71,4 +96,13 @@
 
 .user-data__footer {
   text-align: center;
+}
+
+.user-data__button {
+  margin-bottom: 40px;
+}
+
+.user-data__field {
+  margin-left: 21px;
+  margin-right: 23px;
 }

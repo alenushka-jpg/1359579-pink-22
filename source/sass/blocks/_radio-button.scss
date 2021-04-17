@@ -1,16 +1,16 @@
-.checkbox {
+.radio-button {
   position: relative;
   display: block;
   cursor: pointer;
 }
 
-.checkbox__input {
+.radio-button__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.checkbox__label {
+.radio-button__label {
   position: absolute;
   font-size: 18px;
   line-height: 30px;
@@ -19,35 +19,36 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -3px;
     left: -55px;
     width: 35px;
     height: 35px;
-    background: $white;
+    background-color: $white;
+    border-radius: 50%;
     border: 2px solid $disabled;
-    border-radius: 1px;
   }
 }
 
-.checkbox__input:checked ~ .checkbox__label {
-  &::after {
+.radio-button__input:checked ~ .radio-button__label {
+  &::after{
     content: "";
     position: absolute;
-    top: 8px;
-    left: -47px;
-    width: 22px;
-    height: 16px;
-    background-image: url("../../img/check-mark.svg");
+    top: 7px;
+    left: -45px;
+    width: 15px;
+    height: 15px;
+    background-color: #D22856;
+    border-radius: 50%;
     background-repeat: no-repeat;
+  }
+
+  &:hover + &::before {
+    border: 2px solid $dark;
   }
 
   &:focus + &::before,
   &:checked:focus + &::before {
     border: 2px solid $main;
-  }
-
-  &:hover + &::before {
-    border: 2px solid $dark;
   }
 
   &:disabled + &::before,
@@ -56,5 +57,4 @@
     color: $disabled;
   }
 }
-
 
