@@ -1,5 +1,5 @@
 .advantages__container{
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
   }
@@ -18,12 +18,12 @@
   color: $dark;
   text-align: center;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 54px;
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
   }
@@ -32,13 +32,13 @@
 .advantages__slogan:last-of-type {
   padding-top: 40px;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     padding-left: 45px;
     padding-right: 40px;
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
     padding-left: 115px;
     padding-right: 115px;
@@ -51,14 +51,14 @@
   background-color: $light;
   overflow: hidden;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 37px;
     .advantages__container {
       padding-left: 339px;
     }
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 350px;
     padding-bottom: 130px;
     .advantages__container {
@@ -76,7 +76,7 @@
   list-style: none;
 
   &:before {
-    @media  (min-width: $mobile-width-only) and (max-width: 600px){
+    @media (min-width: $mobile-width-only) and (max-width: 600px){
       content: "";
       position: absolute;
       bottom: -363px;
@@ -88,7 +88,7 @@
       background-repeat: no-repeat;
     }
 
-    @media  (min-width: $tablet-width) and (max-width: 1100px) {
+    @media (min-width: $tablet-width) and (max-width: 1100px) {
       content: "";
       position: absolute;
       left: -170px;
@@ -101,13 +101,13 @@
     }
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
   }
 }
 
-@media  (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .advantages-item {
     width: 240px;
   }
@@ -166,11 +166,11 @@
   font-size: 18px;
   line-height: 24px;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 25px;
     font-weight: bold;
     font-size: 30px;
@@ -184,11 +184,11 @@
   font-size: 14px;
   line-height: 24px;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;

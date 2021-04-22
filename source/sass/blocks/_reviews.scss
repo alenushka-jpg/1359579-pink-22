@@ -1,5 +1,5 @@
 .reviews__container {
-  @media  (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width)  {
     width: 940px;
     margin: 0 auto;
     padding-left: 60px;
@@ -13,11 +13,11 @@
   padding: 50px 20px 0 20px;
   list-style: none;
 
-  @media  (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width)  {
     padding-top: 100px;
   }
 
-  @media  (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width)  {
     padding-top: 150px;
 
     &:before {

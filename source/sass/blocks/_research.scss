@@ -1,9 +1,9 @@
 .research {
-  @media  (min-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) {
     display: none;
   }
 
-  @media  (min-width: $tablet-width),
+  @media (min-width: $tablet-width),
   (min-width: $desktop-width) {
     display: block;
   }
@@ -16,7 +16,7 @@
 .research__container {
   padding-left: 339px;
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
     padding-left: 365px;
@@ -43,7 +43,7 @@
     background-image: url(../../img/tablet-timer.png);
     background-repeat: no-repeat;
 
-    @media  (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       bottom: 29px;
       left: -360px;
       width: 298px;
@@ -61,7 +61,7 @@
   font-size: 30px;
   line-height: 36px;
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 25px;
     line-height: 30px;
   }
@@ -75,7 +75,7 @@
   line-height: 24px;
   color: $dark;
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
   }
@@ -88,5 +88,4 @@
   font-size: 14px;
   line-height: 24px;
   color: $main;
-
 }
