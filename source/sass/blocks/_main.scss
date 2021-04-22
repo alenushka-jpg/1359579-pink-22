@@ -8,6 +8,10 @@
   padding: 15px 0;
   text-align: center;
   box-shadow: 0px 1px 0px $black;
+
+  @media  (min-width: $desktop-width)  {
+    box-shadow: none;
+  }
 }
 
 .main-nav__link {

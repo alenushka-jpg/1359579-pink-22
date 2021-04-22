@@ -1,6 +1,10 @@
 .download {
   padding: 28px 20px 38px 20px;
   background-color: $dark;
+
+  @media  (min-width: $tablet-width)  {
+    background-color: inherit;
+  }
 }
 
 .download__button {
@@ -35,4 +39,8 @@
   line-height: 24px;
   text-align: center;
   color: $white;
+
+  @media  (min-width: $tablet-width) and  (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
