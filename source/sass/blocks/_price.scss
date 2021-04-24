@@ -56,6 +56,15 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $dark;
+
+  @media  (min-width: $tablet-width),
+  (min-width: $desktop-width) {
+    display: table-cell;
+
+    .price-table__thead &:first-child {
+      opacity: 0;
+    }
+  }
 }
 
 .price-table__cell  {

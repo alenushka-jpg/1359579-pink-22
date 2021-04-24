@@ -14,6 +14,7 @@
 }
 
 .research__container {
+  padding: 0;
   padding-left: 339px;
 
   @media (min-width: $desktop-width) {
@@ -83,7 +84,7 @@
   text-decoration: none;
   text-decoration: underline;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 30px;
   color: $main;
 }
