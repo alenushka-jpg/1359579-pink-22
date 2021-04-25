@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   background-image: url(../../img/back-mobile.png);
   background-color: $dark;
   background-repeat: no-repeat;
@@ -7,6 +8,11 @@
   @media  (min-width: $tablet-width)  {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: url(../../img/back-tablet.png);
+  }
+
+  @media  (min-width: $desktop-width)  {
+    background-image: url(../../img/back-desktop.png);
   }
 }
 
