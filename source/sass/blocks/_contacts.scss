@@ -56,16 +56,28 @@
 }
 
 .contacts__item {
-  &:first-child {
-    order: 1;
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:last-child {
+      order: 3;
+    }
   }
 
-  &:nth-child(2) {
-    order: 3;
-  }
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      order: 1;
+    }
 
-  &:last-child {
-    order: 2;
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 2;
+    }
   }
 }
 
@@ -89,6 +101,8 @@
 }
 
 .contacts__info {
+  display: block;
+  width: 226px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -107,8 +121,3 @@
   width: 320px;
   height: 200px;
 }
-
-
-
-
-
