@@ -1,7 +1,5 @@
 .research {
-  @media (min-width: $mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width)  {
     display: block;
@@ -80,7 +78,6 @@
 }
 
 .research__link {
-  text-decoration: none;
   text-decoration: underline;
   font-weight: normal;
   font-size: 18px;

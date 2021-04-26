@@ -14,7 +14,7 @@ body {
   color: $dark;
 }
 
-*, ::after, ::before {
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -27,6 +27,6 @@ button {
   font: inherit;
 
   &:focus:not(:focus-visible) {
-    outline: none
+    outline: none;
   }
 }
