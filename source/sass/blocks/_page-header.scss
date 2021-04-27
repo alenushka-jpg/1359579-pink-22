@@ -9,11 +9,20 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    z-index: 5;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    z-index: 5;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba($black, 0.3);
+  }
+}
+
+.page-header__inner-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
   }
 }
 
@@ -34,8 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 42px;
+    align-items: center;
   }
 }
 

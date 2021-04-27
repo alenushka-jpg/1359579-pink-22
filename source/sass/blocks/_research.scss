@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width)  {
     display: block;
+    min-height: 315px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,12 +12,8 @@
 }
 
 .research__container {
-  padding: 0;
-  padding-left: 339px;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 365px;
-  }
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
 
 .research__wrapper {
@@ -24,27 +21,38 @@
   padding-top: 100px;
   padding-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 322px;
+  }
+
+
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-left: 365px;
     padding-bottom: 110px;
   }
 
   &:before {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: -300px;
+    bottom: -20%;
+    left: 0;
     width: 239px;
     height: 280px;
     background-image: url(../../img/tablet-timer.png);
+    background-position: 0 0;
+    background-size: contain;
     background-repeat: no-repeat;
 
     @media (min-width: $desktop-width) {
       bottom: 29px;
-      left: -360px;
+      left: 0;
+      bottom: 0;
       width: 298px;
       height: 345px;
       background-image: url(../../img/desktop-timer.png);
+      background-position: 0 0;
       background-repeat: no-repeat;
     }
   }

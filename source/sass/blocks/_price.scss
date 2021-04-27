@@ -197,4 +197,8 @@
 .price__toggles {
   padding-top: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

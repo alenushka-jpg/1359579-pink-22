@@ -1,31 +1,31 @@
 .promo {
-  position: relative;
   background-image: url(../../img/back-mobile.png);
   background-color: $dark;
   background-repeat: no-repeat;
   background-size: cover;
 
   .container {
+    position: relative;
     padding: 0;
   }
 
   @media  (min-width: $tablet-width)  {
-    padding-top: 96px;
-    padding-bottom: 96px;
     background-image: url(../../img/back-tablet.png);
 
     .container {
+      padding-top: 96px;
+      padding-bottom: 96px;
       padding-left: 20px;
       padding-right: 20px;
     }
   }
 
   @media  (min-width: $desktop-width)  {
-    padding-top: 222px;
-    padding-bottom: 223px;
     background-image: url(../../img/back-desktop.png);
 
     .container {
+      padding-top: 222px;
+      padding-bottom: 223px;
       padding-right: 592px;
     }
   }
@@ -33,10 +33,10 @@
 
 .promo__container {
   padding: 0;
+  position: relative;
 }
 
 .promo__application {
-  position: relative;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -68,19 +68,14 @@
 
 .promo__image-wrapper {
   position: absolute;
-  bottom: 0px;
+  bottom: 271px;
   left: 50%;
   width: 320px;
   height: 286px;
   transform: translateX(-50%);
 
   @media  (min-width: $tablet-width) {
-    left: 134%;
-    bottom: -178%;
-  }
-
-  @media  (min-width: $desktop-width) {
-    left: 219%;
-    bottom: -178%;
+    bottom: 0;
+    left: calc(50% + 170px);
   }
 }
