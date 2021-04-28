@@ -1,4 +1,8 @@
-.post_link-photo {
+.post {
+  background-color: $light;
+}
+
+.post__link-photo {
   display: block;
 }
 
@@ -40,14 +44,16 @@
 }
 
 .post__picture {
-  .post__picture-image {
-    display: block;
-    margin: 0 auto;
-  }
+  display: block;
 
   &--panorama {
     .post__picture-image {
       width: 100%;
     }
   }
+}
+
+.post__picture-image {
+  display: block;
+  margin: 0 auto;
 }

@@ -9,37 +9,39 @@
 <body class="page__body">
   <header class="page-header">
     <div class="container page-header__container">
-      <div class="page-header__top">
-        <a class="page-header__logo">
-          <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
-        </a>
-        <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
-      </div>
-      <div class="page-header__panel">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">
-                главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="page-header__inner-wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo">
+            <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
+          </a>
+          <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <div class="page-header__panel">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -62,18 +64,21 @@
           <a class="button download__button button--round" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
-              <a class="visually-hidden download__link download__link--apple" href="https://www.apple.com/ru/app-store/">
-                Cкачать приложение в app-store
+              <a class="download__link download__link--apple" href="https://www.apple.com/ru/app-store/">
+                <img src="img/apple-logo.svg" width="47" height="56" alt="app-store">
+                <span class="visually-hidden">Cкачать приложение в app-store</span>
               </a>
             </li>
             <li class="download__item">
-              <a class="visually-hidden download__link download__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
-                Cкачать приложение в play market
+              <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
+                <img src="img/android-logo.svg" width="43" height="47" alt="play market">
+                <span class="visually-hidden">Cкачать приложение в play market</span>
               </a>
             </li>
             <li class="download__item">
-              <a class="visually-hidden download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                Cкачать приложение в microsoft store
+              <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                <img src="img/windows-logo.svg" width="44" height="41" alt="microsoft store">
+                <span class="visually-hidden">Cкачать приложение в microsoft store</span>
               </a>
             </li>
           </ul>
@@ -96,7 +101,7 @@
         </div>
       </div>
         <div class="advantages__inner-wrapper">
-          <div class="container">
+          <div class="container advantages__container">
             <ul class="advantages__list">
               <li class="advantages-item advantages__advantages-item">
                 <h3 class="advantages-item__title">Поднимает настроение</h3>
@@ -114,16 +119,46 @@
           </div>
         </div>
     </section>
+    <section class="research">
+      <div class="container research__container">
+        <h2 class="visually-hidden">Исследование приложения</h2>
+        <div class="research__wrapper">
+          <p class="research__title">Эффект на 24 часа!</p>
+          <p class="research__description">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="research__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
     <section class="reviews">
-      <div class="container container__reviews">
+      <div class="container reviews__container">
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <ul class="reviews__list">
             <li class="reviews__item">
               <blockquote class="quote">
                 <cite class="quote__author-name">Николай Петров</cite>
+                <p class="quote__about-author">
+                  25 лет, водитель трамвая
+                </p>
                 <div class="quote__text">
-                  <p>
+                  <p class="quote__review">
+                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                  </p>
+                </div>
+              </blockquote>
+            </li>
+            <li class="reviews__item">
+              <blockquote class="quote">
+                <cite class="quote__author-name">Николай Петров</cite>
+                <p class="quote__about-author">
+                  25 лет, водитель трамвая
+                </p>
+                <div class="quote__text">
+                  <p class="quote__review">
                     «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                     А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                   </p>
@@ -133,19 +168,11 @@
             <li class="reviews__item">
               <blockquote class="quote">
                 <cite class="quote__author-name">Николай Петров</cite>
+                <p class="quote__about-author">
+                  25 лет, водитель трамвая
+                </p>
                 <div class="quote__text">
-                  <p>
-                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                    А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                  </p>
-                </div>
-              </blockquote>
-            </li>
-            <li class="reviews__item">
-              <blockquote class="quote">
-                <cite class="quote__author-name">Николай Петров</cite>
-                <div class="quote__text">
-                  <p>
+                  <p class="quote__review">
                     «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                     А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                   </p>
@@ -168,14 +195,14 @@
         <h2 class="visually-hidden">Стоимость приложения</h2>
         <table class="price-table">
           <caption class="visually-hidden">Стоимость функциональных возможностей приложения</caption>
-          <thead>
+          <thead class="price-table__thead">
             <tr>
               <th class="price-table__title"></th>
               <th class="price-table__column" scope="col">
                 <span class="price-table__tarif">База</span>
                 <span class="price-table__price">1,99 USD</span>
               </th>
-              <th class="price-table__column" scope="col">
+              <th class="price-table__column price-table__column--hit" scope="col">
                 <span class="price-table__tarif">Стандарт</span>
                 <span class="price-table__price">3,99 USD</span>
               </th>
@@ -187,7 +214,7 @@
           </thead>
           <tbody>
             <tr>
-              <th class="price-table__title" scope="row">Розовыйфильтр</th>
+              <th class="price-table__title" scope="row">Розовый фильтр</th>
               <td class="price-table__cell">
                 <span class="price-table__value price-table__value--check">
                   <span class="visually-hidden">Есть</span>
@@ -279,7 +306,7 @@
                 <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </dd>
             </div>
-            <div class="contacts_item">
+            <div class="contacts__item">
               <dt class="contacts__title">Приезжайте в гости:</dt>
               <dd class="contacts__description">
                 <a class="contacts__info" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16">ул. Большая Конюшенная, 19/8</a>

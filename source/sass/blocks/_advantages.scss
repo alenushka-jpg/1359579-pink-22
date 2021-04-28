@@ -1,10 +1,8 @@
-.advantages__container{
-  padding: 0;
-}
-
-.advantages__text-slogan {
+.advantages {
   padding-top: 46px;
-  padding-bottom: 70px;
+}
+.advantages__text-slogan {
+  margin-bottom: 70px;
 }
 
 .advantages__slogan {
@@ -14,17 +12,57 @@
   line-height: 120%;
   color: $dark;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  &:last-of-type {
+    padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      padding-left: 45px;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      padding-left: 115px;
+      padding-right: 115px;
+    }
+  }
 }
 
-.advantages__slogan:last-of-type {
-  padding-top: 40px;
-}
 
 .advantages__inner-wrapper {
-  padding-top: 75px;
+  padding-top: 45px;
   padding-bottom: 325px;
   background-color: $light;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 37px;
+
+    .advantages__container {
+      padding-left: 339px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 350px;
+
+    .advantages__container {
+      padding: 0;
+      padding-top: 55px;
+    }
+  }
 }
 
 .advantages__list {
@@ -35,32 +73,123 @@
   list-style: none;
 
   &:before {
-    content: "";
-    position: absolute;
-    bottom: -363px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 157px;
-    height: 320px;
-    background-image: url(../../img/mobile-smile.png);
-    background-repeat: no-repeat;
+    @media (min-width: $mobile-width-only) and (max-width: 600px){
+      content: "";
+      position: absolute;
+      bottom: -363px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 157px;
+      height: 320px;
+      background-image: url(../../img/mobile-smile.png);
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: 1100px) {
+      content: "";
+      position: absolute;
+      left: -170px;
+      top: -43px;
+      transform: translateX(-50%);
+      width: 268px;
+      height: 547px;
+      background-image: url(../../img/tablet-smile.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
-.advantages-item:not(:last-child) {
-  margin-bottom: 42px;
+.advantages-item {
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+
+    &:first-child {
+      &:before {
+        content: "";
+        position: absolute;
+        top: -400px;
+        left: 17%;
+        transform: translateX(-50%);
+        width: 186px;
+        height: 382px;
+        background-image: url(../../img/iphone-desktop-gray.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+    :nth-child(2) {
+      &:before {
+        content: "";
+        position: absolute;
+        top: -400px;;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 186px;
+        height: 382px;
+        background-image: url(../../img/iphone-desktop-pink.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:last-child {
+      &:before {
+        content: "";
+        position: absolute;
+        top: -400px;
+        left: 84%;
+        transform: translateX(-50%);
+        width: 186px;
+        height: 382px;
+        background-image: url(../../img/iphone-desktop-smile.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
 
 .advantages-item__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .advantages-item__description {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
