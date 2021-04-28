@@ -1,8 +1,12 @@
 .container {
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     width: 940px;
-    margin: 0 auto;
   }
 }

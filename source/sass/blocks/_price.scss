@@ -6,10 +6,13 @@
 }
 
 .price__container {
-  // padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .price-table {
@@ -17,7 +20,11 @@
   table-layout: fixed;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 944px;
   }
 }
 

@@ -7,14 +7,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
+    background-color: $light;
   }
 }
 
 .research__container {
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    padding-bottom: 55px;
   }
 }
 
@@ -34,8 +34,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 60px;
     padding-left: 365px;
-    padding-bottom: 110px;
+    padding-bottom: 50px;
   }
 
   &:before {
