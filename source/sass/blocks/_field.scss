@@ -1,13 +1,36 @@
 .field {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    &--user {
+      display: flex;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+      .field__input {
+        order: 1;
+        margin-bottom: 10px;
+      }
+      .field__label {
+        order: 2;
+      }
+    }
+  }
+
   &--textarea {
     .field__input {
-      height: 197px;
+      min-height: 197px;
       border: 2px solid $light;
       color: $dark;
       resize: none;
       &::placeholder {
         color: $dark;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-height: 124px;
       }
     }
   }
@@ -21,10 +44,20 @@
   line-height: 30px;
   color: $main;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 17px;
+    margin-right: 20px;
+  }
 }
 
 .field__input {
   display: block;
+  display: flex;
   width: 100%;
   padding: 13px 17px;
   font-size: 18px;
