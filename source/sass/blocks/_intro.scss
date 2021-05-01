@@ -1,9 +1,20 @@
 .intro {
-  min-height: 235px;
-  padding-top: 95px;
-  padding-bottom: 40px;
+  padding-top: 90px;
+  padding-bottom: 48px;
   background-image: url(../../img/back-mobile.png);
+  background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 170px;
+    padding-bottom: 66px;
+    background-image: url(../../img/back-tablet.png);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 88px;
+    background-image: url(../../img/back-desktop.png);
+  }
 }
 
 .intro__container {
@@ -19,5 +30,11 @@
   font-weight: 300;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 

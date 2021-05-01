@@ -1,6 +1,16 @@
 .user-data {
   padding-top: 50px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+  }
+}
+
+.user-data__container {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .user-data__text {
@@ -9,13 +19,39 @@
   line-height: 30px;
   color: $dark;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 55px;
+    margin-left: 55px;
+    font-size: 18px;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      display: inline-block;
+    }
+  }
 }
 
+.user-data__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    grid-gap: 62px 70px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .user-data__fieldset {
   min-width: 0;
   margin: 0 -20px;
-  padding: 42px 20px 44px;
+  padding: 42px 22px 44px;
   border: none;
 
   &--user,
@@ -25,42 +61,73 @@
     }
   }
 
+  &--user {
+    padding-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      .user-data__item {
+        margin-bottom: 51px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      padding-top: 6px;
+      margin: 0;
+    }
+  }
+
   &--features,
   &--applications {
     background-color: $light;
-  }
 
-  &--user,
-  &--contacts{
-    .user-data__list {
-      margin-left: 21px;
-      margin-right: 23px;
+    @media (min-width: $tablet-width) {
+      background-color: $white;
     }
   }
 
   &--features {
     .user-data__list {
-      margin-left: 79px;
-      margin-right: 41px;
+      margin-left: 52px;
+
+      @media (min-width: $desktop-width) {
+        display: grid;
+        grid-column-gap: 53px;
+        grid-row-gap: 43px;
+        grid-template-columns: minmax(260px,1fr) minmax(245px,1fr) minmax(210px,1fr);
+        grid-template-rows: minmax(40px,1fr) minmax(40px,1fr);
+      }
     }
 
     .user-data__item {
       margin-bottom: 47px;
+
+      @media (min-width: $desktop-width) {
+        margin: 0;
+      }
     }
 
     .user-data__legend {
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
   &--applications {
     .user-data__list {
-      margin-left: 90px;
+      margin-left: 55px;
     }
 
     .user-data__item {
       margin-bottom: 38px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 51px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 22px 53px;
     }
   }
 
@@ -69,10 +136,74 @@
       margin-bottom: 10px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &--user {
+      order: 1;
+    }
+
+    &--applications {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 3;
+      padding-bottom: 30px;
+    }
+
+    &--features {
+      order: 4;
+      padding-bottom: 50px;
+    }
+
+    &--message {
+      order: 5;
+    }
+
+    &--features,
+    &--contacts,
+    &--applications,
+    &--message {
+      position: relative;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin: 0;
+      margin-bottom: 65px;
+      border: 2px solid $disabled;
+      border-radius: 5px;
+
+      @media (min-width: $desktop-width) {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--features,
+    &--contacts,
+    &--message {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &--contacts {
+      padding-bottom: 15px;
+
+      .user-data__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 74px;
+      }
+
+      .user-data__item {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .user-data__legend {
-  width: 100%;
   float: left;
   margin: 0;
   margin-bottom: 40px;
@@ -82,6 +213,24 @@
   color: $main;
   text-align: center;
   text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    padding: 0px 30px;
+    white-space: nowrap;
+    top: -16px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $white;
+
+    &--hidden {
+      display: block;
+    }
+  }
 }
 
 .user-data__list {
@@ -96,13 +245,19 @@
 
 .user-data__footer {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    order: 6;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .user-data__button {
-  margin-bottom: 40px;
-}
+  margin-bottom: 35px;
 
-.user-data__field {
-  margin-left: 21px;
-  margin-right: 23px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
