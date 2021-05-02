@@ -1,18 +1,72 @@
 .post {
-  background-color: $light;
+  position: relative;
+
+  &--day {
+    &::before {
+      position: absolute;
+      right: 20px;
+      content: "";
+      width: 140px;
+      height: 36px;
+      background-image: url("../../img/panorama-day.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      @media (min-width: $tablet-width) {
+        top: 57px;
+      }
+    }
+  }
 }
 
 .post__link-photo {
   display: block;
 }
 
-.post__content{
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.post__content {
+  min-height: 155px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 17px;
   padding-right: 17px;
   background-color: $light;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    .post__social-like {
+      margin-top: auto;
+    }
+
+    &--panorama {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      min-height: 121px;
+      margin-bottom: 50px;
+
+      .post__item {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .post__text-wrapper {
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+
+      .post__social-like {
+        grid-column-start: 2;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    }
+  }
 }
 
 .post__name {
@@ -32,9 +86,9 @@
   color: $dark;
 }
 
-.post__text-wrapper {
-  margin-bottom: 10px;
-}
+// .post__text-wrapper {
+//   margin-bottom: 5px;
+// }
 
 .post__text {
   margin: 0;
@@ -49,11 +103,17 @@
   &--panorama {
     .post__picture-image {
       width: 100%;
+      margin: 0;
+
+      @media (min-width: $tablet-width) {
+        height: 509px;
+      }
     }
   }
 }
 
 .post__picture-image {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }

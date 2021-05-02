@@ -20,7 +20,7 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="index.html">
-                главная
+                Главная
               </a>
             </li>
             <li class="main-nav__item">
@@ -30,12 +30,12 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">
-                конкурс
+                Конкурс
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
-                html academy
+                HTML Academy
               </a>
             </li>
           </ul>
@@ -44,7 +44,7 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="intro">
+    <div class="intro intro--catalog">
       <div class="container intro__container">
         <h1 class="intro__title">Фотографии пользователей</h1>
       </div>
@@ -56,16 +56,18 @@
           Видите, как не хватает ваших?
         </p>
       </div>
-      <article class="post">
+      <article class="post post--day">
         <a class="post__link-photo">
           <picture class="post__picture post__picture--panorama">
             <img class="post__picture-image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя с высоты птичьего полёта с видом на природу">
           </picture>
         </a>
         <div class="container post__container">
-          <div class="post__content">
-            <h3 class="post__name">Анна</h3>
-            <time class="post__time" datetime="2018-03-31">(5 минут назад)</time>
+          <div class="post__content post__content--panorama">
+            <div class="post__item">
+              <h3 class="post__name">Анна</h3>
+              <time class="post__time" datetime="2018-03-31">(5 минут назад)</time>
+            </div>
             <div class="post__text-wrapper">
               <p class="post__text">
                 Прыгать или нет? Напишите в
@@ -94,14 +96,16 @@
                   </picture>
                 </a>
                 <div class="post__content">
-                  <h3 class="post__name">Левон</h3>
-                  <time class="post__time" datetime="2018-03-31">(5 часов назад)</time>
-                  <div class="post__text">
-                    <p>
+                  <div class="post__item">
+                    <h3 class="post__name">Левон</h3>
+                    <time class="post__time" datetime="2018-03-31">(5 часов назад)</time>
+                  </div>
+                  <div class="post__text-wrapper">
+                    <p class="post__text">
                       Вчера он на луну летал, сегодня в руки к нам попал.
                     </p>
                   </div>
-                  <div class="post__social-like social-like">
+                  <div class="post__social-like social-like social-like--gallery">
                     <a class="social-like__icon">
                       <span class="visually-hidden">Нравится</span>
                     </a>
@@ -118,14 +122,16 @@
                   </picture>
                 </a>
                 <div class="post__content">
-                  <h3 class="post__name">Антон</h3>
-                  <time class="post__time" datetime="2018-03-31">(12 часов назад)</time>
+                  <div class="post__item">
+                    <h3 class="post__name">Антон</h3>
+                    <time class="post__time" datetime="2018-03-31">(12 часов назад)</time>
+                  </div>
                   <div class="post__text-wrapper">
                     <p class="post__text">
                       Соседи будут рады!
                     </p>
                   </div>
-                  <div class="post__social-like social-like">
+                  <div class="post__social-like social-like social-like--gallery">
                     <a class="social-like__icon">
                       <span class="visually-hidden">Нравится</span>
                     </a>
@@ -142,14 +148,16 @@
                   </picture>
                 </a>
                 <div class="post__content">
-                  <h3 class="post__name">Борис</h3>
-                  <time class="post__time" datetime="2018-03-31">(20 часов назад)</time>
+                  <div class="post__item">
+                    <h3 class="post__name">Борис</h3>
+                    <time class="post__time" datetime="2018-03-31">(20 часов назад)</time>
+                  </div>
                   <div class="post__text-wrapper">
                     <p class="post__text">
                       Здесь могла быть ваша цитата о высоком и вечном.
                     </p>
                   </div>
-                  <div class="post__social-like social-like">
+                  <div class="post__social-like social-like social-like--gallery">
                     <a class="social-like__icon">
                       <span class="visually-hidden">Нравится</span>
                     </a>
@@ -166,14 +174,16 @@
                   </picture>
                 </a>
                 <div class="post__content">
-                  <h3 class="post__name">Сергей</h3>
-                  <time class="post__time" datetime="2018-03-31">(25 часов назад)</time>
+                  <div class="post__item">
+                    <h3 class="post__name">Сергей</h3>
+                    <time class="post__time" datetime="2018-03-31">(25 часов назад)</time>
+                  </div>
                   <div class="post__text-wrapper">
                     <p class="post__text">
                       Самая кубанская в мире!
                     </p>
                   </div>
-                  <div class="post__social-like social-like">
+                  <div class="post__social-like social-like social-like--gallery">
                     <a class="social-like__icon">
                       <span class="visually-hidden">Нравится</span>
                     </a>
@@ -190,14 +200,16 @@
                   </picture>
                 </a>
                 <div class="post__content">
-                  <h3 class="post__name">Максим</h3>
-                  <time class="post__time" datetime="2018-03-31">(40 часов назад)</time>
+                  <div class="post__item">
+                    <h3 class="post__name">Максим</h3>
+                    <time class="post__time" datetime="2018-03-31">(40 часов назад)</time>
+                  </div>
                   <div class="post__text-wrapper">
                     <p class="post__text">
                       Где снег-то?
                     </p>
                   </div>
-                  <div class="post__social-like social-like">
+                  <div class="post__social-like social-like social-like--gallery">
                     <a class="social-like__icon">
                       <span class="visually-hidden">Нравится</span>
                     </a>
@@ -214,14 +226,16 @@
                   </picture>
                 </a>
                 <div class="post__content">
-                  <h3 class="post__name">Надежда</h3>
-                  <time class="post__time" datetime="2018-03-31">(45 часов назад)</time>
+                  <div class="post__item">
+                    <h3 class="post__name">Надежда</h3>
+                    <time class="post__time" datetime="2018-03-31">(45 часов назад)</time>
+                  </div>
                   <div class="post__text-wrapper">
                     <p class="post__text">
                       Всем GM и взаимные лайки!
                     </p>
                   </div>
-                  <div class="post__social-like social-like">
+                  <div class="post__social-like social-like social-like--gallery">
                     <a class="social-like__icon">
                       <span class="visually-hidden">Нравится</span>
                     </a>
@@ -247,46 +261,45 @@
       <div class="container upload__container">
         <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
           <a class="upload__picture-link">
-           <picture class="upload__picture">
-             <img class="post__picture-image" src="img/upload-photo.jpg" width="280" height="374" alt="">
-           </picture>
-         </a>
-         <div class="upload__tools tools">
-           <ul class="tools__list">
-             <li class="tools__item tools__item--active">
-               <button class="tools__toggle" tabindex="0">
-                 <span class="visually-hidden">Обрезать фотографию</span>
-               </button>
-               <label class="tools__range-controls range-controls">
-                 <span class="visually-hidden">Обрезать фотографию</span>
-                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
-               </label>
-             </li>
-             <li class="tools__item">
-               <button class="tools__toggle" tabindex="0">
-                 <span class="visually-hidden">Добавить розовый фильтр</span>
-               </button>
-               <label class="tools__range-controls range-controls">
-                 <span class="visually-hidden">Добавить розовый фильтр</span>
-                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
-               </label>
-             </li>
-             <li class="tools__item">
-               <button class="tools__toggle" tabindex="0">
-                 <span class="visually-hidden">Задать контрастность</span>
-               </button>
-               <label class="tools__range-controls range-controls">
-                 <span class="visually-hidden">Задать контрастность</span>
-                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
-               </label>
-             </li>
-           </ul>
-           <button class="button button--round button--main" type="type">Запостить</button>
-           <button class="button button--round button--reset" type="reset">Отмена</button>
-         </div>
-       </form>
+            <picture class="upload__picture">
+              <img class="post__picture-image" src="img/upload-photo.jpg" width="280" height="374" alt="">
+            </picture>
+          </a>
+          <div class="upload__tools tools">
+            <ul class="tools__list">
+              <li class="tools__item tools__item--active">
+                <button class="tools__toggle" tabindex="0">
+                  <span class="visually-hidden">Обрезать фотографию</span>
+                </button>
+                <label class="tools__range-controls range-controls">
+                  <span class="visually-hidden">Обрезать фотографию</span>
+                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                </label>
+              </li>
+              <li class="tools__item">
+                <button class="tools__toggle" tabindex="0">
+                  <span class="visually-hidden">Добавить розовый фильтр</span>
+                </button>
+                <label class="tools__range-controls range-controls">
+                  <span class="visually-hidden">Добавить розовый фильтр</span>
+                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                </label>
+              </li>
+              <li class="tools__item">
+                <button class="tools__toggle" tabindex="0">
+                  <span class="visually-hidden">Задать контрастность</span>
+                </button>
+                <label class="tools__range-controls range-controls">
+                  <span class="visually-hidden">Задать контрастность</span>
+                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                </label>
+              </li>
+            </ul>
+            <button class="button button--round button--main" type="type">Запостить</button>
+            <button class="button button--round button--reset" type="reset">Отмена</button>
+          </div>
+        </form>
       </div>
-
     </section>
   </main>
   <footer class="page-footer">

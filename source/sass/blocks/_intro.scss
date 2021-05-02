@@ -1,19 +1,23 @@
 .intro {
   padding-top: 90px;
-  padding-bottom: 48px;
-  background-image: url(../../img/back-mobile.png);
+  padding-bottom: 81px;
+  background-image: url("../../img/back-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     padding-top: 170px;
     padding-bottom: 66px;
-    background-image: url(../../img/back-tablet.png);
+    background-image: url("../../img/back-tablet.png");
+
+    &--catalog {
+      padding-bottom: 134px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 88px;
-    background-image: url(../../img/back-desktop.png);
+    background-image: url("../../img/back-desktop.png");
   }
 }
 
@@ -37,4 +41,3 @@
     line-height: 68px;
   }
 }
-

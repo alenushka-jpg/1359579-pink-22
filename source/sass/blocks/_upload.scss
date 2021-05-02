@@ -1,13 +1,27 @@
+.upload {
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+  }
+}
+
 .upload__slogan {
   margin: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .upload__slogan:last-of-type {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .upload__container {

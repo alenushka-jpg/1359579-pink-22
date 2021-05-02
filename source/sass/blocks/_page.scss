@@ -4,9 +4,9 @@
 
 .page__body {
   position: relative;
-  min-width: 320px;;
+  min-width: 320px;
   min-height: 100%;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   color: $dark;
   overflow-x: hidden;

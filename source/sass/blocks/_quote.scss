@@ -4,7 +4,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width),
-  (min-width: $desktop-width) {
+    (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
   }
@@ -37,11 +37,11 @@
     order: 2;
   }
 
-  @media (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 
-  @media (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width) {
     font-size: 24px;
   }
 }
