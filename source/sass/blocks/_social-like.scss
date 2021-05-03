@@ -11,19 +11,24 @@
     }
     &--gallery {
       .social-like__text {
-        padding: 0;
+        text-align: start;
       }
     }
   }
 }
 
 .social-like__text {
-  padding-left: 18px;
+  padding-left: 16px;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $main;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .social-like__icon {

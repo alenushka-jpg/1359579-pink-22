@@ -1,3 +1,13 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tools__toggle {
+  border-style: none;
+}
+
 .tools__list {
   margin: 0;
   padding: 0;

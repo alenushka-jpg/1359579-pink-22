@@ -9,37 +9,39 @@
 <body class="page__body">
   <header class="page-header">
     <div class="container page-header__container">
-      <div class="page-header__top">
-        <a class="page-header__logo">
-          <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
-        </a>
-        <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
-      </div>
-      <div class="page-header__panel">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="page-header__inner-wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo">
+            <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
+          </a>
+          <button class="page-header__burger burger" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <div class="page-header__panel">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -262,7 +264,7 @@
         <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
           <a class="upload__picture-link">
             <picture class="upload__picture">
-              <img class="post__picture-image" src="img/upload-photo.jpg" width="280" height="374" alt="">
+              <img class="upload__picture-image" src="img/upload-photo.jpg" width="280" height="374" alt="">
             </picture>
           </a>
           <div class="upload__tools tools">
@@ -271,7 +273,7 @@
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Обрезать фотографию</span>
                 </button>
-                <label class="tools__range-controls range-controls">
+                <label class="tools__range-controls range-controls range-controls--active">
                   <span class="visually-hidden">Обрезать фотографию</span>
                   <input class="range-controls__input" type="range" min="0" max="100" step="1">
                 </label>
@@ -295,8 +297,10 @@
                 </label>
               </li>
             </ul>
-            <button class="button button--round button--main" type="type">Запостить</button>
-            <button class="button button--round button--reset" type="reset">Отмена</button>
+            <div class="upload__buttons">
+              <button class="button button--round button--main" type="type">Запостить</button>
+              <button class="button button--round button--reset" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </div>

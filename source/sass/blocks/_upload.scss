@@ -28,9 +28,33 @@
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: $light;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
+
+.upload__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 
 .upload__picture,
 .upload__picture-link {
   display: block;
+}
+
+.upload__picture-image {
+  display: block;
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
 }

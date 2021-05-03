@@ -10,6 +10,13 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 .gallery__text {
@@ -34,5 +41,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 54px;
   }
 }

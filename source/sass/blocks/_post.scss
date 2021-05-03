@@ -15,6 +15,11 @@
       @media (min-width: $tablet-width) {
         top: 57px;
       }
+
+      @media (min-width: $desktop-width) {
+        right: 130px;
+        top: 53px;
+      }
     }
   }
 }
@@ -85,10 +90,6 @@
   text-transform: uppercase;
   color: $dark;
 }
-
-// .post__text-wrapper {
-//   margin-bottom: 5px;
-// }
 
 .post__text {
   margin: 0;
