@@ -1,6 +1,7 @@
 .advantages {
   padding-top: 46px;
 }
+
 .advantages__text-slogan {
   margin-bottom: 70px;
 }
@@ -72,8 +73,8 @@
   text-align: center;
   list-style: none;
 
-  &:before {
-    @media (min-width: $mobile-width-only) and (max-width: 600px){
+  &::before {
+    @media (min-width: $mobile-width-only) and (max-width: 600px) {
       content: "";
       position: absolute;
       bottom: -363px;
@@ -81,7 +82,7 @@
       transform: translateX(-50%);
       width: 157px;
       height: 320px;
-      background-image: url(../../img/mobile-smile.png);
+      background-image: url("../../img/mobile-smile.png");
       background-repeat: no-repeat;
     }
 
@@ -93,7 +94,7 @@
       transform: translateX(-50%);
       width: 268px;
       height: 547px;
-      background-image: url(../../img/tablet-smile.png);
+      background-image: url("../../img/tablet-smile.png");
       background-repeat: no-repeat;
     }
   }
@@ -105,7 +106,6 @@
 }
 
 .advantages-item {
-
   &:not(:last-child) {
     margin-bottom: 35px;
   }
@@ -114,7 +114,7 @@
     width: 240px;
 
     &:first-child {
-      &:before {
+      &::before {
         content: "";
         position: absolute;
         top: -400px;
@@ -122,27 +122,27 @@
         transform: translateX(-50%);
         width: 186px;
         height: 382px;
-        background-image: url(../../img/iphone-desktop-gray.png);
+        background-image: url("../../img/iphone-desktop-gray.png");
         background-repeat: no-repeat;
       }
     }
 
     :nth-child(2) {
-      &:before {
+      &::before {
         content: "";
         position: absolute;
-        top: -400px;;
+        top: -400px;
         left: 50%;
         transform: translateX(-50%);
         width: 186px;
         height: 382px;
-        background-image: url(../../img/iphone-desktop-pink.png);
+        background-image: url("../../img/iphone-desktop-pink.png");
         background-repeat: no-repeat;
       }
     }
 
     &:last-child {
-      &:before {
+      &::before {
         content: "";
         position: absolute;
         top: -400px;
@@ -150,7 +150,7 @@
         transform: translateX(-50%);
         width: 186px;
         height: 382px;
-        background-image: url(../../img/iphone-desktop-smile.png);
+        background-image: url("../../img/iphone-desktop-smile.png");
         background-repeat: no-repeat;
       }
     }

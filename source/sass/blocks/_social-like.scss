@@ -1,14 +1,34 @@
 .social-like {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 13px;
+    align-items: center;
+
+    .social-like__icon {
+      order: 2;
+    }
+    &--gallery {
+      .social-like__text {
+        text-align: start;
+      }
+    }
+  }
 }
 
 .social-like__text {
-  padding-left: 30px;
+  padding-left: 16px;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $main;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .social-like__icon {
@@ -18,7 +38,7 @@
 
   &::before {
     position: absolute;
-    bottom: 10px;
+    bottom: 9px;
     content: "";
     width: 13px;
     height: 12px;

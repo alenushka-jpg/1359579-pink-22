@@ -1,11 +1,11 @@
 .contacts {
   padding-top: 47px;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 55px;
   }
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 74px;
   }
 }

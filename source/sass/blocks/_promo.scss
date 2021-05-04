@@ -1,5 +1,5 @@
 .promo {
-  background-image: url(../../img/back-mobile.png);
+  background-image: url("../../img/back-mobile.png");
   background-color: $dark;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +9,8 @@
     padding: 0;
   }
 
-  @media  (min-width: $tablet-width)  {
-    background-image: url(../../img/back-tablet.png);
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/back-tablet.png");
 
     .container {
       padding-top: 96px;
@@ -20,8 +20,8 @@
     }
   }
 
-  @media  (min-width: $desktop-width)  {
-    background-image: url(../../img/back-desktop.png);
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back-desktop.png");
 
     .container {
       padding-top: 222px;
@@ -43,7 +43,7 @@
   padding-right: 20px;
   padding-bottom: 376px;
 
-  @media  (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     position: static;
     padding: 0;
     margin-bottom: 40px;
@@ -60,7 +60,7 @@
   text-align: center;
   color: $white;
 
-  @media  (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -76,7 +76,7 @@
   height: 286px;
   transform: translateX(-50%);
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: 0;
     left: calc(50% + 170px);
   }

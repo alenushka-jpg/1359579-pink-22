@@ -41,7 +41,7 @@
   &--hit {
     position: relative;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
       top: -5px;
@@ -60,12 +60,12 @@
 
   @media (min-width: $tablet-width) {
     width: 25%;
-    padding: 7px 0px 9px;
+    padding: 7px 0 9px;
   }
 
   @media (min-width: $desktop-width) {
     width: 233px;
-    padding: 15px 0px 19px;
+    padding: 15px 0 19px;
   }
 }
 
@@ -108,12 +108,12 @@
   color: $dark;
   text-align: left;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: table-cell;
   }
 }
 
-.price-table__cell  {
+.price-table__cell {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -124,19 +124,19 @@
   width: 276px;
   background-color: $white;
 
- @media (min-width: $tablet-width) {
-  width: 25%;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
- }
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
- @media (min-width: $desktop-width) {
-  width: 234px;
-  padding-top: 14px;
-  padding-bottom: 14px;
- }
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .price-table__value {
@@ -147,8 +147,8 @@
     bottom: 30px;
     width: 31px;
     height: 21px;
-    border-bottom: 4px solid #3DC644;
-    border-right: 4px solid #3DC644;
+    border-bottom: 4px solid $success;
+    border-right: 4px solid $success;
     transform: scale(-1, 1) rotate(45deg);
   }
 
@@ -159,7 +159,7 @@
     bottom: 30px;
     width: 35px;
     height: 3px;
-    background-color: #f25b26;
+    background-color: $error;
     transform: rotate(45deg);
   }
 
@@ -170,7 +170,7 @@
     bottom: 30px;
     width: 35px;
     height: 3px;
-    background-color: #f25b26;
+    background-color: $error;
     transform: rotate(135deg);
   }
 
