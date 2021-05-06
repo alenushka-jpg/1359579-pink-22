@@ -2,7 +2,7 @@
   background-image: url("../../img/back-mobile.png");
   background-color: $dark;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   .container {
     position: relative;
@@ -11,6 +11,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-tablet.png");
+    background-size: auto;
 
     .container {
       padding-top: 96px;
@@ -38,10 +39,15 @@
 
 .promo__application {
   position: relative;
-  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 376px;
+  padding-top: 30px;
+  padding-bottom: 312px;
+
+  &--closed {
+    padding-top: 90px;
+    padding-bottom: 312px;
+  }
 
   @media (min-width: $tablet-width) {
     position: static;

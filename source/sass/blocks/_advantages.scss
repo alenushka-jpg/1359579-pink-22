@@ -2,10 +2,6 @@
   padding-top: 46px;
 }
 
-.advantages__text-slogan {
-  margin-bottom: 70px;
-}
-
 .advantages__slogan {
   margin: 0;
   font-weight: 300;
@@ -41,15 +37,19 @@
   }
 }
 
-
 .advantages__inner-wrapper {
-  padding-top: 45px;
+  padding-top: 110px;
   padding-bottom: 325px;
   background-color: $light;
+  background-image:
+    linear-gradient(175deg, $white 60px, $light 60px);
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
+    padding-top: 100px;
     padding-bottom: 37px;
+    background-image:
+      linear-gradient(175deg, $white  100px, $light 100px);
 
     .advantages__container {
       padding-left: 339px;
@@ -57,7 +57,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 350px;
+    padding-top: 390px;
+    background-image:
+      linear-gradient(176deg, $white 130px, $light 130px);
 
     .advantages__container {
       padding: 0;
@@ -74,19 +76,17 @@
   list-style: none;
 
   &::before {
-    @media (min-width: $mobile-width-only) and (max-width: 600px) {
-      content: "";
-      position: absolute;
-      bottom: -363px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 157px;
-      height: 320px;
-      background-image: url("../../img/mobile-smile.png");
-      background-repeat: no-repeat;
-    }
+    content: "";
+    position: absolute;
+    bottom: -363px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 157px;
+    height: 320px;
+    background-image: url("../../img/mobile-smile.png");
+    background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) and (max-width: 1100px) {
+    @media (min-width: $tablet-width) and (max-width: 1199px) {
       content: "";
       position: absolute;
       left: -170px;

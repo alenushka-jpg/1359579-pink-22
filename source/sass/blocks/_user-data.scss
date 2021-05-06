@@ -241,6 +241,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     padding: 0 30px;
+    width: inherit;
     white-space: nowrap;
     top: -16px;
     left: 50%;
@@ -250,11 +251,6 @@
     &--hidden {
       display: block;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: inherit;
-
   }
 }
 

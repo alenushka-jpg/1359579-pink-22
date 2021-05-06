@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--opened page-header--nojs">
     <div class="container page-header__container">
-      <div class="page-header__inner-wrapper">
+      <div class="page-header__wrapper">
         <div class="page-header__top">
           <a class="page-header__logo">
             <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
@@ -48,7 +48,7 @@
   <main class="page-main">
     <section class="promo">
       <div class="container promo__container">
-        <div class="promo__application">
+        <div class="promo__application promo__application--closed">
           <h1 class="visually-hidden">Приложение «Pink»</h1>
           <div class="promo__slogan-wrapper">
             <p class="promo__slogan">
@@ -183,9 +183,15 @@
           <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
           <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
           <div class="reviews__toggles bullets">
-            <span class="bullets__toggle bullets__toggle--current">1</span>
-            <span class="bullets__toggle">2</span>
-            <span class="bullets__toggle">3</span>
+            <button class="bullets__toggle bullets__toggle--current">
+              <span class="visually-hidden">Переключить на первый отзыв</span>
+            </button>
+            <button class="bullets__toggle">
+              <span class="visually-hidden">Переключить на второй отзыв</span>
+            </button>
+            <button class="bullets__toggle">
+              <span class="visually-hidden">Переключить на третий отзыв</span>
+            </button>
           </div>
         </div>
       </div>
@@ -279,9 +285,15 @@
           </tbody>
         </table>
         <div class="price__toggles bullets">
-          <span class="bullets__toggle bullets__toggle--current">1</span>
-          <span class="bullets__toggle">2</span>
-          <span class="bullets__toggle">3</span>
+          <button class="bullets__toggle bullets__toggle--current">
+            <span class="visually-hidden">Переключить на тариф база</span>
+          </button>
+          <button class="bullets__toggle">
+            <span class="visually-hidden">Переключить на тариф стандарт</span>
+          </button>
+          <button class="bullets__toggle">
+            <span class="visually-hidden">Переключить на тариф аналим </span>
+          </button>
         </div>
       </div>
     </section>

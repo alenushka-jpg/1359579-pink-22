@@ -21,7 +21,6 @@
 }
 
 .range-controls__input {
-  position: relative;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -31,16 +30,4 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid #d22856;
-    background: #f2f2f2;
-    z-index: 10;
-    cursor: pointer;
-  }
 }

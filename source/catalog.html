@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--opened page-header--nojs">
     <div class="container page-header__container">
-      <div class="page-header__inner-wrapper">
+      <div class="page-header__wrapper">
         <div class="page-header__top">
           <a class="page-header__logo">
             <img src="img/pink.svg" width="74" height="24" alt="Логотип приложения Pink">
@@ -273,28 +273,34 @@
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Обрезать фотографию</span>
                 </button>
-                <label class="tools__range-controls range-controls range-controls--active">
-                  <span class="visually-hidden">Обрезать фотографию</span>
-                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
-                </label>
+               <div class="tools__item-label">
+                  <label class="tools__range-controls range-controls range-controls--active">
+                    <span class="visually-hidden">Обрезать фотографию</span>
+                    <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                  </label>
+               </div>
               </li>
               <li class="tools__item">
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Добавить розовый фильтр</span>
                 </button>
-                <label class="tools__range-controls range-controls">
-                  <span class="visually-hidden">Добавить розовый фильтр</span>
-                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
-                </label>
+                <div class="tools__item-label">
+                  <label class="tools__range-controls range-controls">
+                    <span class="visually-hidden">Добавить розовый фильтр</span>
+                    <input class="range-controls__input" type="range" min="0" max="100" step="1" tabindex="0" style="right: 8%">
+                  </label>
+                </div>
               </li>
               <li class="tools__item">
                 <button class="tools__toggle" tabindex="0">
                   <span class="visually-hidden">Задать контрастность</span>
                 </button>
-                <label class="tools__range-controls range-controls">
-                  <span class="visually-hidden">Задать контрастность</span>
-                  <input class="range-controls__input" type="range" min="0" max="100" step="1">
-                </label>
+                <div class="tools__item-label">
+                  <label class="tools__range-controls range-controls">
+                    <span class="visually-hidden">Задать контрастность</span>
+                    <input class="range-controls__input" type="range" min="0" max="100" step="1">
+                  </label>
+                </div>
               </li>
             </ul>
             <div class="upload__buttons">

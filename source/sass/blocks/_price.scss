@@ -1,8 +1,21 @@
 .price {
-  padding-top: 90px;
+  padding-top: 100px;
   padding-bottom: 40px;
   background-color: $disabled;
+  background-image:
+    linear-gradient(176deg, $white 42px, $light 42px);
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      linear-gradient(176deg, $white 60px, $light 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 155px;
+    background-image:
+      linear-gradient(174deg, $white 125px, $light 125px);
+  }
 }
 
 .price__container {
