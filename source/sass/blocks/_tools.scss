@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
 }
 
 .tools__toggle {
@@ -16,23 +20,27 @@
 
 .tools__item {
   margin-bottom: 10px;
-}
+  display: none;
 
-.tools__item-label {
-  position: relative;
+  &--active {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba($dark, 0.1);
+    margin: 20px -20px 43px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: -3px;
-    right: 50px;
-    border-radius: 50%;
-    border: 2px solid #d22856;
-    background: #f2f2f2;
-    z-index: 10;
-    cursor: pointer;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    padding-bottom: 34px;
+    border-bottom: 1px solid rgba($dark, 0.1);
   }
 }
 

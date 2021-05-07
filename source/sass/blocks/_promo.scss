@@ -2,7 +2,8 @@
   background-image: url("../../img/back-mobile.png");
   background-color: $dark;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  background-position: center top;
 
   .container {
     position: relative;
@@ -11,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-tablet.png");
-    background-size: auto;
+    background-size: 100% 100%;
 
     .container {
       padding-top: 96px;

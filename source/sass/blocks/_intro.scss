@@ -25,6 +25,11 @@
   padding: 0;
   padding-left: 34px;
   padding-right: 34px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 .intro__title {

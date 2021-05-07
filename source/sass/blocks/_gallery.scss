@@ -1,8 +1,8 @@
 .gallery__container {
   padding-top: 47px;
   padding-bottom: 47px;
-  padding-left: 42px;
-  padding-right: 42px;
+  padding-left: 35px;
+  padding-right: 35px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
@@ -48,5 +48,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 54px;
+  }
+}
+
+.gallery__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }

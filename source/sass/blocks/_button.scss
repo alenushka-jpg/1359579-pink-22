@@ -76,4 +76,12 @@
       color: rgba($white, 0.3);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--main,
+    &--reset {
+      min-width: 183px;
+      margin: 0;
+    }
+  }
 }

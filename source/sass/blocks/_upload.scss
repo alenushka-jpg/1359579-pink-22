@@ -1,4 +1,6 @@
 .upload {
+  padding-top: 40px;
+
   @media (min-width: $tablet-width) {
     padding-top: 63px;
   }
@@ -29,9 +31,15 @@
   padding-bottom: 40px;
   background-color: $light;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-right: 80px;
+    padding-bottom: 57px;
   }
 }
 
@@ -41,7 +49,6 @@
     justify-content: space-between;
   }
 }
-
 
 .upload__picture,
 .upload__picture-link {
@@ -56,5 +63,12 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 400px;
+  }
+}
+
+.upload__buttons {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }

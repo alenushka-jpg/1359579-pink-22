@@ -37,5 +37,28 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
+    
+    &:hover:not([href="#"]),
+    &:focus:not([href="#"]) {
+      color: $main;
+    }
+  
+    &:active:not([href="#"]) {
+      color: rgba($white, 0.3);
+    }
+  
+    &--active {
+      position: relative;
+  
+      &::after{
+        position: absolute;
+        content: "";
+        bottom: -12px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+      }
+    }
   }
 }
