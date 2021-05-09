@@ -6,7 +6,7 @@
   color: $dark;
 
   &:first-child {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 }
 
@@ -14,4 +14,19 @@
   display: inline-block;
   color: $dark;
   text-decoration: none;
+}
+
+.copyright__logo-academy {
+  width: 27px;
+  height: 34px;
+  fill: $main;
+
+  &:hover {
+    fill: $dark;
+  }
+
+  &:active {
+    fill: $dark;
+    opacity: 0.3;
+  }
 }

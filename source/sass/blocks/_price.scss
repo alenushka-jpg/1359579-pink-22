@@ -5,40 +5,17 @@
   background-image:
     linear-gradient(176deg, $white 42px, $light 42px);
   overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      linear-gradient(176deg, $white 60px, $light 60px);
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 155px;
-    background-image:
-      linear-gradient(174deg, $white 125px, $light 125px);
-  }
 }
 
 .price__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
 }
 
 .price-table {
   width: 280px;
   table-layout: fixed;
-
-  @media (min-width: $tablet-width) {
-    width: 620px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 944px;
-  }
 }
 
 .price-table__column {
@@ -62,23 +39,7 @@
       width: 74px;
       height: 74px;
       background-image: url("../../img/hit.svg");
-
-      @media (min-width: $tablet-width) and (max-width: 1100px) {
-        width: 61px;
-        height: 61px;
-        background-image: url("../../img/tablet-hit.svg");
-      }
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 25%;
-    padding: 7px 0 9px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 233px;
-    padding: 15px 0 19px;
   }
 }
 
@@ -88,10 +49,6 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
 }
 
 .price-table__price {
@@ -100,9 +57,7 @@
   font-size: 18px;
   line-height: 30px;
 
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
+
 }
 
 .price-table__thead {
@@ -120,10 +75,6 @@
   line-height: 30px;
   color: $dark;
   text-align: left;
-
-  @media (min-width: $tablet-width) {
-    display: table-cell;
-  }
 }
 
 .price-table__cell {
@@ -136,20 +87,6 @@
 .price-table__cell {
   width: 276px;
   background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: 25%;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 234px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
 }
 
 .price-table__value {
@@ -186,8 +123,55 @@
     background-color: $error;
     transform: rotate(135deg);
   }
+}
 
-  @media (min-width: $tablet-width) {
+.price-table__headline {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.price__toggles {
+  padding-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    background-image:
+    linear-gradient(176deg, $white 60px, $light 60px);
+  }
+
+  .price-table {
+    width: 620px;
+  }
+
+  .price-table__column {
+    width: 25%;
+    padding: 7px 0 9px;
+
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-image: url("../../img/tablet-hit.svg");
+      }
+    }
+  }
+
+  .price-table__title  {
+    display: table-cell;
+  }
+
+  .price-table__title,
+  .price-table__cell {
+    width: 25%;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .price-table__value {
     &--check::before {
       bottom: 40%;
       right: 40%;
@@ -203,22 +187,56 @@
       right: 40%;
     }
   }
-}
 
-.price-table__headline {
-  padding-left: 20px;
-  text-transform: uppercase;
+  .price-table__headline {
+    display: none;
+  }
 
-  @media (min-width: $tablet-width) {
+  .price__toggles {
     display: none;
   }
 }
 
-.price__toggles {
-  padding-top: 40px;
-  text-align: center;
+@media (min-width: $desktop-width) {
+  .price {
+    padding-top: 155px;
+    background-image:
+      linear-gradient(174deg, $white 125px, $light 125px);
+  }
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  .price__container {
+    padding: 0;
+  }
+
+  .price-table {
+    width: 944px;
+  }
+
+  .price-table__column {
+    width: 233px;
+    padding: 15px 0 19px;
+
+    &--hit {
+      &::before {
+        width: 74px;
+        height: 74px;
+        background-image: url("../../img/hit.svg");
+      }
+    }
+  }
+
+  .price-table__tarif {
+    font-size: 18px;
+  }
+
+  .price-table__price {
+    font-size: 18px;
+  }
+
+  .price-table__title,
+  .price-table__cell  {
+    width: 234px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

@@ -12,7 +12,7 @@
 
   &:last-of-type {
     padding-top: 40px;
-  
+
 
     .advantages-item__title {
       margin-bottom: 25px;
@@ -21,7 +21,7 @@
       line-height: 30px;
       text-align: center;
     }
-    
+
     .advantages-item__description {
       font-weight: normal;
       font-size: 18px;
@@ -143,10 +143,14 @@
       padding-top: 55px;
     }
   }
-  
+
   .advantages__list {
     display: flex;
     justify-content: space-around;
+
+    &::before {
+      display: none;
+    }
   }
 
   .advantages-item {

@@ -1,42 +1,11 @@
 .research {
   display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    min-height: 315px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $light;
-  }
-}
-
-.research__container {
-  @media (min-width: $desktop-width) {
-    padding-bottom: 55px;
-  }
 }
 
 .research__wrapper {
   position: relative;
   padding-top: 100px;
   padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    min-height: 315px;
-    padding-left: 322px;
-    padding-top: 100px;
-    padding-bottom: 10px;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-top: 60px;
-    padding-left: 365px;
-    padding-bottom: 50px;
-  }
 
   &::before {
     content: "";
@@ -49,16 +18,6 @@
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
-
-    @media (min-width: $desktop-width) {
-      bottom: 29px;
-      left: 0;
-      width: 298px;
-      height: 345px;
-      background-image: url("../../img/desktop-timer.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
   }
 }
 
@@ -68,11 +27,6 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
-    line-height: 30px;
-  }
 }
 
 .research__description {
@@ -82,11 +36,6 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-  }
 }
 
 .research__link {
@@ -95,4 +44,56 @@
   font-size: 18px;
   line-height: 30px;
   color: $main;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+    min-height: 315px;
+  }
+
+  .research__wrapper {
+    padding: 0;
+    min-height: 315px;
+    padding-left: 322px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $light;
+  }
+
+  .research__container {
+    padding-bottom: 55px;
+  }
+
+  .research__wrapper {
+    padding: 0;
+    padding-top: 60px;
+    padding-left: 365px;
+    padding-bottom: 50px;
+  }
+
+  .research__wrapper::before {
+    bottom: 29px;
+    left: 0;
+    width: 298px;
+    height: 345px;
+    background-image: url("../../img/desktop-timer.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .research__title {
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+
+  .research__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
