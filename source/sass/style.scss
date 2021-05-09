@@ -3,6 +3,7 @@
 @import "global/variables";
 @import "global/global";
 @import "blocks/page";
+@import "blocks/logo-image";
 @import "blocks/container";
 @import "blocks/button";
 @import "blocks/visually-hidden";
@@ -11,7 +12,7 @@
 @import "blocks/social";
 @import "blocks/copyright";
 // Index
-@import "blocks/main";
+@import "blocks/main-nav";
 @import "blocks/burger";
 @import "blocks/promo";
 @import "blocks/download";

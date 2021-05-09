@@ -9,28 +9,6 @@
     position: relative;
     padding: 0;
   }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/back-tablet.png");
-    background-size: 100% 100%;
-
-    .container {
-      padding-top: 96px;
-      padding-bottom: 96px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../../img/back-desktop.png");
-
-    .container {
-      padding-top: 222px;
-      padding-bottom: 130px;
-      padding-right: 592px;
-    }
-  }
 }
 
 .promo__container {
@@ -42,21 +20,8 @@
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 312px;
-
-  &--closed {
-    padding-top: 90px;
-    padding-bottom: 312px;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: static;
-    padding: 0;
-    margin-bottom: 40px;
-    margin-left: 25px;
-    width: 245px;
-  }
 }
 
 .promo__slogan {
@@ -66,13 +31,6 @@
   line-height: 30px;
   text-align: center;
   color: $white;
-
-  @media (min-width: $tablet-width) {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 120%;
-  }
 }
 
 .promo__image-wrapper {
@@ -82,9 +40,50 @@
   width: 320px;
   height: 286px;
   transform: translateX(-50%);
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../../img/back-tablet.png");
+    background-size: 100% 100%;
+
+    .container {
+      padding-top: 200px;
+      padding-bottom: 96px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .promo__application  {
+    position: static;
+    padding: 0;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    width: 245px;
+  }
+
+  .promo__slogan {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .promo__image-wrapper  {
     bottom: 0;
     left: calc(50% + 170px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../../img/back-desktop.png");
+
+    .container {
+      padding-top: 222px;
+      padding-bottom: 130px;
+      padding-right: 592px;
+    }
   }
 }

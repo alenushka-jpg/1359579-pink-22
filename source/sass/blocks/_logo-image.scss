@@ -1,0 +1,22 @@
+.logo-image__glass-tablet,
+.logo-image__glass-desktop,
+.logo-image__stars {
+    display: none;
+}
+ 
+@media (min-width: $tablet-width) {
+  .logo-image__glass-tablet {
+      display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-image__glass-tablet {
+      display: none;
+  }
+
+  .logo-image__glass-desktop,
+  .logo-image__stars {
+      display: block;
+  }
+}
