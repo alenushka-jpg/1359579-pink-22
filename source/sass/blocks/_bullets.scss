@@ -2,10 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .bullets__toggle {
@@ -22,5 +18,11 @@
     height: 12px;
     background-color: $white;
     border: 3px solid $dark;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bullets {
+    display: none;
   }
 }

@@ -23,15 +23,6 @@
   &--active {
     display: block;
   }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 202px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 288px;
-  }
 }
 
 .range-controls__input {
@@ -44,4 +35,18 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+@media (min-width: $tablet-width) {
+  .range-controls {
+    display: block;
+    width: 202px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-controls {
+    width: 288px;
+  }
 }

@@ -1,12 +1,6 @@
 .download {
   padding: 28px 20px 30px;
   background-color: $dark;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    width: 300px;
-    background-color: inherit;
-  }
 }
 
 .download__button {
@@ -33,11 +27,6 @@
   margin-bottom: 11px;
   padding: 0;
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 38px;
-    margin-bottom: 36px;
-  }
 }
 
 .download__link {
@@ -53,8 +42,21 @@
   line-height: 24px;
   text-align: center;
   color: $white;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .download {
+    padding: 0;
+    width: 300px;
+    background-color: inherit;
+  }
+
+  .download__list {
+    margin-top: 38px;
+    margin-bottom: 36px;
+  }
+
+  .download__availability {
     font-size: 18px;
   }
 }

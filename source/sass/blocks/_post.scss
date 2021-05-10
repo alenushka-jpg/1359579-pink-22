@@ -8,18 +8,9 @@
       content: "";
       width: 140px;
       height: 36px;
-      background-image: url("../../img/panorama-day.svg");
+      background-image: url("../img/panorama-day.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-
-      @media (min-width: $tablet-width) {
-        top: 57px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 130px;
-        top: 53px;
-      }
     }
   }
 }
@@ -38,37 +29,6 @@
   padding-right: 17px;
   margin-bottom: 20px;
   background-color: $light;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 22px;
-
-    &--panorama {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      min-height: 121px;
-      margin-bottom: 50px;
-
-      .post__item {
-        grid-column-start: 1;
-        grid-column-end: 2;
-      }
-
-      .post__text-wrapper {
-        grid-column-start: 1;
-        grid-column-end: -1;
-      }
-
-      .post__social-like {
-        grid-column-start: 2;
-        grid-column-end: -1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-      }
-    }
-  }
 }
 
 .post__social-like {
@@ -112,4 +72,56 @@
 .post__picture-image {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    &--day {
+      &::before {
+        top: 57px;
+      }
+    }
+  }
+
+  .post__content {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    &--panorama {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      min-height: 121px;
+      margin-bottom: 50px;
+
+      .post__item {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .post__text-wrapper {
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+
+      .post__social-like {
+        grid-column-start: 2;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    &--day {
+      &::before {
+        right: 130px;
+        top: 53px;
+      }
+    }
+  }
 }

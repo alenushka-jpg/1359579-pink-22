@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../../img/back-mobile.png");
+  background-image: url("../img/back-mobile.png");
   background-color: $dark;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -44,7 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    background-image: url("../../img/back-tablet.png");
+    background-image: url("../img/back-tablet.png");
     background-size: 100% 100%;
 
     .container {
@@ -55,7 +55,7 @@
     }
   }
 
-  .promo__application  {
+  .promo__application {
     position: static;
     width: 245px;
     padding: 0;
@@ -70,7 +70,7 @@
     line-height: 120%;
   }
 
-  .promo__image-wrapper  {
+  .promo__image-wrapper {
     bottom: 0;
     left: calc(50% + 170px);
   }
@@ -78,7 +78,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background-image: url("../../img/back-desktop.png");
+    background-image: url("../img/back-desktop.png");
 
     .container {
       padding-top: 222px;

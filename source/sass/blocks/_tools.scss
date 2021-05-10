@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @media (min-width: $desktop-width) {
-    width: 410px;
-  }
 }
 
 .tools__toggle {
@@ -24,23 +20,29 @@
 
   &--active {
     display: block;
-    margin-top: 20px;
+    margin: 20px -20px 43px;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba($dark, 0.1);
-    margin: 20px -20px 43px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .tools__item {
+    display: block;
+    margin: 0;
+    padding-bottom: 34px;
+    border-bottom: 1px solid rgba($dark, 0.1);
+
+    &--active {
       margin: 0;
       padding: 0;
       border: none;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin: 0;
-    padding-bottom: 34px;
-    border-bottom: 1px solid rgba($dark, 0.1);
-  }
 }
 
+@media (min-width: $desktop-width) {
+  .tools {
+    width: 410px;
+  }
+}
