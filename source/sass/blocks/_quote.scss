@@ -61,6 +61,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .quote__text {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
   .quote__about-author {
     font-size: 18px;
   }

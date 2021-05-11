@@ -33,17 +33,43 @@
   }
 
   .reviews__list {
-    padding-top: 150px;
+    padding-top: 180px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 60px;
+      top: 72px;
       left: 50%;
       transform: translateX(-50%);
       width: 79px;
       height: 63px;
       background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .reviews__item {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 22px;
+      height: 41px;
+      background-image: url("../img/icons/left-arrow.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      right: 0;
+      width: 22px;
+      height: 41px;
+      background-image: url("../img/icons/right-arrow.svg");
       background-repeat: no-repeat;
     }
   }

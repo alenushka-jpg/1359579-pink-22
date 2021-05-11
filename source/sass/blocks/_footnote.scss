@@ -24,7 +24,7 @@
 @media (min-width: $desktop-width) {
   .footnote {
     &--hidden {
-      display: block;
+      display: inline-block;
     }
   }
 }

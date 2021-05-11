@@ -24,6 +24,19 @@
     background-color: $white;
     border-radius: 50%;
     border: 2px solid $disabled;
+
+  }
+
+  &:hover {
+    &::before {
+      border: 2px solid $dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid $main;
+    }
   }
 }
 
@@ -42,6 +55,8 @@
 
   &:hover + &::before {
     border: 2px solid $dark;
+
+
   }
 
   &:focus + &::before,

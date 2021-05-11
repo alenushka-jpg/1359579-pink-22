@@ -33,6 +33,14 @@
   line-height: 30px;
   border: 2px solid $disabled;
   border-radius: 1px;
+
+  &:hover {
+    border: 2px solid $dark;
+  }
+
+  &:active {
+    border: 2px solid $main;
+  }
 }
 
 .field__textarea {

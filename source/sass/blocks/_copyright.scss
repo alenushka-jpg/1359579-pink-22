@@ -30,3 +30,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__text  {
+    font-size: 18px;
+  }
+}

@@ -25,6 +25,18 @@
     border: 2px solid $disabled;
     border-radius: 1px;
   }
+
+  &:hover {
+    &::before {
+      border: 2px solid $dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid $main;
+    }
+  }
 }
 
 .checkbox__input:checked ~ .checkbox__label {
