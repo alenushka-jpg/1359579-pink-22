@@ -14,7 +14,7 @@
     padding-top: 40px;
 
 
-    .advantages-item__title {
+    .advantages__item-title {
       margin-bottom: 25px;
       font-weight: bold;
       font-size: 30px;
@@ -22,7 +22,7 @@
       text-align: center;
     }
 
-    .advantages-item__description {
+    .advantages__item-description {
       font-weight: normal;
       font-size: 18px;
       line-height: 30px;
@@ -54,18 +54,18 @@
     transform: translateX(-50%);
     width: 157px;
     height: 320px;
-    background-image: url("../../img/mobile-smile.png");
+    background-image: url("../img/mobile-smile.png");
     background-repeat: no-repeat;
   }
 }
 
-.advantages-item {
+.advantages__item {
   &:not(:last-child) {
     margin-bottom: 35px;
   }
 }
 
-.advantages-item__title {
+.advantages__item-title {
   margin: 0;
   margin-bottom: 15px;
   font-weight: bold;
@@ -73,7 +73,7 @@
   line-height: 24px;
 }
 
-.advantages-item__description {
+.advantages__item-description {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
@@ -109,17 +109,28 @@
     transform: translateX(-50%);
     width: 268px;
     height: 547px;
-    background-image: url("../../img/tablet-smile.png");
+    background-image: url("../img/tablet-smile.png");
     background-repeat: no-repeat;
   }
 
-  .advantages-item__title,
-  .advantages-item__description {
+  .advantages__item-title,
+  .advantages__item-description {
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .advantages__container {
+      margin-bottom: 50px;
+    }
+  }
+
   .advantages__slogan {
     font-size: 50px;
     line-height: 68px;
@@ -132,37 +143,43 @@
   }
 
   .advantages__inner-wrapper {
-    padding-top: 390px;
+    padding-top: 42px;
+    padding-bottom: 0;
     background-image: linear-gradient(176deg, $white 130px, $light 130px);
 
     .advantages__container {
       padding: 0;
-      padding-top: 55px;
+      margin-bottom: 0;
     }
   }
 
   .advantages__list {
     display: flex;
     justify-content: space-around;
+    padding-top: 350px;
 
     &::before {
       display: none;
     }
   }
 
-  .advantages-item {
+  .advantages__item {
     width: 240px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
 
     &:first-child {
       &::before {
         content: "";
         position: absolute;
-        top: -400px;
+        top: 0;
         left: 17%;
         transform: translateX(-50%);
         width: 186px;
-        height: 382px;
-        background-image: url("../../img/iphone-desktop-gray.png");
+        height: 301px;
+        background-image: url("../img/iphone-desktop-gray.png");
         background-repeat: no-repeat;
       }
     }
@@ -171,12 +188,12 @@
       &::before {
         content: "";
         position: absolute;
-        top: -400px;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 186px;
-        height: 382px;
-        background-image: url("../../img/iphone-desktop-pink.png");
+        height: 301px;
+        background-image: url("../img/iphone-desktop-pink.png");
         background-repeat: no-repeat;
       }
     }
@@ -185,14 +202,28 @@
       &::before {
         content: "";
         position: absolute;
-        top: -400px;
+        top: 0;
         left: 84%;
         transform: translateX(-50%);
         width: 186px;
-        height: 382px;
-        background-image: url("../../img/iphone-desktop-smile.png");
+        height: 301px;
+        background-image: url("../img/iphone-desktop-smile.png");
         background-repeat: no-repeat;
       }
     }
+  }
+
+  .advantages__item-title,
+  .advantages__item-description {
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages__item-title {
+    font-size: 30px;
+  }
+
+  .advantages__item-description {
+    font-size: 18px;
   }
 }

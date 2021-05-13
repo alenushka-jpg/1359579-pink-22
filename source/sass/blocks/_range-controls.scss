@@ -22,6 +22,9 @@
 
   &--active {
     display: block;
+    position: absolute;
+    bottom: -38px;
+    left: -5px;
   }
 }
 
@@ -40,8 +43,14 @@
 
 @media (min-width: $tablet-width) {
   .range-controls {
+    bottom: 10px;
+    left: 15px;
     display: block;
     width: 202px;
+
+    &--active {
+      position: relative;
+    }
   }
 }
 
