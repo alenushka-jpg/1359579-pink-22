@@ -235,7 +235,7 @@
           <caption class="visually-hidden">Стоимость функциональных возможностей приложения</caption>
           <thead class="price-table__thead">
             <tr>
-              <th class="price-table__title"></th>
+              <th></th>
               <th class="price-table__column" scope="col">
                 <span class="price-table__tarif">База</span>
                 <span class="price-table__price">1,99 USD</span>
@@ -245,13 +245,13 @@
                 <span class="price-table__price">3,99 USD</span>
               </th>
               <th class="price-table__column" scope="col">
-                <span class="price-table__tarif">Аналим</span>
+                <span class="price-table__tarif">Анлим</span>
                 <span class="price-table__price">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="price-table__tr">
               <th class="price-table__title" scope="row">Розовый фильтр</th>
               <td class="price-table__cell">
                 <span class="price-table__value price-table__value--check">
@@ -272,7 +272,7 @@
                 </span>
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__tr">
               <th class="price-table__title" scope="row">Смайлики</th>
               <td class="price-table__cell">
                 <span class="price-table__value price-table__value--cross">
@@ -293,7 +293,7 @@
                 </span>
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__tr">
               <th class="price-table__title" scope="row">Комментарии</th>
               <td class="price-table__cell">
                 <span class="price-table__value price-table__value--cross">
@@ -360,7 +360,11 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/map.png" width="320" height="200" alt="карта проезда">
+        <picture>
+          <source media="(min-width: 1020px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <img class="contacts__map-image" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="200" alt="Карта проезда">
+        </picture>
       </div>
     </section>
     <footer class="page-footer">

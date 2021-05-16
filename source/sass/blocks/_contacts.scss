@@ -38,7 +38,7 @@
 
 .contacts__info {
   display: block;
-  width: 226px;
+  // width: 226px;
   margin: auto;
   font-weight: 300;
   font-size: 24px;
@@ -86,6 +86,13 @@
       order: 3;
     }
   }
+
+  .contacts__map,
+  .contacts__map-image {
+    width: 660px;
+    height: 374px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -122,5 +129,11 @@
   .contacts__description {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .contacts__map,
+  .contacts__map-image {
+    width: 1020px;
+    height: 502px;
   }
 }
