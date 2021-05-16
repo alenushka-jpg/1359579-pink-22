@@ -30,8 +30,8 @@
 }
 
 .page-header__container {
-  max-width: none;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .page-header__top {
@@ -165,8 +165,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .page-header__burger {

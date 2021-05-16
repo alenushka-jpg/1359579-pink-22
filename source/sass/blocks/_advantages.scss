@@ -11,7 +11,7 @@
   text-align: center;
 
   &:last-of-type {
-    padding-top: 40px;
+    margin-top: 40px;
 
 
     .advantages__item-title {
@@ -121,13 +121,10 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    .container {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
     .advantages__container {
       margin-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 

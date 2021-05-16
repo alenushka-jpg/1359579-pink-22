@@ -61,6 +61,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
     border-bottom: none;
   }
 
@@ -68,9 +70,12 @@
     display: block;
     width: 275px;
     margin: 0;
-    padding-top: 27px;
     padding-bottom: 23px;
     border-bottom: 1px solid rgba($dark, 0.1);
+
+    &:not(:first-child) {
+      padding-top: 27px;
+    }
   }
 
   .tools__icon {
@@ -99,9 +104,41 @@
     width: 410px;
   }
 
+  .tools__list {
+    margin-bottom: 40px;
+  }
+
   .tools__item {
+    width: 410px;
+    padding-bottom: 10px;
+
+    &:not(:first-child) {
+      padding-top: 16px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
     &--active {
       position: static;
+    }
+  }
+
+  .tools__icon {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
     }
   }
 }

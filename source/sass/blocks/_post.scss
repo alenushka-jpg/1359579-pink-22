@@ -27,7 +27,6 @@
   padding-bottom: 15px;
   padding-left: 17px;
   padding-right: 17px;
-  margin-bottom: 20px;
   background-color: $light;
 }
 
@@ -71,6 +70,7 @@
 
 .post__picture-image {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }
 
