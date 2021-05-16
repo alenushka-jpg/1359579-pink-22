@@ -32,7 +32,7 @@
     }
   }
 
-  &:active {
+  &:focus {
     &::before {
       border: 2px solid $main;
     }

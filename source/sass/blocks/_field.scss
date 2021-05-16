@@ -38,12 +38,13 @@
     border: 2px solid $dark;
   }
 
-  &:active {
+  &:focus {
     border: 2px solid $main;
   }
 }
 
 .field__textarea {
+  font-size: inherit;
   color: $dark;
   border: 2px solid $light;
   resize: none;
@@ -61,12 +62,30 @@
 
       .field__input {
         order: 1;
+        padding-right: 60px;
         margin-bottom: 10px;
       }
 
       .field__label {
         order: 2;
       }
+    }
+  }
+
+  .field__input {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    &--tel {
+      background-image: url(../img/icons/phone-icon.svg), linear-gradient(to left,#E5E5E5 60px, #FFFF 60px);
+      background-position: right 20px center, right center;
+      background-repeat: no-repeat;
+    }
+
+    &--email {
+      background-image: url(../img/icons/mail-icon.svg), linear-gradient(to left,#E5E5E5 60px, #FFFF 60px);
+      background-position: right 20px center, right center;
+      background-repeat: no-repeat;
     }
   }
 

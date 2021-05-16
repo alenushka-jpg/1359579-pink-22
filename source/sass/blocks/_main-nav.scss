@@ -22,7 +22,7 @@
     color: $main;
   }
 
-  &:active {
+  &:focus {
     color: rgba($main, 0.3);
   }
 

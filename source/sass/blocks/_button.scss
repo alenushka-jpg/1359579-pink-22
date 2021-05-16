@@ -22,7 +22,7 @@
       background-color: $sub-hover;
     }
 
-    &:active {
+    &:focus {
       color: rgba($white, 0.3);
     }
   }
@@ -53,7 +53,7 @@
       color: $white;
     }
 
-    &:active {
+    &:focus {
       color: rgba($white, 0.3);
     }
 
@@ -71,7 +71,7 @@
       color: rgba($dark, 0.3);
     }
 
-    &:active {
+    &:focus {
       background-color: rgba($dark, 0.3);
       color: rgba($white, 0.3);
     }

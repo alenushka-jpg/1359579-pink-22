@@ -76,7 +76,7 @@
       opacity: 0.6;
     }
 
-    &:active::before {
+    &:focus::before {
       opacity: 0.1;
     }
   }

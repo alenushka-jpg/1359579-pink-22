@@ -13,7 +13,7 @@
     }
   }
 
-  &:active {
+  &:focus {
     .logo-image__letters,
     .logo-image__glass {
       fill: rgba($dark, 0.3);
