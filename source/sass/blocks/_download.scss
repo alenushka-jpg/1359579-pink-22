@@ -29,10 +29,19 @@
   list-style: none;
 }
 
+.download__item {
+  padding: 0 20px;
+}
+
 .download__link {
   display: block;
   text-decoration: none;
   color: $white;
+}
+
+.download__logo {
+  width: 47px;
+  height: 56px;
 }
 
 .download__availability {
@@ -49,6 +58,7 @@
     padding: 0;
     width: 300px;
     background-color: inherit;
+    z-index: 1;
   }
 
   .download__list {

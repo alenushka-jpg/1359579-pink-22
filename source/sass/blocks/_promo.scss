@@ -41,6 +41,11 @@
   transform: translateX(-50%);
 }
 
+.promo__image {
+  width: 320px;
+  height: 286px;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
     background-image: url("../img/back-tablet.jpg");
@@ -75,8 +80,14 @@
   }
 
   .promo__image-wrapper {
+    width: 660px;
+    height: 545px;
     bottom: 0;
-    left: calc(50% + 100px);
+  }
+
+  .promo__image {
+    width: 660px;
+    height: 545px;
   }
 }
 
@@ -93,5 +104,11 @@
       padding-bottom: 130px;
       padding-right: 592px;
     }
+  }
+
+  .promo__image-wrapper,
+  .promo__image {
+    width: 1020px;
+    height: 645px;
   }
 }

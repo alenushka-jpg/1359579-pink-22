@@ -6,19 +6,6 @@
 .page-footer__logo {
   display: block;
   text-align: center;
-
-  &:hover {
-    .logo-image__letters {
-      fill: $main;
-    }
-  }
-
-  &:focus {
-    .logo-image__letters,
-    .logo-image__glass {
-      fill: rgba($dark, 0.3);
-    }
-  }
 }
 
 .page-footer__copyright {

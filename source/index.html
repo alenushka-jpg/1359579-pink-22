@@ -84,11 +84,15 @@
           <h1 class="visually-hidden">Приложение «Pink»</h1>
           <div class="promo__slogan-wrapper">
             <p class="promo__slogan">
-              Взгляните на жизнь <br> иначе!
+              Взгляните на&nbsp;жизнь иначе!
             </p>
           </div>
           <div class="promo__image-wrapper">
-            <img class="promo__image" src="img/phone-screen.png" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+            <picture class="upload__picture">
+              <source media="(min-width: 1020px)" srcset="img/phone-screen-desktop.png, img/phone-screen-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/phone-screen-tablet.png 1x, img/phone-screen-tablet@2x.png 2x">
+              <img class="promo__image" src="img/phone-screen.png" srcset="img/phone-screen@2x.png 2x" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+            </picture>
           </div>
         </div>
         <section class="promo__download download">
@@ -103,13 +107,13 @@
             </li>
             <li class="download__item">
               <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">
-                <img src="img/android-logo.svg" width="43" height="47" alt="play market">
+                <img src="img/android-logo.svg" width="47" height="56" alt="play market">
                 <span class="visually-hidden">Cкачать приложение в play market</span>
               </a>
             </li>
             <li class="download__item">
               <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                <img src="img/windows-logo.svg" width="44" height="41" alt="microsoft store">
+                <img src="img/windows-logo.svg" width="47" height="56" alt="microsoft store">
                 <span class="visually-hidden">Cкачать приложение в microsoft store</span>
               </a>
             </li>

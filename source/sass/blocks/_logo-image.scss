@@ -18,6 +18,19 @@
     .logo-image__glass {
       fill: $main;
     }
+
+    &:hover {
+      .logo-image__letters {
+        fill: $main;
+      }
+    }
+
+    &:focus {
+      .logo-image__letters,
+      .logo-image__glass {
+        fill: rgba($dark, 0.3);
+      }
+    }
   }
 }
 
