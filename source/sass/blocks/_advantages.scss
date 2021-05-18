@@ -56,6 +56,11 @@
     height: 320px;
     background-image: url("../img/mobile-smile.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile-smile@2x.png");
+      background-size: 157px auto;
+    }
   }
 }
 
@@ -111,6 +116,11 @@
     height: 547px;
     background-image: url("../img/tablet-smile.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-smile@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   .advantages__item-title,
@@ -178,6 +188,11 @@
         height: 301px;
         background-image: url("../img/iphone-desktop-gray.png");
         background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/iphone-desktop-gray@2x.png");
+          background-size: 300px auto;
+        }
       }
     }
 
@@ -192,6 +207,11 @@
         height: 301px;
         background-image: url("../img/iphone-desktop-pink.png");
         background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/iphone-desktop-pink@2x.png");
+          background-size: 300px auto;
+        }
       }
     }
 
@@ -206,6 +226,11 @@
         height: 301px;
         background-image: url("../img/iphone-desktop-smile.png");
         background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/iphone-desktop-smile@2x.png");
+          background-size: 300px auto;
+        }
       }
     }
   }

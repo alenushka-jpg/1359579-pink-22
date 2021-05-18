@@ -13,8 +13,7 @@
   display: block;
 }
 
-.reviews__prev,
-.reviews__next {
+.reviews__button {
   display: none;
   border: none;
   padding: 0;
@@ -51,8 +50,7 @@
     }
   }
 
-  .reviews__prev,
-  .reviews__next {
+  .reviews__button {
     position: absolute;
     top: 50%;
     display: block;
@@ -79,23 +77,23 @@
     &:focus::before {
       opacity: 0.1;
     }
-  }
 
-  .reviews__prev {
-    left: 0;
-
-    &::before {
-      transform: rotate(-135deg);
+    &--prev {
       left: 0;
+
+      &::before {
+        transform: rotate(-135deg);
+        left: 0;
+      }
     }
 
-  }
-  .reviews__next {
-    right: 0;
-
-    &::before {
-      transform: rotate(45deg);
+    &--next {
       right: 0;
+
+      &::before {
+        transform: rotate(45deg);
+        right: 0;
+      }
     }
   }
 }

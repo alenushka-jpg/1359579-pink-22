@@ -18,6 +18,12 @@
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-timer@2x.png");
+      background-size: 239px auto;
+    }
   }
 }
 
@@ -87,6 +93,11 @@
     background-image: url("../img/desktop-timer.png");
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-timer@2x.png");
+      background-size: 298px auto;
+    }
   }
 
   .research__title {
