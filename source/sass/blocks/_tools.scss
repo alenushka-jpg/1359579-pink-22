@@ -5,11 +5,141 @@
 }
 
 .tools__toggle {
+  display: flex;
+  padding: 0;
+  background-color: inherit;
   border-style: none;
 }
 
 .tools__list {
-  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 38px;
   padding: 0;
+  padding-bottom: 75px;
   list-style: none;
+  border-bottom: 1px solid rgba($dark, 0.1);
+}
+
+.tools__item {
+  &--active {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    .tools__icon {
+      fill: $main;
+      opacity: 1;
+    }
+  }
+}
+
+.tools__icon {
+  opacity: 0.3;
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tools__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
+    border-bottom: none;
+  }
+
+  .tools__item {
+    display: block;
+    width: 275px;
+    margin: 0;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba($dark, 0.1);
+
+    &:not(:first-child) {
+      padding-top: 27px;
+    }
+  }
+
+  .tools__icon {
+    fill: $main;
+    opacity: 1;
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tools {
+    width: 410px;
+  }
+
+  .tools__list {
+    margin-bottom: 40px;
+  }
+
+  .tools__item {
+    width: 410px;
+    padding-bottom: 11px;
+
+    &:not(:first-child) {
+      padding-top: 16px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--active {
+      position: static;
+    }
+  }
+
+  .tools__icon {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }

@@ -1,35 +1,8 @@
-.reviews__container {
-  @media (min-width: $desktop-width) {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-
 .reviews__list {
   position: relative;
   margin: 0;
   padding: 50px 20px 0 20px;
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 150px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 60px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 79px;
-      height: 63px;
-      background-image: url("../../img/quotes.svg");
-      background-repeat: no-repeat;
-    }
-  }
 }
 
 .reviews__item {
@@ -40,11 +13,87 @@
   display: block;
 }
 
-.reviews__toggles {
-  display: flex;
-  justify-content: center;
+.reviews__button {
+  display: none;
+  border: none;
+  padding: 0;
+}
 
-  @media (min-width: $desktop-width) {
-    display: none;
+@media (min-width: $tablet-width) {
+  .reviews__list {
+    padding-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reviews__list {
+    padding-top: 180px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/icons/quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 22px;
+    height: 41px;
+    background-color: inherit;
+    background-position: 0 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      width: 28px;
+      height: 28px;
+      border-top: 3px solid $dark;
+      border-right: 3px solid $dark;
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      opacity: 0.6;
+    }
+
+    &:focus::before {
+      opacity: 0.1;
+    }
+
+    &--prev {
+      left: 0;
+
+      &::before {
+        transform: rotate(-135deg);
+        left: 0;
+      }
+    }
+
+    &--next {
+      right: 0;
+
+      &::before {
+        transform: rotate(45deg);
+        right: 0;
+      }
+    }
   }
 }

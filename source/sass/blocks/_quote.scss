@@ -2,29 +2,11 @@
   margin: 0;
   text-align: center;
   margin-bottom: 31px;
-
-  @media (min-width: $tablet-width),
-    (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .quote__about-author {
   display: none;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    order: 3;
-    font-size: 14px;
-    line-height: 30px;
-    color: $dark;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
 }
 
 .quote__author-name {
@@ -32,18 +14,6 @@
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
-
-  @media (min-width: $tablet-width) {
-    order: 2;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 24px;
-  }
 }
 
 .quote__review {
@@ -52,19 +22,55 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark;
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-  }
 }
 
 .quote__text {
   font-size: 14px;
   line-height: 30px;
   color: $dark;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .quote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote__about-author {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+  }
+
+  .quote__author-name {
+    order: 2;
+    font-size: 20px;
+  }
+
+  .quote__review {
+    font-size: 18px;
+  }
+
+
+  .quote__text {
     order: 1;
     margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .quote__text {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .quote__about-author {
+    font-size: 18px;
+  }
+
+  .quote__author-name {
+    font-size: 24px;
   }
 }

@@ -1,26 +1,6 @@
 .field {
   display: block;
 
-  @media (min-width: $tablet-width) {
-    &--user {
-      display: flex;
-    }
-
-    &--contacts {
-      display: flex;
-      flex-direction: column;
-
-      .field__input {
-        order: 1;
-        margin-bottom: 10px;
-      }
-
-      .field__label {
-        order: 2;
-      }
-    }
-  }
-
   &--textarea {
     .field__input {
       min-height: 197px;
@@ -30,10 +10,6 @@
 
       &::placeholder {
         color: $dark;
-      }
-
-      @media (min-width: $desktop-width) {
-        min-height: 124px;
       }
     }
   }
@@ -47,15 +23,6 @@
   line-height: 30px;
   color: $main;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    margin-left: 17px;
-    margin-right: 20px;
-  }
 }
 
 .field__input {
@@ -66,10 +33,77 @@
   line-height: 30px;
   border: 2px solid $disabled;
   border-radius: 1px;
+
+  &:hover {
+    border: 2px solid $dark;
+  }
+
+  &:focus {
+    border: 2px solid $main;
+  }
 }
 
 .field__textarea {
+  font-size: inherit;
   color: $dark;
   border: 2px solid $light;
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .field {
+    &--user {
+      display: flex;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+
+      .field__input {
+        order: 1;
+        padding-right: 60px;
+        margin-bottom: 10px;
+      }
+
+      .field__label {
+        order: 2;
+      }
+    }
+  }
+
+  .field__input {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    &--tel {
+      background-image: url(../img/icons/phone-icon.svg), linear-gradient(to left,#E5E5E5 60px, #FFFF 60px);
+      background-position: right 20px center, right center;
+      background-repeat: no-repeat;
+    }
+
+    &--email {
+      background-image: url(../img/icons/mail-icon.svg), linear-gradient(to left,#E5E5E5 60px, #FFFF 60px);
+      background-position: right 20px center, right center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .field__label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field {
+    &--textarea {
+      .field__input {
+        min-height: 124px;
+      }
+    }
+  }
 }

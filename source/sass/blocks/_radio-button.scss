@@ -1,12 +1,11 @@
 .radio-button {
   position: relative;
   display: block;
+  padding-left: 55px;
   cursor: pointer;
 }
 
 .radio-button__input {
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
   appearance: none;
 }
 
@@ -26,6 +25,19 @@
     background-color: $white;
     border-radius: 50%;
     border: 2px solid $disabled;
+
+  }
+
+  &:hover {
+    &::before {
+      border: 2px solid $dark;
+    }
+  }
+
+  &:focus {
+    &::before {
+      border: 2px solid $main;
+    }
   }
 }
 
@@ -44,6 +56,8 @@
 
   &:hover + &::before {
     border: 2px solid $dark;
+
+
   }
 
   &:focus + &::before,

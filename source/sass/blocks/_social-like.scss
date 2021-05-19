@@ -1,20 +1,5 @@
 .social-like {
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 13px;
-    align-items: center;
-
-    .social-like__icon {
-      order: 2;
-    }
-    &--gallery {
-      .social-like__text {
-        text-align: start;
-      }
-    }
-  }
 }
 
 .social-like__text {
@@ -24,11 +9,6 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $main;
-
-  @media (min-width: $tablet-width) {
-    text-align: center;
-    padding: 0;
-  }
 }
 
 .social-like__icon {
@@ -42,7 +22,30 @@
     content: "";
     width: 13px;
     height: 12px;
-    background-image: url("../../img/like.svg");
+    background-image: url("../img/icons/like.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-like {
+    display: grid;
+    grid-template-columns: 1fr 13px;
+    align-items: center;
+
+    .social-like__icon {
+      order: 2;
+    }
+
+    .social-like__text {
+      text-align: center;
+      padding: 0;
+    }
+
+    &--gallery {
+      .social-like__text {
+        text-align: start;
+      }
+    }
   }
 }

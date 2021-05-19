@@ -1,7 +1,8 @@
 .price {
-  padding-top: 90px;
+  padding-top: 100px;
   padding-bottom: 40px;
   background-color: $disabled;
+  background-image: linear-gradient(176deg, $white 42px, $light 42px);
   overflow: hidden;
 }
 
@@ -9,26 +10,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
 }
 
 .price-table {
+  border-spacing: 0;
   width: 280px;
   table-layout: fixed;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 620px;
+.price-table__item {
+  border: 1px solid #f2f2f2;
+
+  &:last-child {
+    border-right-width: 2px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 944px;
+  &:first-child {
+    border-left-width: 2px;
+  }
+
+  &--title {
+    display: none;
+    margin-right:0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+    text-align: left;
+  }
+
+  &--cell {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &--title,
+  &--cell {
+    width: 276px;
+    background-color: $white;
   }
 }
 
-.price-table__column {
+.price-table__empty {
+  display: none;
+}
+
+.price-table__heading {
   padding-top: 11px;
   padding-bottom: 22px;
   padding-right: 95px;
@@ -36,7 +66,19 @@
   width: 276px;
   color: $white;
   background-color: $dark;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
   overflow: hidden;
+
+  &:nth-child(2) {
+    border-left: 1px solid $dark;
+    border-top-left-radius: 5px;
+  }
+
+  &:last-child {
+    border-right: 2px solid $dark;
+    border-top-right-radius: 5px;
+  }
 
   &--hit {
     position: relative;
@@ -48,24 +90,8 @@
       left: -5px;
       width: 74px;
       height: 74px;
-      background-image: url("../../img/hit.svg");
-
-      @media (min-width: $tablet-width) and (max-width: 1100px) {
-        width: 61px;
-        height: 61px;
-        background-image: url("../../img/tablet-hit.svg");
-      }
+      background-image: url("../img/hit.svg");
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 25%;
-    padding: 7px 0 9px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 233px;
-    padding: 15px 0 19px;
   }
 }
 
@@ -75,10 +101,6 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
 }
 
 .price-table__price {
@@ -86,56 +108,36 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
 }
 
-.price-table__thead {
-  .price-table__title:first-child {
-    opacity: 0;
-  }
-}
+.price-table__tr {
+  &:first-child {
+    .price-table__item {
+      border-top-width: 2px;
+      border-top-color: $dark;
 
-.price-table__title {
-  display: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark;
-  text-align: left;
+      &:first-child {
+        border-top-left-radius: 5px;
+      }
 
-  @media (min-width: $tablet-width) {
-    display: table-cell;
-  }
-}
-
-.price-table__cell {
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.price-table__title,
-.price-table__cell {
-  width: 276px;
-  background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: 25%;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
+      &--title {
+        border-top-color: #F2F2F2;
+      }
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 234px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+  &:last-child {
+    .price-table__item {
+      border-bottom-width: 2px;
+
+      &:first-child {
+        border-bottom-left-radius: 5px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 5px;
+      }
+    }
   }
 }
 
@@ -173,8 +175,60 @@
     background-color: $error;
     transform: rotate(135deg);
   }
+}
 
-  @media (min-width: $tablet-width) {
+.price-table__headline {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.price__toggles {
+  padding-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    background-image: linear-gradient(176deg, $white 60px, $light 60px);
+  }
+
+  .price-table {
+    width: 620px;
+  }
+
+  .price-table__empty {
+    display: table-cell;
+  }
+
+  .price-table__item {
+    &--title {
+      display: table;
+    }
+
+    &--title,
+    &--cell {
+      width: 153px;
+      padding-top: 8px;
+      padding-bottom: 7px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .price-table__heading {
+    width: 25.5%;
+    padding: 7px 9px;
+
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/icons/tablet-hit.svg");
+      }
+    }
+  }
+
+  .price-table__value {
     &--check::before {
       bottom: 40%;
       right: 40%;
@@ -190,22 +244,57 @@
       right: 40%;
     }
   }
-}
 
-.price-table__headline {
-  padding-left: 20px;
-  text-transform: uppercase;
+  .price-table__headline {
+    display: none;
+  }
 
-  @media (min-width: $tablet-width) {
+  .price__toggles {
     display: none;
   }
 }
 
-.price__toggles {
-  padding-top: 40px;
-  text-align: center;
+@media (min-width: $desktop-width) {
+  .price {
+    padding-top: 150px;
+    background-image: linear-gradient(175deg, $white 125px, $light 125px);
+  }
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  .price__container {
+    padding: 0;
+  }
+
+  .price-table {
+    width: 944px;
+  }
+
+  .price-table__heading {
+    width: 237px;
+    padding: 17px 22px;
+
+    &--hit {
+      &::before {
+        width: 74px;
+        height: 74px;
+        background-image: url("../img/icons/hit.svg");
+      }
+    }
+  }
+
+  .price-table__tarif {
+    font-size: 18px;
+  }
+
+  .price-table__price {
+    font-size: 18px;
+  }
+
+   .price-table__item {
+      &--title,
+      &--cell {
+      width: 237px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
   }
 }

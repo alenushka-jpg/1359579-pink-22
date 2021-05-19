@@ -4,9 +4,27 @@
   line-height: 30px;
   color: $dark;
   text-transform: uppercase;
-  text-align: end;
+  text-align: center;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .footnote__point {
   color: $main;
+}
+
+@media (min-width: $tablet-width) {
+  .footnote {
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footnote {
+    &--hidden {
+      display: inline-block;
+    }
+  }
 }

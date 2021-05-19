@@ -8,20 +8,25 @@
 
   &--active {
     display: block;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 202px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 288px;
+    position: absolute;
+    bottom: -38px;
+    left: -5px;
   }
 }
 
+.range-controls__bar {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -5px;
+  right: 50px;
+  border-radius: 50%;
+  border: 2px solid $main;
+  background: $light;
+  z-index: 10;
+}
+
 .range-controls__input {
-  position: relative;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -31,16 +36,25 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid #d22856;
-    background: #f2f2f2;
-    z-index: 10;
-    cursor: pointer;
+
+@media (min-width: $tablet-width) {
+  .range-controls {
+    bottom: 10px;
+    left: 15px;
+    display: block;
+    width: 202px;
+
+    &--active {
+      position: relative;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-controls {
+    width: 288px;
+    bottom: 23px;
   }
 }

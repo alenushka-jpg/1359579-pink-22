@@ -1,12 +1,11 @@
 .checkbox {
   position: relative;
   display: block;
+  padding-left: 52px;
   cursor: pointer;
 }
 
 .checkbox__input {
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
   appearance: none;
 }
 
@@ -27,6 +26,18 @@
     border: 2px solid $disabled;
     border-radius: 1px;
   }
+
+  &:hover {
+    &::before {
+      border: 2px solid $dark;
+    }
+  }
+
+  &:focus {
+    &::before {
+      border: 2px solid $main;
+    }
+  }
 }
 
 .checkbox__input:checked ~ .checkbox__label {
@@ -37,7 +48,7 @@
     left: -47px;
     width: 22px;
     height: 16px;
-    background-image: url("../../img/check-mark.svg");
+    background-image: url("../img/icons/check-mark.svg");
     background-repeat: no-repeat;
   }
 

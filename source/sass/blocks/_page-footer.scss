@@ -1,6 +1,6 @@
 .page-footer {
   padding-top: 40px;
-  padding-bottom: 51px;
+  padding-bottom: 40px;
 }
 
 .page-footer__logo {
@@ -9,6 +9,27 @@
 }
 
 .page-footer__copyright {
-  margin-top: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 41px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .page-footer__copyright {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-bottom: 70px;
+  }
 }
