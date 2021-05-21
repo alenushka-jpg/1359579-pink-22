@@ -1,8 +1,8 @@
 .price {
-  padding-top: 100px;
+  padding-top: 139px;
   padding-bottom: 40px;
   background-color: $disabled;
-  background-image: linear-gradient(176deg, $white 42px, $light 42px);
+  background-image: linear-gradient(177deg, $white 54px, $light 42px);
   overflow: hidden;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .price-table__item {
-  border: 1px solid #f2f2f2;
+  border: 1px solid $light;
 
   &:last-child {
     border-right-width: 2px;
@@ -43,7 +43,7 @@
 
   &--cell {
     position: relative;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 15px;
   }
 
@@ -60,14 +60,14 @@
 
 .price-table__heading {
   padding-top: 11px;
-  padding-bottom: 22px;
-  padding-right: 95px;
-  padding-left: 95px;
+  padding-bottom: 27px;
+  padding-right: 50px;
+  padding-left: 50px;
   width: 276px;
   color: $white;
   background-color: $dark;
-  border-left: 1px solid #F2F2F2;
-  border-right: 1px solid #F2F2F2;
+  border-left: 1px solid $light;
+  border-right: 1px solid $light;
   overflow: hidden;
 
   &:nth-child(2) {
@@ -97,6 +97,7 @@
 
 .price-table__tarif {
   display: block;
+  margin-bottom: -2px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -121,7 +122,7 @@
       }
 
       &--title {
-        border-top-color: #F2F2F2;
+        border-top-color: $light;
       }
     }
   }
@@ -145,10 +146,10 @@
   &--check::before {
     position: absolute;
     content: "";
-    right: 17px;
-    bottom: 30px;
+    right: 16px;
+    bottom: 27px;
     width: 31px;
-    height: 21px;
+    height: 16px;
     border-bottom: 4px solid $success;
     border-right: 4px solid $success;
     transform: scale(-1, 1) rotate(45deg);
@@ -289,9 +290,9 @@
     font-size: 18px;
   }
 
-   .price-table__item {
-      &--title,
-      &--cell {
+ .price-table__item {
+    &--title,
+    &--cell {
       width: 237px;
       padding-top: 14px;
       padding-bottom: 14px;

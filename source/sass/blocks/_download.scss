@@ -1,5 +1,5 @@
 .download {
-  padding: 28px 20px 30px;
+  padding: 28px 20px 31px;
   background-color: $dark;
 }
 
@@ -20,7 +20,7 @@
 
 .download__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0;
   margin-top: 32px;

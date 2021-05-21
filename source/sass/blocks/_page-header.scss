@@ -4,6 +4,8 @@
   margin-bottom: -66px;
 
   .page-header__burger {
+    width: 50px;
+    height: 24px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -19,6 +21,10 @@
       &:active {
         opacity: 0.3;
       }
+    }
+
+    .page-header__burger-close {
+      display: none;
     }
   }
 
@@ -71,6 +77,9 @@
 
   &--closed {
     .page-header__burger {
+      width: 50px;
+      height: 24px;
+
       &--open {
         .page-header__burger-close {
           display: none;
@@ -130,17 +139,27 @@
     padding-bottom: 24px;
     background-color: rgba($black, 0.3);
 
-    &--no-js,
-    &--opened {
-      .page-header__top {
-        padding: 0;
-        background-color: transparent;
-        box-shadow: none;
-      }
+    // &--no-js,
+    // &--opened,
+    // &--closed {
+    //   .page-header__top {
+    //     padding: 0;
+    //     background-color: transparent;
+    //     box-shadow: none;
+    //   }
 
-      .page-header__panel {
-        display: block;
-      }
+    //   .page-header__panel {
+    //     display: block;
+    //   }
+    // }
+    .page-header__top {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .page-header__panel {
+      display: block;
     }
 
     .page-header__burger {

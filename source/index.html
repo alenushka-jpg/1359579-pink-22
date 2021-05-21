@@ -311,10 +311,10 @@
           </tbody>
         </table>
         <div class="price__toggles bullets">
-          <button class="bullets__toggle bullets__toggle--current">
+          <button class="bullets__toggle">
             <span class="visually-hidden">Переключить на тариф база</span>
           </button>
-          <button class="bullets__toggle">
+          <button class="bullets__toggle bullets__toggle--current">
             <span class="visually-hidden">Переключить на тариф стандарт</span>
           </button>
           <button class="bullets__toggle">
@@ -347,7 +347,8 @@
             <div class="contacts__item">
               <dt class="contacts__title">Приезжайте в гости:</dt>
               <dd class="contacts__description">
-                <a class="contacts__info" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16">ул. Большая Конюшенная, 19/8</a>
+                <a class="contacts__info" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16">
+                  ул. Большая <br> Конюшенная, 19/8</a>
               </dd>
             </div>
           </dl>
@@ -359,6 +360,7 @@
           <source media="(min-width: 660px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <img class="contacts__map-image" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="200" alt="Карта проезда">
         </picture>
+        <div class="contacts__map-marker"></div>
       </div>
     </section>
     <footer class="page-footer">
@@ -396,7 +398,7 @@
           </ul>
         </section>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
+          <p class="copyright__text">Разработано</p>
           <p class="copyright__text">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg class="copyright__logo" width="23" height="34">

@@ -1,7 +1,7 @@
 var pageHeader = document.querySelector('.page-header');
 var burger = document.querySelector('.page-header__burger');
 
-pageHeade.classList.remove('page-header--no-js');
+pageHeader.classList.remove('page-header--no-js');
 
 
 burger.addEventListener('click', function() {

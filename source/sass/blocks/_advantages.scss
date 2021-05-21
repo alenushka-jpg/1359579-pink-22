@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 46px;
+  padding-top: 41px;
 }
 
 .advantages__slogan {
@@ -11,8 +11,7 @@
   text-align: center;
 
   &:last-of-type {
-    margin-top: 40px;
-
+    margin-top: 31px;
 
     .advantages__item-title {
       margin-bottom: 25px;
@@ -32,8 +31,8 @@
 }
 
 .advantages__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 325px;
+  padding-top: 113px;
+  padding-bottom: 317px;
   background-color: $light;
   background-image: linear-gradient(175deg, $white 60px, $light 60px);
   overflow: hidden;
@@ -66,13 +65,13 @@
 
 .advantages__item {
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
   }
 }
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;

@@ -9,7 +9,7 @@
 
 .contacts__slogan {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -22,10 +22,16 @@
   text-align: center;
 }
 
+.contacts__item {
+  padding-bottom: 15px;
+
+  &:last-child {
+    padding-top: 7px;
+  }
+}
+
 .contacts__description {
   margin: 0;
-  padding-top: 4px;
-  padding-bottom: 15px;
 }
 
 .contacts__title {
@@ -58,7 +64,7 @@
     width: 320px;
     left: 0;
     top: -90px;
-    background-image: url(../img/triangle-footer.svg);
+    background-image: url("../img/triangle-footer.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -69,6 +75,18 @@
   margin: 0 auto;
   width: 320px;
   height: 200px;
+}
+
+.contacts__map-marker {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-45%);
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/map-marker.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
