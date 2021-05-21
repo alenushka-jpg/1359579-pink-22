@@ -5,7 +5,7 @@
     }
 
     .logo__footer {
-      &--letters {
+      .logo__footer-letters {
         fill: $main;
       }
     }
@@ -18,14 +18,14 @@
     }
 
     .logo__footer {
-      &--glass,
-      &--stars {
+      .logo__footer-glass,
+      .logo__footer-stars {
         opacity: 0.3;
         fill: $main;
       }
 
-      &--letters,
-      &--star {
+      .logo__footer-letters,
+      .logo__footer-star {
         opacity: 0.3;
         fill: $dark;
       }
@@ -51,11 +51,11 @@
     margin: 0 auto;
   }
 
-  &--glass {
+  .logo__footer-glass {
     fill: $main;
   }
 
-  &--letters {
+  .logo__footer-letters {
     fill: $dark;
 
     &:hover {
@@ -104,11 +104,11 @@
       display: block;
     }
 
-    &--stars {
+    .logo__footer-stars {
       fill: $black;
     }
 
-    &--star {
+    .logo__footer-star {
       fill: $main;
     }
   }
