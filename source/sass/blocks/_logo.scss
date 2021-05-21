@@ -77,7 +77,8 @@
 
     &--tablet {
       display: block;
-  } }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -86,7 +87,7 @@
       display: none;
     }
 
-    &--desktop{
+    &--desktop {
       display: block;
     }
 

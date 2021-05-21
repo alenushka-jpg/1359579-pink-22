@@ -25,7 +25,6 @@
     background-color: $white;
     border-radius: 50%;
     border: 2px solid $disabled;
-
   }
 
   &:hover {
@@ -56,8 +55,6 @@
 
   &:hover + &::before {
     border: 2px solid $dark;
-
-
   }
 
   &:focus + &::before,

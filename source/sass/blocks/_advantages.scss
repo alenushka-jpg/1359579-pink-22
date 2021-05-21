@@ -84,32 +84,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 47px;
+  }
+
   .advantages__slogan {
     font-size: 40px;
     line-height: 54px;
 
     &:last-of-type {
+      margin-top: 0;
       padding: 0;
-      padding-left: 45px;
-      padding-right: 40px;
+      padding-left: 47px;
+      padding-right: 47px;
     }
   }
 
   .advantages__inner-wrapper {
-    padding-top: 100px;
-    padding-bottom: 37px;
-    background-image: linear-gradient(175deg, $white  100px, $light 100px);
+    padding-top: 103px;
+    padding-bottom: 41px;
+    background-image: linear-gradient(175deg, $white 85px, $light 85px);
 
     .advantages__container {
-      padding-left: 339px;
+      padding-left: 329px;
     }
   }
 
   .advantages__list::before {
     content: "";
     position: absolute;
-    left: -170px;
-    top: -43px;
+    left: -175px;
+    top: -65px;
     transform: translateX(-50%);
     width: 268px;
     height: 547px;
@@ -119,6 +124,12 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet-smile@2x.png");
       background-size: 268px auto;
+    }
+  }
+
+  .advantages__item {
+    &:not(:last-child) {
+      margin-bottom: 33px;
     }
   }
 

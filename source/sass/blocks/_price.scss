@@ -31,7 +31,7 @@
 
   &--title {
     display: none;
-    margin-right:0;
+    margin-right: 0;
     padding-top: 12px;
     padding-bottom: 12px;
     font-weight: normal;
@@ -86,8 +86,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: -5px;
-      left: -5px;
+      top: 0;
+      left: -1px;
       width: 74px;
       height: 74px;
       background-image: url("../img/hit.svg");
@@ -190,6 +190,8 @@
 
 @media (min-width: $tablet-width) {
   .price {
+    padding-top: 113px;
+    padding-bottom: 68px;
     background-image: linear-gradient(176deg, $white 60px, $light 60px);
   }
 
@@ -217,8 +219,8 @@
   }
 
   .price-table__heading {
-    width: 25.5%;
-    padding: 7px 9px;
+    width: 155px;
+    padding: 12px 9px 7px;
 
     &--hit {
       &::before {
@@ -236,8 +238,8 @@
     }
 
     &--cross::before {
-      bottom: 45%;
-      right: 40%;
+      bottom: 43%;
+      right: 37%;
     }
 
     &--cross::after {
@@ -290,7 +292,7 @@
     font-size: 18px;
   }
 
- .price-table__item {
+  .price-table__item {
     &--title,
     &--cell {
       width: 237px;

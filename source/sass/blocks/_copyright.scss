@@ -31,8 +31,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .copyright__text {
+
+    &:first-child {
+      margin-right: 18px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .copyright__text  {
+  .copyright__text {
     font-size: 18px;
   }
 }
