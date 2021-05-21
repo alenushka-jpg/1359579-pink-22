@@ -75,20 +75,18 @@
 
   .research__container {
     padding-bottom: 67px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .research__wrapper {
     padding: 0;
-    padding-top: 125px;
-    padding-left: 365px;
-    padding-bottom: 50px;
+    padding-top: 162px;
+    padding-left: 372px;
+    padding-bottom: 46px;
   }
 
   .research__wrapper::before {
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 3px;
     width: 298px;
     height: 345px;
     background-image: url("../img/desktop-timer.png");
@@ -102,12 +100,14 @@
   }
 
   .research__title {
+    width: auto;
     margin-bottom: 25px;
     line-height: 30px;
   }
 
   .research__description {
-    font-size: 18px;
+    margin-bottom: 29px;
+    font-size: 14px;
     line-height: 30px;
   }
 }

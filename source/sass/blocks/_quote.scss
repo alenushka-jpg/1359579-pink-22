@@ -55,7 +55,6 @@
     font-size: 18px;
   }
 
-
   .quote__text {
     order: 1;
     margin-bottom: 36px;
@@ -64,8 +63,8 @@
 
 @media (min-width: $desktop-width) {
   .quote__text {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .quote__about-author {

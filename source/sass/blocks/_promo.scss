@@ -58,7 +58,7 @@
 
     .promo__container {
       padding-top: 204px;
-      padding-bottom: 114px;
+      padding-bottom: 71px;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -101,10 +101,19 @@
     }
 
     .promo__container {
-      padding-top: 222px;
-      padding-bottom: 130px;
-      padding-right: 592px;
+      padding-top: 219px;
+      padding-bottom: 123px;
+      padding-left: 40px;
     }
+  }
+
+  .promo__application {
+    margin-bottom: 41px;
+  }
+
+  .promo__slogan {
+    line-height: 65px;
+    font-size: 51px;
   }
 
   .promo__image-wrapper,

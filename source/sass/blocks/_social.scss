@@ -62,3 +62,9 @@
     margin-left: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-left: 25px;
+  }
+}
