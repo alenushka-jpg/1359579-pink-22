@@ -250,6 +250,11 @@
   .user-data__button {
     margin: 0;
   }
+
+  .user-data__pop-up {
+    left: calc(50vw - 230px);
+    width: 460px;
+  }
 }
 
 @media (min-width: $desktop-width) {
