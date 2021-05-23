@@ -109,6 +109,14 @@
   margin-bottom: 35px;
 }
 
+.user-data__pop-up {
+  position: fixed;
+  left: calc(50vw - 160px);
+  top: 30vh;
+  width: 320px;
+  z-index: 11;
+}
+
 @media (min-width: $tablet-width) {
   .user-data {
     padding-top: 91px;
