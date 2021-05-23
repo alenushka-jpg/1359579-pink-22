@@ -3,9 +3,13 @@
 
   &--textarea {
     .field__input {
-      min-height: 197px;
+      min-height: 201px;
+      padding: 13px 20px;
       border: 2px solid $light;
       color: $dark;
+      font: inherit;
+      font-size: 18px;
+      line-height: 30px;
       resize: none;
 
       &::placeholder {
@@ -17,7 +21,7 @@
 
 .field__label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   padding-left: 23px;
   font-size: 14px;
   line-height: 30px;
@@ -28,8 +32,8 @@
 .field__input {
   display: flex;
   width: 100%;
-  padding: 13px 17px;
-  font-size: 18px;
+  padding: 15px 20px 14px;
+  font-size: 19px;
   line-height: 30px;
   border: 2px solid $disabled;
   border-radius: 1px;
@@ -41,13 +45,6 @@
   &:focus {
     border: 2px solid $main;
   }
-}
-
-.field__textarea {
-  font-size: inherit;
-  color: $dark;
-  border: 2px solid $light;
-  resize: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,12 +59,20 @@
 
       .field__input {
         order: 1;
-        padding-right: 60px;
+        padding: 15px 60px 14px 18px;
         margin-bottom: 10px;
       }
 
       .field__label {
         order: 2;
+        padding-left: 17px;
+      }
+    }
+
+    &--textarea {
+      .field__input {
+        min-height: 193px;
+        padding: 14px 20px;
       }
     }
   }
@@ -94,7 +99,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-right: 20px;
+    margin-right: 22px;
   }
 }
 

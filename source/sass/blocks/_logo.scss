@@ -35,11 +35,12 @@
 
 .logo__header,
 .logo__footer {
-  fill: $white;
   display: none;
 }
 
 .logo__header {
+  fill: $white;
+
   &--mobile {
     display: block;
   }

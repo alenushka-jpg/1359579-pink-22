@@ -1,9 +1,12 @@
+.social {
+  margin-top: 37px;
+}
+
 .social__list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-top: 37px;
   padding: 0;
   list-style: none;
 }
@@ -53,6 +56,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    margin-top: 0;
+  }
+
   .social__list {
     margin-top: 0;
   }

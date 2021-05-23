@@ -1,7 +1,7 @@
 .radio-button {
   position: relative;
   display: block;
-  padding-left: 55px;
+  padding-left: 62px;
   cursor: pointer;
 }
 
@@ -18,10 +18,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -55px;
-    width: 35px;
-    height: 35px;
+    top: -6px;
+    left: -70px;
+    width: 41px;
+    height: 41px;
     background-color: $white;
     border-radius: 50%;
     border: 2px solid $disabled;
@@ -45,7 +45,7 @@
     content: "";
     position: absolute;
     top: 7px;
-    left: -45px;
+    left: -57px;
     width: 15px;
     height: 15px;
     background-color: $main;
@@ -66,5 +66,25 @@
   &:checked:disabled + &::before {
     border: 2px solid $disabled;
     color: $disabled;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radio-button {
+    padding-left: 51px;
+  }
+
+  .radio-button__label {
+    &:before {
+      top: -5px;
+      left: -61px;
+    }
+  }
+
+  .radio-button__input:checked ~ .radio-button__label {
+    &:after {
+      top: 8px;
+      left: -48px;
+    }
   }
 }
