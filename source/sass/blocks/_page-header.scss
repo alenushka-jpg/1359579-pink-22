@@ -147,6 +147,8 @@
 
     .page-header__panel {
       display: block;
+      padding-top: 30px;
+      background-color: transparent;
     }
 
     .page-header__burger {
@@ -162,8 +164,4 @@
     padding-right: 40px;
   }
 
-  .page-header__panel {
-    padding-top: 30px;
-    background-color: transparent;
-  }
 }

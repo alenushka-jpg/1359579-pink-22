@@ -88,3 +88,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .radio-button {
+    padding-left: 65px;
+  }
+}

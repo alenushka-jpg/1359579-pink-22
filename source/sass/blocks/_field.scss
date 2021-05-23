@@ -107,7 +107,13 @@
   .field {
     &--textarea {
       .field__input {
-        min-height: 124px;
+        min-height: 130px;
+      }
+    }
+
+    &--contacts {
+      .field__input {
+        padding-left: 16px;
       }
     }
   }

@@ -249,6 +249,16 @@
     padding-left: 40px;
     padding-right: 40px;
 
+    .user-data__text {
+      margin-right: 79px;
+      margin-left: 79px;
+
+      &--hidden {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
     .user-data__footer {
       padding: 0;
       display: grid;
@@ -269,7 +279,7 @@
   }
 
   .user-data__form {
-    margin-top: 60px;
+    margin-top: 79px;
     grid-gap: 62px 70px;
     grid-template-columns: 1fr 1fr;
   }
@@ -279,6 +289,10 @@
       padding: 0;
       padding-top: 6px;
       margin: 0;
+
+      .user-data__item {
+        margin-bottom: 53px;
+      }
     }
 
     &--features,
@@ -346,6 +360,11 @@
       .user-data__item {
         margin: 0;
       }
+    }
+
+    &--message {
+      padding-top: 40px;
+      padding-bottom: 44px;
     }
   }
 }
