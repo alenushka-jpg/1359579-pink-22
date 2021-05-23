@@ -1,5 +1,5 @@
 .download {
-  padding: 28px 20px 30px;
+  padding: 28px 20px 31px;
   background-color: $dark;
 }
 
@@ -62,8 +62,8 @@
   }
 
   .download__list {
-    margin-top: 63px;
-    margin-bottom: 32px;
+    margin-top: 38px;
+    margin-bottom: 14px;
   }
 
   .download__item {
@@ -72,5 +72,12 @@
 
   .download__availability {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__list {
+    margin-top: 62px;
+    margin-bottom: 31px;
   }
 }
