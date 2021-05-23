@@ -46,5 +46,10 @@
   "editor.renderWhitespace": "all",
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0"
   }
 }
