@@ -12,8 +12,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 239px;
-    height: 280px;
+    width: 240px;
+    height: 278px;
     background-image: url("../img/tablet-timer.png");
     background-position: 0 0;
     background-size: contain;
@@ -28,8 +28,9 @@
 }
 
 .research__title {
+  width: 200px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -37,7 +38,7 @@
 
 .research__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -47,7 +48,7 @@
 .research__link {
   text-decoration: underline;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: $main;
 }
@@ -61,9 +62,9 @@
   .research__wrapper {
     padding: 0;
     min-height: 315px;
-    padding-left: 322px;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-left: 310px;
+    padding-top: 96px;
+    padding-bottom: 25px;
   }
 }
 
@@ -74,23 +75,21 @@
 
   .research__container {
     padding-bottom: 67px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .research__wrapper {
     padding: 0;
-    padding-top: 125px;
-    padding-left: 365px;
-    padding-bottom: 50px
+    padding-top: 120px;
+    padding-left: 368px;
+    padding-bottom: 44px;
   }
 
   .research__wrapper::before {
-    bottom: 0;
-    left: 0;
-    width: 298px;
-    height: 345px;
-    background-image: url("../img/desktop-timer.png");
+    bottom: 0px;
+    left: 0px;
+    width: 301px;
+    height: 343px;
+    background-image: url(../img/desktop-timer.png);
     background-position: 0 0;
     background-repeat: no-repeat;
 
@@ -101,12 +100,18 @@
   }
 
   .research__title {
+    width: auto;
     margin-bottom: 25px;
     line-height: 30px;
   }
 
   .research__description {
+    margin-bottom: 29px;
     font-size: 18px;
     line-height: 30px;
   }
+
+  .research__link {
+    font-size: 18px;
+}
 }

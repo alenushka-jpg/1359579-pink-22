@@ -19,8 +19,8 @@
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 90px;
-  padding-bottom: 312px;
+  padding-top: 88px;
+  padding-bottom: 313px;
 }
 
 .promo__slogan {
@@ -57,8 +57,8 @@
     }
 
     .promo__container {
-      padding-top: 200px;
-      padding-bottom: 96px;
+      padding-top: 204px;
+      padding-bottom: 114px;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -68,7 +68,8 @@
     position: static;
     width: 245px;
     padding: 0;
-    margin-bottom: 40px;
+    margin-left: 28px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -100,15 +101,28 @@
     }
 
     .promo__container {
-      padding-top: 222px;
-      padding-bottom: 130px;
-      padding-right: 592px;
+      padding-top: 219px;
+      padding-bottom: 126px;
+      padding-left: 40px;
     }
+  }
+
+  .promo__application {
+    margin-bottom: 41px;
+  }
+
+  .promo__slogan {
+    line-height: 65px;
+    font-size: 51px;
+  }
+
+  .promo__image-wrapper {
+    left: 57%;
   }
 
   .promo__image-wrapper,
   .promo__image {
-    width: 1020px;
+    width: 787px;
     height: 645px;
   }
 }

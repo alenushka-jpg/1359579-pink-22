@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 46px;
+  padding-top: 41px;
 }
 
 .advantages__slogan {
@@ -11,8 +11,7 @@
   text-align: center;
 
   &:last-of-type {
-    margin-top: 40px;
-
+    margin-top: 31px;
 
     .advantages__item-title {
       margin-bottom: 25px;
@@ -32,24 +31,24 @@
 }
 
 .advantages__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 325px;
+  padding-top: 113px;
   background-color: $light;
   background-image: linear-gradient(175deg, $white 60px, $light 60px);
-  overflow: hidden;
 }
 
 .advantages__list {
   position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 316px;
   text-align: center;
   list-style: none;
+  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: -363px;
+    bottom: -42px;
     left: 50%;
     transform: translateX(-50%);
     width: 157px;
@@ -66,13 +65,13 @@
 
 .advantages__item {
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 }
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -85,41 +84,53 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 47px;
+  }
+
   .advantages__slogan {
     font-size: 40px;
     line-height: 54px;
 
     &:last-of-type {
+      margin-top: 0;
       padding: 0;
-      padding-left: 45px;
-      padding-right: 40px;
+      padding-left: 47px;
+      padding-right: 47px;
     }
   }
 
   .advantages__inner-wrapper {
-    padding-top: 100px;
-    padding-bottom: 37px;
-    background-image: linear-gradient(175deg, $white  100px, $light 100px);
+    padding-top: 0;
+    background-image: linear-gradient(175deg, $white 85px, $light 85px);
+  }
 
-    .advantages__container {
-      padding-left: 339px;
+  .advantages__list {
+    padding-left: 310px;
+    padding-bottom: 42px;
+    padding-top: 105px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 134px;
+      top: 35px;
+      transform: translateX(-50%);
+      width: 268px;
+      height: 547px;
+      background-image: url("../img/tablet-smile.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tablet-smile@2x.png");
+        background-size: 268px auto;
+      }
     }
   }
 
-  .advantages__list::before {
-    content: "";
-    position: absolute;
-    left: -170px;
-    top: -43px;
-    transform: translateX(-50%);
-    width: 268px;
-    height: 547px;
-    background-image: url("../img/tablet-smile.png");
-    background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablet-smile@2x.png");
-      background-size: 268px auto;
+  .advantages__item {
+    &:not(:last-child) {
+      margin-bottom: 33px;
     }
   }
 
@@ -131,8 +142,10 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
+    padding-top: 61px;
+
     .advantages__container {
-      margin-bottom: 50px;
+      margin-bottom: 58px;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -144,15 +157,15 @@
 
     &:last-of-type {
       padding: 0;
-      padding-left: 115px;
-      padding-right: 115px;
+      padding-left: 130px;
+      padding-right: 130px;
     }
   }
 
   .advantages__inner-wrapper {
-    padding-top: 42px;
+    padding-top: 0;
     padding-bottom: 0;
-    background-image: linear-gradient(176deg, $white 130px, $light 130px);
+    background-image: linear-gradient(175deg, $white 99px, $light 99px);
 
     .advantages__container {
       padding: 0;
@@ -162,8 +175,9 @@
 
   .advantages__list {
     display: flex;
-    justify-content: space-around;
-    padding-top: 350px;
+    justify-content: space-evenly;
+    padding-top: 359px;
+    padding-left: 0;
 
     &::before {
       display: none;
@@ -171,7 +185,7 @@
   }
 
   .advantages__item {
-    width: 240px;
+    width: 248px;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -182,7 +196,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 17%;
+        left: 19%;
         transform: translateX(-50%);
         width: 300px;
         height: 301px;
@@ -220,7 +234,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 84%;
+        left: 81%;
         transform: translateX(-50%);
         width: 300px;
         height: 301px;
@@ -242,6 +256,7 @@
   }
 
   .advantages__item-title {
+    margin-bottom: 22px;
     font-size: 30px;
   }
 

@@ -1,6 +1,6 @@
 .page-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 37px;
 }
 
 .page-footer__logo {
@@ -12,15 +12,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 41px;
+  margin-top: 37px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 46px;
+    padding-bottom: 72px;
+  }
+
   .page-footer__container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
   }
 
   .page-footer__copyright {
