@@ -53,28 +53,33 @@
 .contacts__map {
   position: relative;
   height: 200px;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    height: 123px;
-    width: 320px;
+    height: 33px;
+    width: 100%;
     left: 0;
-    top: -90px;
+    top: 0;
     background-image: url("../img/triangle-footer.svg");
-    background-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
+}
+
+.contacts__map-picture {
+  display: flex;
 }
 
 .contacts__map-image {
   display: block;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 
 .contacts__map-marker {
@@ -130,17 +135,13 @@
 
   .contacts__map,
   .contacts__map-image {
-    width: 660px;
     height: 371px;
     margin: 0 auto;
   }
 
   .contacts__map {
     &::before {
-      top: -92px;
-      width: 660px;
-      height: 190px;
-      background-image: url("../img/triangle-footer-tablet.svg");
+      height: 68px;
     }
   }
 }
@@ -193,16 +194,13 @@
 
   .contacts__map,
   .contacts__map-image {
-    width: 100%;
     height: 495px;
     object-fit: cover;
   }
 
   .contacts__map {
     &::before {
-      width: 100%;
       height: 265px;
-      background-image: url("../img/triangle-footer-desktop.svg");
     }
   }
 }
