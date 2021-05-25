@@ -1,12 +1,13 @@
 .bullets {
   display: flex;
-  justify-content: center;
+  width: 80px;
+  margin: 0 auto;
+  justify-content: space-around;
   align-items: center;
 }
 
 .bullets__toggle {
   padding: 0;
-  margin-right: 19px;
   border: 0;
   width: 6px;
   height: 6px;

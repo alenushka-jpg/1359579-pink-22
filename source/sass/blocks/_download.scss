@@ -1,5 +1,5 @@
 .download {
-  padding: 28px 20px 30px;
+  padding: 28px 20px 31px;
   background-color: $dark;
 }
 
@@ -20,17 +20,17 @@
 
 .download__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0;
-  margin-top: 32px;
-  margin-bottom: 11px;
+  margin-top: 31px;
+  margin-bottom: 6px;
   padding: 0;
   list-style: none;
 }
 
 .download__item {
-  padding: 0 20px;
+  padding: 3px 16px;
 }
 
 .download__link {
@@ -55,6 +55,7 @@
 
 @media (min-width: $tablet-width) {
   .download {
+    position: relative;
     padding: 0;
     width: 300px;
     background-color: inherit;
@@ -63,10 +64,21 @@
 
   .download__list {
     margin-top: 38px;
-    margin-bottom: 36px;
+    margin-bottom: 14px;
+  }
+
+  .download__item {
+    padding: 8px 16px;
   }
 
   .download__availability {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__list {
+    margin-top: 62px;
+    margin-bottom: 31px;
   }
 }

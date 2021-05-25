@@ -1,0 +1,32 @@
+.burger {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &--close,
+  &--open {
+    fill: $white;
+  }
+
+  &--open {
+    display: none;
+  }
+
+  &--close {
+    display: block;
+  }
+
+  &:hover {
+    &--close,
+    &--open {
+      fill: $main;
+    }
+  }
+
+  &:focus {
+    &--close,
+    &--open {
+      fill: rgba($main, 0.3);
+    }
+  }
+}

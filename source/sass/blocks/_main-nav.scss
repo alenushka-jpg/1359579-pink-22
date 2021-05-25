@@ -4,9 +4,15 @@
   list-style: none;
 }
 
+.main-nav__item {
+  padding: 17px 20px 18px;
+  box-shadow: inset 0 1px 0 0 rgba($white, 0.15),
+    inset 0 -1px 0 0 rgba($black, 1);
+}
+
 .main-nav__link {
   display: block;
-  padding: 22px 20px;
+  padding: 5px 0;
   font-size: 18px;
   line-height: 19px;
   font-weight: bold;
@@ -14,9 +20,6 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  box-shadow:
-    inset 0 1px 0 0 rgba($white, 0.15),
-    inset 0 -1px 0 0 rgba($black, 1);
 
   &:hover {
     color: $main;
@@ -37,10 +40,14 @@
     flex-wrap: wrap;
   }
 
+  .main-nav__item {
+    padding: 0;
+    box-shadow: none;
+  }
+
   .main-nav__link {
     padding: 0;
-    padding-bottom: 17px;
-    box-shadow: none;
+    padding-bottom: 14px;
     font-weight: normal;
     text-transform: none;
 

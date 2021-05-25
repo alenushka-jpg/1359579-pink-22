@@ -1,7 +1,7 @@
 .reviews__list {
   position: relative;
   margin: 0;
-  padding: 50px 20px 0 20px;
+  padding: 41px 0 20px;
   list-style: none;
 }
 
@@ -21,21 +21,20 @@
 
 @media (min-width: $tablet-width) {
   .reviews__list {
-    padding-top: 90px;
+    padding-top: 83px;
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews__container {
+  .reviews__wrapper {
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .reviews__list {
-    padding-top: 180px;
+    padding-top: 174px;
+    padding-bottom: 19px;
 
     &::before {
       content: "";
@@ -52,7 +51,7 @@
 
   .reviews__button {
     position: absolute;
-    top: 50%;
+    top: 52%;
     display: block;
     width: 22px;
     height: 41px;
@@ -79,20 +78,20 @@
     }
 
     &--prev {
-      left: 0;
+      left: 3px;
 
       &::before {
         transform: rotate(-135deg);
-        left: 0;
+        left: 3px;
       }
     }
 
     &--next {
-      right: 0;
+      right: 2px;
 
       &::before {
         transform: rotate(45deg);
-        right: 0;
+        right: 2px;
       }
     }
   }

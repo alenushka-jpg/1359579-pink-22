@@ -2,9 +2,9 @@
   display: block;
   margin: 0 auto;
   min-width: 280px;
-  padding: 20px 30px;
+  padding: 21px 30px 22px;
   border: 0;
-  border-radius: 1px;
+  border-radius: 3px;
   font: inherit;
   font-size: 18px;
   line-height: 20px;
@@ -34,9 +34,9 @@
   }
 
   &--round {
-    min-width: 280px;
+    min-width: 281px;
     height: 55px;
-    padding: 15px 30px;
+    padding: 14px 30px;
     border: 3px solid;
     border-radius: 30px;
     background-color: transparent;
@@ -57,10 +57,6 @@
     &:focus {
       color: rgba($white, 0.3);
     }
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 24px;
-    }
   }
 
   &--reset {
@@ -77,8 +73,21 @@
       color: rgba($white, 0.3);
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .button {
+    min-width: 300px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--round {
+      padding: 15px 25px;
+    }
+
     &--main,
     &--reset {
       min-width: 183px;
