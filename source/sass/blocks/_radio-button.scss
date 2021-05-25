@@ -32,11 +32,11 @@
       border: 2px solid $dark;
     }
   }
+}
 
-  &:focus {
-    &::before {
-      border: 2px solid $main;
-    }
+.radio-button__input:focus ~ .radio-button__label {
+  &::before {
+    border: 2px solid $main;
   }
 }
 
@@ -75,14 +75,14 @@
   }
 
   .radio-button__label {
-    &:before {
+    &::before {
       top: -5px;
       left: -61px;
     }
   }
 
   .radio-button__input:checked ~ .radio-button__label {
-    &:after {
+    &::after {
       top: 8px;
       left: -48px;
     }

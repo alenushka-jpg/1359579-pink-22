@@ -85,11 +85,11 @@
   }
 
   .research__wrapper::before {
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 301px;
     height: 343px;
-    background-image: url(../img/desktop-timer.png);
+    background-image: url("../img/desktop-timer.png");
     background-position: 0 0;
     background-repeat: no-repeat;
 
@@ -110,8 +110,4 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  .research__link {
-    font-size: 18px;
-}
 }

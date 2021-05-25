@@ -33,11 +33,11 @@
       border: 2px solid $dark;
     }
   }
+}
 
-  &:focus {
-    &::before {
-      border: 2px solid $main;
-    }
+.checkbox__input:focus ~ .checkbox__label {
+  &::before {
+    border: 2px solid $main;
   }
 }
 

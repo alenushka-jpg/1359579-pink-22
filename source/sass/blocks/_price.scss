@@ -147,34 +147,21 @@
     position: absolute;
     content: "";
     right: 16px;
-    bottom: 27px;
+    bottom: 20px;
     width: 31px;
-    height: 16px;
-    border-bottom: 4px solid $success;
-    border-right: 4px solid $success;
-    transform: scale(-1, 1) rotate(45deg);
+    height: 21px;
+    background-image: url("../img/icons/yes.svg");
+    background-repeat: no-repeat;
   }
 
   &--cross::before {
     position: absolute;
     content: "";
-    right: 14px;
-    bottom: 30px;
-    width: 35px;
-    height: 3px;
-    background-color: $error;
-    transform: rotate(45deg);
-  }
-
-  &--cross::after {
-    position: absolute;
-    content: "";
-    right: 14px;
-    bottom: 30px;
-    width: 35px;
-    height: 3px;
-    background-color: $error;
-    transform: rotate(135deg);
+    right: 18px;
+    bottom: 17px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icons/no.svg");
   }
 }
 
@@ -233,18 +220,13 @@
 
   .price-table__value {
     &--check::before {
-      bottom: 40%;
-      right: 40%;
+      bottom: calc(50% - 10px);
+      right: calc(50% - 16px);
     }
 
     &--cross::before {
-      bottom: 44%;
-      right: 37%;
-    }
-
-    &--cross::after {
-      bottom: 47%;
-      right: 39%;
+      bottom: calc(50% - 13px);
+      right: calc(50% - 13px);
     }
   }
 
@@ -273,9 +255,8 @@
   }
 
   .price-table__value {
-    &--check::before {
-      bottom: 45%;
-      right: 43%;
+    &--cross::before {
+      bottom: calc(50% - 16px);
     }
   }
 

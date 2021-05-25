@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Html Academy: Pink</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link type="image/x-icon" rel="icon" href="favicon.ico"/>
   <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -30,7 +30,7 @@
           </svg>
           <svg class="logo__header logo__header--desktop" width="147" height="41">
             <use xlink:href="img/logo-sprite.svg#header-desktop"></use>
-            <use class="logo__header--stars" xlink:href="img/logo-sprite.svg#header-desktop__stars"></use>
+            <use class="logo__header-stars" xlink:href="img/logo-sprite.svg#header-desktop__stars"></use>
           </svg>
         </a>
         <button class="page-header__burger page-header__burger--close" type="button" aria-label="Открыть меню">
@@ -82,6 +82,9 @@
           </div>
           <div class="promo__image-wrapper">
             <picture class="promo__image-picture">
+              <source media="(min-width: 1200px)" type="webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
+              <source media="(min-width: 660px)" type="webp"srcset="img/photo-1-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
+              <source type="webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
               <source media="(min-width: 1020px)" srcset="img/phone-screen-desktop.png, img/phone-screen-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/phone-screen-tablet.png 1x, img/phone-screen-tablet@2x.png 2x">
               <img class="promo__image" src="img/phone-screen.png" srcset="img/phone-screen@2x.png 2x" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
@@ -359,6 +362,9 @@
       </div>
       <div class="contacts__map">
         <picture class="contacts__map-picture">
+          <source media="(min-width: 1200px)" type="webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 660px)" type="webp"srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="webp" srcset="img/map-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
           <img class="contacts__map-image" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="200" alt="Карта проезда">
