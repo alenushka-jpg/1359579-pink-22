@@ -56,6 +56,13 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
     }
+
+    &--catalog {
+      .intro__container {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+    }
   }
 
   .intro__container {
