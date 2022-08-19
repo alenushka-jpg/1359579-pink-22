@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Тренировочный проект Html Academy: Pink">
+  <meta name="description" content="Тренировочный проект Html Academy">
   <title>Html Academy: Pink</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link type="image/x-icon" rel="icon" href="favicon.ico"/>
@@ -21,12 +21,12 @@
   <header class="page-header page-header--no-js">
     <div class="container page-header__container">
       <div class="page-header__top">
-        <a class="page-header__logo logo" href="#">
+        <a class="page-header__logo logo">
           <svg class="logo__header logo__header--mobile" width="74" height="23">
             <use xlink:href="img/logo-sprite.svg#header-mobile"></use>
           </svg>
-          <svg class="logo__header logo__header--tablet" width="147" height="41">
-            <use xlink:href="img/logo-sprite.svg#header-tablet"></use>
+          <svg class="logo__header logo__header-t" width="147" height="41">
+            <use xlink:href="img/logo-sprite.svg#headert"></use>
           </svg>
           <svg class="logo__header logo__header--desktop" width="147" height="41">
             <use xlink:href="img/logo-sprite.svg#header-desktop"></use>
@@ -46,7 +46,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#" aria-current="page">
+              <a class="main-nav__link" aria-current="page">
                 Главная
               </a>
             </li>
@@ -86,7 +86,7 @@
               <source media="(min-width: 660px)" type="image/webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
               <source type="image/webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
               <source media="(min-width: 1020px)" srcset="img/phone-screen-desktop.png, img/phone-screen-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/phone-screen-tablet.png 1x, img/phone-screen-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/phone-screent.png 1x, img/phone-screent@2x.png 2x">
               <img class="promo__image" src="img/phone-screen.png" srcset="img/phone-screen@2x.png 2x" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
             </picture>
           </div>
@@ -231,86 +231,86 @@
     <section class="price">
       <div class="container price__container">
         <h2 class="visually-hidden">Стоимость приложения</h2>
-        <table class="price-table">
+        <table class="price__table">
           <caption class="visually-hidden">Стоимость функциональных возможностей приложения</caption>
-          <thead class="price-table__head">
+          <thead class="price__head">
             <tr>
-              <th class="price-table__empty"></th>
-              <th class="price-table__heading" scope="col">
-                <span class="price-table__tarif">База</span>
-                <span class="price-table__price">1,99 USD</span>
+              <th class="price__empty"></th>
+              <th class="price__heading" scope="col">
+                <span class="price__tarif">База</span>
+                <span class="price__price">1,99 USD</span>
               </th>
-              <th class="price-table__heading price-table__heading--hit" scope="col">
-                <span class="price-table__tarif">Стандарт</span>
-                <span class="price-table__price">3,99 USD</span>
+              <th class="price__heading price__heading--hit" scope="col">
+                <span class="price__tarif">Стандарт</span>
+                <span class="price__price">3,99 USD</span>
               </th>
-              <th class="price-table__heading" scope="col">
-                <span class="price-table__tarif">Анлим</span>
-                <span class="price-table__price">9,99 USD</span>
+              <th class="price__heading" scope="col">
+                <span class="price__tarif">Анлим</span>
+                <span class="price__price">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr class="price-table__tr">
-              <th class="price-table__item price-table__item--title" scope="row">Розовый фильтр</th>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--check">
+            <tr class="price__tr">
+              <th class="price__item price__item--title" scope="row">Розовый фильтр</th>
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--check">
                   <span class="visually-hidden">Есть</span>
-                  <span class="price-table__headline">Розовый фильтр</span>
+                  <span class="price__headline">Розовый фильтр</span>
                 </span>
               </td>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--check">
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--check">
                   <span class="visually-hidden">Есть</span>
-                  <span class="price-table__headline">Розовый фильтр</span>
+                  <span class="price__headline">Розовый фильтр</span>
                 </span>
               </td>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--check">
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--check">
                   <span class="visually-hidden">Есть</span>
-                  <span class="price-table__headline">Розовый фильтр</span>
+                  <span class="price__headline">Розовый фильтр</span>
                 </span>
               </td>
             </tr>
-            <tr class="price-table__tr">
-              <th class="price-table__item price-table__item--title" scope="row">Смайлики</th>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--cross">
+            <tr class="price__tr">
+              <th class="price__item price__item--title" scope="row">Смайлики</th>
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--cross">
                   <span class="visually-hidden">Нет</span>
-                  <span class="price-table__headline">Смайлики</span>
+                  <span class="price__headline">Смайлики</span>
                 </span>
               </td>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--check">
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--check">
                   <span class="visually-hidden">Есть</span>
-                  <span class="price-table__headline">Смайлики</span>
+                  <span class="price__headline">Смайлики</span>
                 </span>
               </td>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--check">
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--check">
                   <span class="visually-hidden">Есть</span>
-                  <span class="price-table__headline">Смайлики</span>
+                  <span class="price__headline">Смайлики</span>
                 </span>
               </td>
             </tr>
-            <tr class="price-table__tr">
-              <th class="price-table__item price-table__item--title" scope="row">Комментарии</th>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--cross">
+            <tr class="price__tr">
+              <th class="price__item price__item--title" scope="row">Комментарии</th>
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--cross">
                   <span class="visually-hidden">Нет</span>
-                  <span class="price-table__headline">Комментарии</span>
+                  <span class="price__headline">Комментарии</span>
                 </span>
               </td>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--cross">
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--cross">
                   <span class="visually-hidden">Нет</span>
-                  <span class="price-table__headline">Комментарии</span>
+                  <span class="price__headline">Комментарии</span>
                 </span>
               </td>
-              <td class="price-table__item price-table__item--cell">
-                <span class="price-table__value price-table__value--check">
+              <td class="price__item price__item--cell">
+                <span class="price__value price__value--check">
                   <span class="visually-hidden">Есть</span>
-                  <span class="price-table__headline">Комментарии</span>
+                  <span class="price__headline">Комментарии</span>
                 </span>
               </td>
             </tr>
@@ -366,7 +366,7 @@
           <source media="(min-width: 660px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
           <source type="image/webp" srcset="img/map-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-          <source media="(min-width: 660px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/mapt.png 1x, img/mapt@2x.png 2x">
           <img class="contacts__map-image" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="200" alt="Карта проезда">
         </picture>
         <div class="contacts__map-marker"></div>
@@ -376,7 +376,7 @@
   <footer class="page-footer">
     <div class="container page-footer__container">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <a class="page-footer__logo logo" href="#">
+      <a class="page-footer__logo logo">
         <svg class="logo__footer logo__footer--mobile" width="145" height="40">
           <use class="logo__footer-glass" xlink:href="img/logo-sprite.svg#footer__glass"></use>
           <use class="logo__footer-letters" xlink:href="img/logo-sprite.svg#footer__letters" ></use>

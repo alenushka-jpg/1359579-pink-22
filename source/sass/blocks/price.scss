@@ -12,13 +12,13 @@
   align-items: center;
 }
 
-.price-table {
+.price__table {
   border-spacing: 0;
   width: 280px;
   table-layout: fixed;
 }
 
-.price-table__item {
+.price__item {
   border: 1px solid $light;
 
   &:last-child {
@@ -54,15 +54,12 @@
   }
 }
 
-.price-table__empty {
+.price__empty {
   display: none;
 }
 
-.price-table__heading {
-  padding-top: 11px;
-  padding-bottom: 27px;
-  padding-right: 50px;
-  padding-left: 50px;
+.price__heading {
+  padding: 11px 50px 27px;
   width: 276px;
   color: $white;
   background-color: $dark;
@@ -95,7 +92,7 @@
   }
 }
 
-.price-table__tarif {
+.price__tarif {
   display: block;
   margin-bottom: -2px;
   font-weight: bold;
@@ -104,16 +101,16 @@
   text-transform: uppercase;
 }
 
-.price-table__price {
+.price__price {
   display: block;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
 }
 
-.price-table__tr {
+.price__tr {
   &:first-child {
-    .price-table__item {
+    .price__item {
       border-top-width: 2px;
       border-top-color: $dark;
 
@@ -128,7 +125,7 @@
   }
 
   &:last-child {
-    .price-table__item {
+    .price__item {
       border-bottom-width: 2px;
 
       &:first-child {
@@ -142,7 +139,7 @@
   }
 }
 
-.price-table__value {
+.price__value {
   &--check::before {
     position: absolute;
     content: "";
@@ -165,7 +162,7 @@
   }
 }
 
-.price-table__headline {
+.price__headline {
   padding-left: 20px;
   text-transform: uppercase;
 }
@@ -182,15 +179,15 @@
     background-image: linear-gradient(176deg, $white 60px, $light 60px);
   }
 
-  .price-table {
+  .price__table {
     width: 620px;
   }
 
-  .price-table__empty {
+  .price__empty {
     display: table-cell;
   }
 
-  .price-table__item {
+  .price__item {
     &--title {
       display: table;
     }
@@ -205,7 +202,7 @@
     }
   }
 
-  .price-table__heading {
+  .price__heading {
     width: 155px;
     padding: 12px 9px 7px;
 
@@ -218,7 +215,7 @@
     }
   }
 
-  .price-table__value {
+  .price__value {
     &--check::before {
       bottom: calc(50% - 10px);
       right: calc(50% - 16px);
@@ -230,7 +227,7 @@
     }
   }
 
-  .price-table__headline {
+  .price__headline {
     display: none;
   }
 
@@ -250,17 +247,17 @@
     padding: 0;
   }
 
-  .price-table {
+  .price__table {
     width: 944px;
   }
 
-  .price-table__value {
+  .price__value {
     &--cross::before {
       bottom: calc(50% - 16px);
     }
   }
 
-  .price-table__heading {
+  .price__heading {
     width: 236px;
     padding: 17px 23px 21px;
 
@@ -273,15 +270,15 @@
     }
   }
 
-  .price-table__tarif {
+  .price__tarif {
     font-size: 18px;
   }
 
-  .price-table__price {
+  .price__price {
     font-size: 24px;
   }
 
-  .price-table__item {
+  .price__item {
     &--title,
     &--cell {
       width: 237px;
