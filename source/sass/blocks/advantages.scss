@@ -55,6 +55,7 @@
     height: 320px;
     background-image: url("../img/mobile-smile.png");
     background-repeat: no-repeat;
+    border-radius: 28px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile-smile@2x.png");

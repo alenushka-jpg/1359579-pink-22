@@ -21,7 +21,7 @@
   <header class="page-header page-header--no-js">
     <div class="container page-header__container">
       <div class="page-header__top">
-        <a class="page-header__logo logo">
+        <a class="page-header__logo logo" href="#">
           <svg class="logo__header logo__header--mobile" width="74" height="23">
             <use xlink:href="img/logo-sprite.svg#header-mobile"></use>
           </svg>
@@ -46,7 +46,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" aria-current="page">
+              <a class="main-nav__link" href="#" aria-current="page">
                 Главная
               </a>
             </li>
@@ -82,12 +82,12 @@
           </div>
           <div class="promo__image-wrapper">
             <picture class="promo__image-picture">
-              <source media="(min-width: 1200px)" type="image/webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
-              <source media="(min-width: 660px)" type="image/webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/phone-screen-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
-              <source media="(min-width: 1020px)" srcset="img/phone-screen-desktop.png, img/phone-screen-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/phone-screent.png 1x, img/phone-screent@2x.png 2x">
-              <img class="promo__image" src="img/phone-screen.png" srcset="img/phone-screen@2x.png 2x" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="./img/phone-screen-desktop.webp 1x, ./img/phone-screen-desktop@2x.webp 2x">
+              <source media="(min-width: 660px)" type="image/webp" srcset="./img/phone-screen-desktop.webp 1x, ./img/phone-screen-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="./img/phone-screen.webp 1x, ./img/phone-screen@2x.webp 2x">
+              <source media="(min-width: 1020px)" srcset="./img/phone-screen-desktop.png, ./img/phone-screen-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="./img/phone-screen-tablet.png 1x, ./img/phone-screen-tablet@2x.png 2x">
+              <img class="promo__image" src="./img/phone-screen.png" srcset="./img/phone-screen@2x.png 2x" width="320" height="286" alt="Изображение достопримечательности с розовым фильтром на телефоне">
             </picture>
           </div>
         </div>
@@ -362,12 +362,10 @@
       </div>
       <div class="contacts__map">
         <picture class="contacts__map-picture">
-          <source media="(min-width: 1200px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-          <source media="(min-width: 660px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-desktop.webp 1x, img/phone-screen-desktop@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-          <source media="(min-width: 660px)" srcset="img/mapt.png 1x, img/mapt@2x.png 2x">
-          <img class="contacts__map-image" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="200" alt="Карта проезда">
+          <source media="(min-width: 660px)" type="image/webp" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
+          <source type="image/webp" loading="lazy" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 660px)" srcset="./img/mapt.png 1x, ./img/mapt@2x.png 2x">
+          <img class="contacts__map-image" loading="lazy" src="./img/map.png" srcset="./img/map@2x.png 2x" width="320" height="200" alt="Карта проезда">
         </picture>
         <div class="contacts__map-marker"></div>
       </div>
@@ -376,7 +374,7 @@
   <footer class="page-footer">
     <div class="container page-footer__container">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <a class="page-footer__logo logo">
+      <a class="page-footer__logo logo" href="#">
         <svg class="logo__footer logo__footer--mobile" width="145" height="40">
           <use class="logo__footer-glass" xlink:href="img/logo-sprite.svg#footer__glass"></use>
           <use class="logo__footer-letters" xlink:href="img/logo-sprite.svg#footer__letters" ></use>
@@ -419,6 +417,6 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js" defer async></script>
 </body>
 </html>
