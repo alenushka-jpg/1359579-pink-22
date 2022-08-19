@@ -75,22 +75,22 @@
     }
   }
 
-  &--closed {
-    .page-header__burger {
-      width: 50px;
-      height: 24px;
+  // &--closed {
+  //   .page-header__burger {
+  //     width: 50px;
+  //     height: 24px;
 
-      &--open {
-        .page-header__burger-close {
-          display: none;
-        }
+  //     &--open {
+  //       .page-header__burger-close {
+  //         display: none;
+  //       }
 
-        .page-header__burger-open {
-          display: block;
-        }
-      }
-    }
-  }
+  //       .page-header__burger-open {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .page-header__container {

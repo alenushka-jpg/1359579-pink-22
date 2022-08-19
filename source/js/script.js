@@ -12,3 +12,11 @@ function onClickToggle() {
 }
 
 burger.addEventListener('click', onClickToggle);
+
+// Закрывает модалки при нажатии esc
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    burger.focus;
+    onClickToggle();
+  }
+});
