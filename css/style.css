@@ -805,7 +805,7 @@ button {
     .advantages__item:first-child::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 15px;
       left: 19%;
       transform: translateX(-50%);
       width: 300px;
@@ -821,7 +821,7 @@ button {
     .advantages__item :nth-child(2)::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 15px;
       left: 50%;
       transform: translateX(-50%);
       width: 300px;
@@ -837,7 +837,7 @@ button {
     .advantages__item:last-child::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 15px;
       left: 81%;
       transform: translateX(-50%);
       width: 300px;
