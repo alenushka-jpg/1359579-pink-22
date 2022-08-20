@@ -787,7 +787,7 @@ button {
   .advantages__inner-wrapper {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: linear-gradient(175deg, #ffffff 99px, #f2f2f2 99px); }
+    background-image: none; }
     .advantages__inner-wrapper .advantages__container {
       padding: 0;
       margin-bottom: 0; }
@@ -1209,7 +1209,7 @@ button {
   .price {
     padding-top: 159px;
     padding-bottom: 97px;
-    background-image: linear-gradient(175deg, #ffffff 106px, #f2f2f2 106px); }
+    background-image: none; }
   .price__container {
     padding: 0; }
   .price__table {
